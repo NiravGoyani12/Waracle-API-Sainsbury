@@ -1,0 +1,89 @@
+[
+    {
+        "testName": "404 error with invalid loanApplicationReference",
+        "messageId": "5ec8af2d-5c05-4903-8d56-ba5f9765d1ee",
+        "loanApplicationReference": "FooBar",
+        "fppSettlementAmount": 310,
+        "expectedErrorMessage": "Application does not exist",
+        "expectedErrorName": "APPLICATION_NOT_FOUND",
+        "expectedResponseCode": 404
+    },
+    {
+        "testName": "400 if messageId is not provided",
+        "loanApplicationReference": "FooBar",
+        "fppSettlementAmount": 310,
+        "expectedErrorMessage": "\"messageId\" is required",
+        "expectedErrorName": "ACTIVATE_LOAN_REQUEST_INVALID",
+        "expectedResponseCode": 400
+    },
+    {
+        "testName": "400 if loanApplicationReference is not provided",
+        "messageId": "5ec8af2d-5c05-4903-8d56-ba5f9765d1ee",
+        "fppSettlementAmount": 310,
+        "expectedErrorMessage": "\"loanApplicationReference\" is required",
+        "expectedErrorName": "ACTIVATE_LOAN_REQUEST_INVALID",
+        "expectedResponseCode": 400
+    },
+    {
+        "testName": "400 if fppSettlementAmount is not provided",
+        "messageId": "5ec8af2d-5c05-4903-8d56-ba5f9765d1ee",
+        "loanApplicationReference": "FooBar",
+        "expectedErrorMessage": "\"fppSettlementAmount\" is required",
+        "expectedErrorName": "ACTIVATE_LOAN_REQUEST_INVALID",
+        "expectedResponseCode": 400
+    },
+    {
+        "testName": "400 if messageId is not a string",
+        "messageId": null,
+        "loanApplicationReference": "PP/12345678",
+        "fppSettlementAmount": 310,
+        "expectedErrorMessage": "\"messageId\" must be a string",
+        "expectedErrorName": "ACTIVATE_LOAN_REQUEST_INVALID",
+        "expectedResponseCode": 400
+    },
+    {
+        "testName": "400 if loanApplicationReference is not a string",
+        "messageId": "5ec8af2d-5c05-4903-8d56-ba5f9765d1ee",
+        "loanApplicationReference": null,
+        "fppSettlementAmount": 310,
+        "expectedErrorMessage": "\"loanApplicationReference\" must be a string",
+        "expectedErrorName": "ACTIVATE_LOAN_REQUEST_INVALID",
+        "expectedResponseCode": 400
+    },
+    {
+        "testName": "400 if fppSettlementAmount is an empty string",
+        "messageId": "5ec8af2d-5c05-4903-8d56-ba5f9765d1ee",
+        "loanApplicationReference": "PP/12345678",
+        "fppSettlementAmount": null,
+        "expectedErrorMessage": "\"fppSettlementAmount\" must be a number",
+        "expectedErrorName": "ACTIVATE_LOAN_REQUEST_INVALID",
+        "expectedResponseCode": 400
+    },
+    {
+        "testName": "400 if messageId is an empty string",
+        "messageId": "",
+        "loanApplicationReference": "PP/12345678",
+        "fppSettlementAmount": 310,
+        "expectedErrorMessage": "\"messageId\" contains an invalid value. \"messageId\" is not allowed to be empty",
+        "expectedErrorName": "ACTIVATE_LOAN_REQUEST_INVALID",
+        "expectedResponseCode": 400
+    },
+    {
+        "testName": "400 if loanApplicationReference is an empty string",
+        "messageId": "5ec8af2d-5c05-4903-8d56-ba5f9765d1ee",
+        "loanApplicationReference": "",
+        "fppSettlementAmount": 310,
+        "expectedErrorMessage": "\"loanApplicationReference\" is not allowed to be empty",
+        "expectedErrorName": "ACTIVATE_LOAN_REQUEST_INVALID",
+        "expectedResponseCode": 400
+    },
+    {
+        "testName": "400 if fppSettlementAmount is zero",
+        "messageId": "5ec8af2d-5c05-4903-8d56-ba5f9765d1ee",
+        "loanApplicationReference": "PP/12345678",
+        "fppSettlementAmount": 0,
+        "expectedErrorMessage": "\"fppSettlementAmount\" must be larger than or equal to 0.01",
+        "expectedErrorName": "ACTIVATE_LOAN_REQUEST_INVALID",
+        "expectedResponseCode": 400
+    }
+]

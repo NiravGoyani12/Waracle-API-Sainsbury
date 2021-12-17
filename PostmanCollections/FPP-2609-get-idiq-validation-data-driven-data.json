@@ -1,0 +1,22 @@
+[
+    {
+        "testName": "400 if messageId not provided",
+        "expectedErrorMessage": "\"messageId\" is required",
+        "expectedErrorName": "GET_IDENTITY_QUESTIONS_REQUEST_INVALID",
+        "expectedResponseCode": 400
+    },
+    {
+        "testName": "400 if messageId is empty",
+        "messageId": null,
+        "expectedErrorMessage": "\"messageId\" must be a string",
+        "expectedErrorName": "GET_IDENTITY_QUESTIONS_REQUEST_INVALID",
+        "expectedResponseCode": 400
+    },
+    {
+        "testName": "400 if messageId is provided for dummy application",
+        "messageId": "a99de0a5-53f8-4ca0-bb1b-82116ea42b04",
+        "expectedErrorMessage": "Application Error",
+        "expectedErrorName": "GET_IDENTITY_QUESTIONS_REQUEST_INVALID",
+        "expectedResponseCode": 400
+    }
+]

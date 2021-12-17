@@ -1,0 +1,2891 @@
+[
+    {
+        "scenario": "basket.discounts is very small (0.01)",
+        "scenarioType": "valid",
+        "data": {
+            "messageId": "OTHER_REQUEST",
+            "customer": {
+                "customerId": "123",
+                "title": "Mr",
+                "firstName": "Benjamin",
+                "lastName": "Shales",
+                "emailAddress": "Benjamin.Shales@gmail.com",
+                "billingAddress": {
+                    "houseNumber": "26",
+                    "line1": "Moore Court",
+                    "postCode": "HA0 4AF",
+                    "town": "Wembley",
+                    "county": "London"
+                }
+            },
+            "basket": {
+                "financeAmount": 310,
+                "grossAmount": 310,
+                "discounts": 0.01,
+                "giftVouchers": 0,
+                "nectarPointsCurrencyValue": 0
+            },
+            "others": {
+                "checkoutCallbackUrl": "https://www.argos.co.uk",
+                "origin": "argos",
+                "ipAddress": "99.99.99.99",
+                "collectionStoreId": "12345",
+                "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.164 Safari/537.36",
+                "collectionStorePostCode": "BT14 6NE",
+                "fulfilmentChannel": "Collection",
+                "creditPlanId": "20010",
+                "checkoutSessionExpiryTime": "calculated at runtime",
+                "stockHoldExpiryTime": "calculated at runtime",
+                "purchaseChannel": "Web"
+            },
+            "products": [
+                {
+                    "quantity": 1,
+                    "sku": 1000,
+                    "unitPrice": 300,
+                    "description": "Samsung TV"
+                },
+                {
+                    "quantity": 2,
+                    "sku": 2313131323,
+                    "unitPrice": 10,
+                    "description": "AA Batteries"
+                }
+            ]
+        }
+    },
+    {
+        "scenario": "basket.discounts is negative-zero (-0.00)",
+        "scenarioType": "valid",
+        "data": {
+            "messageId": "OTHER_REQUEST",
+            "customer": {
+                "customerId": "123",
+                "title": "Mr",
+                "firstName": "Benjamin",
+                "lastName": "Shales",
+                "emailAddress": "Benjamin.Shales@gmail.com",
+                "billingAddress": {
+                    "houseNumber": "26",
+                    "line1": "Moore Court",
+                    "postCode": "HA0 4AF",
+                    "town": "Wembley",
+                    "county": "London"
+                }
+            },
+            "basket": {
+                "financeAmount": 310,
+                "grossAmount": 310,
+                "discounts": 0,
+                "giftVouchers": 0,
+                "nectarPointsCurrencyValue": 0
+            },
+            "others": {
+                "checkoutCallbackUrl": "https://www.argos.co.uk",
+                "origin": "argos",
+                "ipAddress": "99.99.99.99",
+                "collectionStoreId": "12345",
+                "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.164 Safari/537.36",
+                "collectionStorePostCode": "BT14 6NE",
+                "fulfilmentChannel": "Collection",
+                "creditPlanId": "20010",
+                "checkoutSessionExpiryTime": "calculated at runtime",
+                "stockHoldExpiryTime": "calculated at runtime",
+                "purchaseChannel": "Web"
+            },
+            "products": [
+                {
+                    "quantity": 1,
+                    "sku": 1000,
+                    "unitPrice": 300,
+                    "description": "Samsung TV"
+                },
+                {
+                    "quantity": 2,
+                    "sku": 2313131323,
+                    "unitPrice": 10,
+                    "description": "AA Batteries"
+                }
+            ]
+        }
+    },
+    {
+        "scenario": "basket.discounts is zero (0.00)",
+        "scenarioType": "valid",
+        "data": {
+            "messageId": "OTHER_REQUEST",
+            "customer": {
+                "customerId": "123",
+                "title": "Mr",
+                "firstName": "Benjamin",
+                "lastName": "Shales",
+                "emailAddress": "Benjamin.Shales@gmail.com",
+                "billingAddress": {
+                    "houseNumber": "26",
+                    "line1": "Moore Court",
+                    "postCode": "HA0 4AF",
+                    "town": "Wembley",
+                    "county": "London"
+                }
+            },
+            "basket": {
+                "financeAmount": 310,
+                "grossAmount": 310,
+                "discounts": 0,
+                "giftVouchers": 0,
+                "nectarPointsCurrencyValue": 0
+            },
+            "others": {
+                "checkoutCallbackUrl": "https://www.argos.co.uk",
+                "origin": "argos",
+                "ipAddress": "99.99.99.99",
+                "collectionStoreId": "12345",
+                "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.164 Safari/537.36",
+                "collectionStorePostCode": "BT14 6NE",
+                "fulfilmentChannel": "Collection",
+                "creditPlanId": "20010",
+                "checkoutSessionExpiryTime": "calculated at runtime",
+                "stockHoldExpiryTime": "calculated at runtime",
+                "purchaseChannel": "Web"
+            },
+            "products": [
+                {
+                    "quantity": 1,
+                    "sku": 1000,
+                    "unitPrice": 300,
+                    "description": "Samsung TV"
+                },
+                {
+                    "quantity": 2,
+                    "sku": 2313131323,
+                    "unitPrice": 10,
+                    "description": "AA Batteries"
+                }
+            ]
+        }
+    },
+    {
+        "scenario": "basket.discounts is missing",
+        "scenarioType": "valid",
+        "data": {
+            "messageId": "OTHER_REQUEST",
+            "customer": {
+                "customerId": "123",
+                "title": "Mr",
+                "firstName": "Benjamin",
+                "lastName": "Shales",
+                "emailAddress": "Benjamin.Shales@gmail.com",
+                "billingAddress": {
+                    "houseNumber": "26",
+                    "line1": "Moore Court",
+                    "postCode": "HA0 4AF",
+                    "town": "Wembley",
+                    "county": "London"
+                }
+            },
+            "basket": {
+                "financeAmount": 310,
+                "grossAmount": 310,
+                "giftVouchers": 0,
+                "nectarPointsCurrencyValue": 0
+            },
+            "others": {
+                "checkoutCallbackUrl": "https://www.argos.co.uk",
+                "origin": "argos",
+                "ipAddress": "99.99.99.99",
+                "collectionStoreId": "12345",
+                "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.164 Safari/537.36",
+                "collectionStorePostCode": "BT14 6NE",
+                "fulfilmentChannel": "Collection",
+                "creditPlanId": "20010",
+                "checkoutSessionExpiryTime": "calculated at runtime",
+                "stockHoldExpiryTime": "calculated at runtime",
+                "purchaseChannel": "Web"
+            },
+            "products": [
+                {
+                    "quantity": 1,
+                    "sku": 1000,
+                    "unitPrice": 300,
+                    "description": "Samsung TV"
+                },
+                {
+                    "quantity": 2,
+                    "sku": 2313131323,
+                    "unitPrice": 10,
+                    "description": "AA Batteries"
+                }
+            ]
+        }
+    },
+    {
+        "scenario": "\"basket.discounts\" has more than 2 decimal places (12.3456789)",
+        "scenarioType": "invalid",
+        "data": {
+            "messageId": "OTHER_REQUEST",
+            "customer": {
+                "customerId": "123",
+                "title": "Mr",
+                "firstName": "Benjamin",
+                "lastName": "Shales",
+                "emailAddress": "Benjamin.Shales@gmail.com",
+                "billingAddress": {
+                    "houseNumber": "26",
+                    "line1": "Moore Court",
+                    "postCode": "HA0 4AF",
+                    "town": "Wembley",
+                    "county": "London"
+                }
+            },
+            "basket": {
+                "financeAmount": 310,
+                "grossAmount": 310,
+                "discounts": 12.3456789,
+                "giftVouchers": 0,
+                "nectarPointsCurrencyValue": 0
+            },
+            "others": {
+                "checkoutCallbackUrl": "https://www.argos.co.uk",
+                "origin": "argos",
+                "ipAddress": "99.99.99.99",
+                "collectionStoreId": "12345",
+                "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.164 Safari/537.36",
+                "collectionStorePostCode": "BT14 6NE",
+                "fulfilmentChannel": "Collection",
+                "creditPlanId": "20010",
+                "checkoutSessionExpiryTime": "calculated at runtime",
+                "stockHoldExpiryTime": "calculated at runtime",
+                "purchaseChannel": "Web"
+            },
+            "products": [
+                {
+                    "quantity": 1,
+                    "sku": 1000,
+                    "unitPrice": 300,
+                    "description": "Samsung TV"
+                },
+                {
+                    "quantity": 2,
+                    "sku": 2313131323,
+                    "unitPrice": 10,
+                    "description": "AA Batteries"
+                }
+            ]
+        },
+        "expectedErrorMessage": "\"basket.discounts\" must have no more than 2 decimal places"
+    },
+    {
+        "scenario": "\"basket.discounts\" is of type string (\"12.34\")",
+        "scenarioType": "invalid",
+        "data": {
+            "messageId": "OTHER_REQUEST",
+            "customer": {
+                "customerId": "123",
+                "title": "Mr",
+                "firstName": "Benjamin",
+                "lastName": "Shales",
+                "emailAddress": "Benjamin.Shales@gmail.com",
+                "billingAddress": {
+                    "houseNumber": "26",
+                    "line1": "Moore Court",
+                    "postCode": "HA0 4AF",
+                    "town": "Wembley",
+                    "county": "London"
+                }
+            },
+            "basket": {
+                "financeAmount": 310,
+                "grossAmount": 310,
+                "discounts": "12.34",
+                "giftVouchers": 0,
+                "nectarPointsCurrencyValue": 0
+            },
+            "others": {
+                "checkoutCallbackUrl": "https://www.argos.co.uk",
+                "origin": "argos",
+                "ipAddress": "99.99.99.99",
+                "collectionStoreId": "12345",
+                "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.164 Safari/537.36",
+                "collectionStorePostCode": "BT14 6NE",
+                "fulfilmentChannel": "Collection",
+                "creditPlanId": "20010",
+                "checkoutSessionExpiryTime": "calculated at runtime",
+                "stockHoldExpiryTime": "calculated at runtime",
+                "purchaseChannel": "Web"
+            },
+            "products": [
+                {
+                    "quantity": 1,
+                    "sku": 1000,
+                    "unitPrice": 300,
+                    "description": "Samsung TV"
+                },
+                {
+                    "quantity": 2,
+                    "sku": 2313131323,
+                    "unitPrice": 10,
+                    "description": "AA Batteries"
+                }
+            ]
+        },
+        "expectedErrorMessage": "\"basket.discounts\" must be a number"
+    },
+    {
+        "scenario": "\"basket.discounts\" is a negative number (-12.34)",
+        "scenarioType": "invalid",
+        "data": {
+            "messageId": "OTHER_REQUEST",
+            "customer": {
+                "customerId": "123",
+                "title": "Mr",
+                "firstName": "Benjamin",
+                "lastName": "Shales",
+                "emailAddress": "Benjamin.Shales@gmail.com",
+                "billingAddress": {
+                    "houseNumber": "26",
+                    "line1": "Moore Court",
+                    "postCode": "HA0 4AF",
+                    "town": "Wembley",
+                    "county": "London"
+                }
+            },
+            "basket": {
+                "financeAmount": 310,
+                "grossAmount": 310,
+                "discounts": -12.34,
+                "giftVouchers": 0,
+                "nectarPointsCurrencyValue": 0
+            },
+            "others": {
+                "checkoutCallbackUrl": "https://www.argos.co.uk",
+                "origin": "argos",
+                "ipAddress": "99.99.99.99",
+                "collectionStoreId": "12345",
+                "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.164 Safari/537.36",
+                "collectionStorePostCode": "BT14 6NE",
+                "fulfilmentChannel": "Collection",
+                "creditPlanId": "20010",
+                "checkoutSessionExpiryTime": "calculated at runtime",
+                "stockHoldExpiryTime": "calculated at runtime",
+                "purchaseChannel": "Web"
+            },
+            "products": [
+                {
+                    "quantity": 1,
+                    "sku": 1000,
+                    "unitPrice": 300,
+                    "description": "Samsung TV"
+                },
+                {
+                    "quantity": 2,
+                    "sku": 2313131323,
+                    "unitPrice": 10,
+                    "description": "AA Batteries"
+                }
+            ]
+        },
+        "expectedErrorMessage": "\"basket.discounts\" must be a positive number. \"basket.discounts\" must be larger than or equal to 0"
+    },
+    {
+        "scenario": "\"basket.discounts\" is empty string",
+        "scenarioType": "invalid",
+        "data": {
+            "messageId": "OTHER_REQUEST",
+            "customer": {
+                "customerId": "123",
+                "title": "Mr",
+                "firstName": "Benjamin",
+                "lastName": "Shales",
+                "emailAddress": "Benjamin.Shales@gmail.com",
+                "billingAddress": {
+                    "houseNumber": "26",
+                    "line1": "Moore Court",
+                    "postCode": "HA0 4AF",
+                    "town": "Wembley",
+                    "county": "London"
+                }
+            },
+            "basket": {
+                "financeAmount": 310,
+                "grossAmount": 310,
+                "discounts": "",
+                "giftVouchers": 0,
+                "nectarPointsCurrencyValue": 0
+            },
+            "others": {
+                "checkoutCallbackUrl": "https://www.argos.co.uk",
+                "origin": "argos",
+                "ipAddress": "99.99.99.99",
+                "collectionStoreId": "12345",
+                "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.164 Safari/537.36",
+                "collectionStorePostCode": "BT14 6NE",
+                "fulfilmentChannel": "Collection",
+                "creditPlanId": "20010",
+                "checkoutSessionExpiryTime": "calculated at runtime",
+                "stockHoldExpiryTime": "calculated at runtime",
+                "purchaseChannel": "Web"
+            },
+            "products": [
+                {
+                    "quantity": 1,
+                    "sku": 1000,
+                    "unitPrice": 300,
+                    "description": "Samsung TV"
+                },
+                {
+                    "quantity": 2,
+                    "sku": 2313131323,
+                    "unitPrice": 10,
+                    "description": "AA Batteries"
+                }
+            ]
+        },
+        "expectedErrorMessage": "\"basket.discounts\" must be a number"
+    },
+    {
+        "scenario": "\"basket.discounts\" is too big (1234567890.12)",
+        "scenarioType": "invalid",
+        "data": {
+            "messageId": "OTHER_REQUEST",
+            "customer": {
+                "customerId": "123",
+                "title": "Mr",
+                "firstName": "Benjamin",
+                "lastName": "Shales",
+                "emailAddress": "Benjamin.Shales@gmail.com",
+                "billingAddress": {
+                    "houseNumber": "26",
+                    "line1": "Moore Court",
+                    "postCode": "HA0 4AF",
+                    "town": "Wembley",
+                    "county": "London"
+                }
+            },
+            "basket": {
+                "financeAmount": 310,
+                "grossAmount": 310,
+                "discounts": 1234567890.12,
+                "giftVouchers": 0,
+                "nectarPointsCurrencyValue": 0
+            },
+            "others": {
+                "checkoutCallbackUrl": "https://www.argos.co.uk",
+                "origin": "argos",
+                "ipAddress": "99.99.99.99",
+                "collectionStoreId": "12345",
+                "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.164 Safari/537.36",
+                "collectionStorePostCode": "BT14 6NE",
+                "fulfilmentChannel": "Collection",
+                "creditPlanId": "20010",
+                "checkoutSessionExpiryTime": "calculated at runtime",
+                "stockHoldExpiryTime": "calculated at runtime",
+                "purchaseChannel": "Web"
+            },
+            "products": [
+                {
+                    "quantity": 1,
+                    "sku": 1000,
+                    "unitPrice": 300,
+                    "description": "Samsung TV"
+                },
+                {
+                    "quantity": 2,
+                    "sku": 2313131323,
+                    "unitPrice": 10,
+                    "description": "AA Batteries"
+                }
+            ]
+        },
+        "expectedErrorMessage": "\"basket.discounts\" must be less than or equal to 1000000"
+    },
+    {
+        "scenario": "basket.financeAmount is very small (0.01)",
+        "scenarioType": "valid",
+        "data": {
+            "messageId": "OTHER_REQUEST",
+            "customer": {
+                "customerId": "123",
+                "title": "Mr",
+                "firstName": "Benjamin",
+                "lastName": "Shales",
+                "emailAddress": "Benjamin.Shales@gmail.com",
+                "billingAddress": {
+                    "houseNumber": "26",
+                    "line1": "Moore Court",
+                    "postCode": "HA0 4AF",
+                    "town": "Wembley",
+                    "county": "London"
+                }
+            },
+            "basket": {
+                "financeAmount": 0.01,
+                "grossAmount": 310,
+                "discounts": 0.00,
+                "giftVouchers": 0,
+                "nectarPointsCurrencyValue": 0
+            },
+            "others": {
+                "checkoutCallbackUrl": "https://www.argos.co.uk",
+                "origin": "argos",
+                "ipAddress": "99.99.99.99",
+                "collectionStoreId": "12345",
+                "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.164 Safari/537.36",
+                "collectionStorePostCode": "BT14 6NE",
+                "fulfilmentChannel": "Collection",
+                "creditPlanId": "20010",
+                "checkoutSessionExpiryTime": "calculated at runtime",
+                "stockHoldExpiryTime": "calculated at runtime",
+                "purchaseChannel": "Web"
+            },
+            "products": [
+                {
+                    "quantity": 1,
+                    "sku": 1000,
+                    "unitPrice": 300,
+                    "description": "Samsung TV"
+                },
+                {
+                    "quantity": 2,
+                    "sku": 2313131323,
+                    "unitPrice": 10,
+                    "description": "AA Batteries"
+                }
+            ]
+        }
+    },
+    {
+        "scenario": "\"basket.financeAmount\" has too many decimal places (12.3456789)",
+        "scenarioType": "invalid",
+        "data": {
+            "messageId": "OTHER_REQUEST",
+            "customer": {
+                "customerId": "123",
+                "title": "Mr",
+                "firstName": "Benjamin",
+                "lastName": "Shales",
+                "emailAddress": "Benjamin.Shales@gmail.com",
+                "billingAddress": {
+                    "houseNumber": "26",
+                    "line1": "Moore Court",
+                    "postCode": "HA0 4AF",
+                    "town": "Wembley",
+                    "county": "London"
+                }
+            },
+            "basket": {
+                "financeAmount": 12.3456789,
+                "grossAmount": 310,
+                "discounts": 0.00,
+                "giftVouchers": 0,
+                "nectarPointsCurrencyValue": 0
+            },
+            "others": {
+                "checkoutCallbackUrl": "https://www.argos.co.uk",
+                "origin": "argos",
+                "ipAddress": "99.99.99.99",
+                "collectionStoreId": "12345",
+                "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.164 Safari/537.36",
+                "collectionStorePostCode": "BT14 6NE",
+                "fulfilmentChannel": "Collection",
+                "creditPlanId": "20010",
+                "checkoutSessionExpiryTime": "calculated at runtime",
+                "stockHoldExpiryTime": "calculated at runtime",
+                "purchaseChannel": "Web"
+            },
+            "products": [
+                {
+                    "quantity": 1,
+                    "sku": 1000,
+                    "unitPrice": 300,
+                    "description": "Samsung TV"
+                },
+                {
+                    "quantity": 2,
+                    "sku": 2313131323,
+                    "unitPrice": 10,
+                    "description": "AA Batteries"
+                }
+            ]
+        },
+        "expectedErrorMessage": "\"basket.financeAmount\" must have no more than 2 decimal places"
+    },
+    {
+        "scenario": "\"basket.financeAmount\" is of wrong type (\"12.34\")",
+        "scenarioType": "invalid",
+        "data": {
+            "messageId": "OTHER_REQUEST",
+            "customer": {
+                "customerId": "123",
+                "title": "Mr",
+                "firstName": "Benjamin",
+                "lastName": "Shales",
+                "emailAddress": "Benjamin.Shales@gmail.com",
+                "billingAddress": {
+                    "houseNumber": "26",
+                    "line1": "Moore Court",
+                    "postCode": "HA0 4AF",
+                    "town": "Wembley",
+                    "county": "London"
+                }
+            },
+            "basket": {
+                "financeAmount": "12.34",
+                "grossAmount": 310,
+                "discounts": 0.00,
+                "giftVouchers": 0,
+                "nectarPointsCurrencyValue": 0
+            },
+            "others": {
+                "checkoutCallbackUrl": "https://www.argos.co.uk",
+                "origin": "argos",
+                "ipAddress": "99.99.99.99",
+                "collectionStoreId": "12345",
+                "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.164 Safari/537.36",
+                "collectionStorePostCode": "BT14 6NE",
+                "fulfilmentChannel": "Collection",
+                "creditPlanId": "20010",
+                "checkoutSessionExpiryTime": "calculated at runtime",
+                "stockHoldExpiryTime": "calculated at runtime",
+                "purchaseChannel": "Web"
+            },
+            "products": [
+                {
+                    "quantity": 1,
+                    "sku": 1000,
+                    "unitPrice": 300,
+                    "description": "Samsung TV"
+                },
+                {
+                    "quantity": 2,
+                    "sku": 2313131323,
+                    "unitPrice": 10,
+                    "description": "AA Batteries"
+                }
+            ]
+        },
+        "expectedErrorMessage": "\"basket.financeAmount\" must be a number. \"basket.grossAmount\" limit references \"ref:financeAmount\" which must be a number"
+    },
+    {
+        "scenario": "\"basket.financeAmount\" is negative value (-12.34)",
+        "scenarioType": "invalid",
+        "data": {
+            "messageId": "OTHER_REQUEST",
+            "customer": {
+                "customerId": "123",
+                "title": "Mr",
+                "firstName": "Benjamin",
+                "lastName": "Shales",
+                "emailAddress": "Benjamin.Shales@gmail.com",
+                "billingAddress": {
+                    "houseNumber": "26",
+                    "line1": "Moore Court",
+                    "postCode": "HA0 4AF",
+                    "town": "Wembley",
+                    "county": "London"
+                }
+            },
+            "basket": {
+                "financeAmount": -12.34,
+                "grossAmount": 310,
+                "discounts": 0.00,
+                "giftVouchers": 0,
+                "nectarPointsCurrencyValue": 0
+            },
+            "others": {
+                "checkoutCallbackUrl": "https://www.argos.co.uk",
+                "origin": "argos",
+                "ipAddress": "99.99.99.99",
+                "collectionStoreId": "12345",
+                "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.164 Safari/537.36",
+                "collectionStorePostCode": "BT14 6NE",
+                "fulfilmentChannel": "Collection",
+                "creditPlanId": "20010",
+                "checkoutSessionExpiryTime": "calculated at runtime",
+                "stockHoldExpiryTime": "calculated at runtime",
+                "purchaseChannel": "Web"
+            },
+            "products": [
+                {
+                    "quantity": 1,
+                    "sku": 1000,
+                    "unitPrice": 300,
+                    "description": "Samsung TV"
+                },
+                {
+                    "quantity": 2,
+                    "sku": 2313131323,
+                    "unitPrice": 10,
+                    "description": "AA Batteries"
+                }
+            ]
+        },
+        "expectedErrorMessage": "\"basket.financeAmount\" must be a positive number. \"basket.financeAmount\" must be larger than or equal to 0.01"
+    },
+    {
+        "scenario": "\"basket.financeAmount\" is zero (0.00)",
+        "scenarioType": "invalid",
+        "data": {
+            "messageId": "OTHER_REQUEST",
+            "customer": {
+                "customerId": "123",
+                "title": "Mr",
+                "firstName": "Benjamin",
+                "lastName": "Shales",
+                "emailAddress": "Benjamin.Shales@gmail.com",
+                "billingAddress": {
+                    "houseNumber": "26",
+                    "line1": "Moore Court",
+                    "postCode": "HA0 4AF",
+                    "town": "Wembley",
+                    "county": "London"
+                }
+            },
+            "basket": {
+                "financeAmount": 0.00,
+                "grossAmount": 310,
+                "discounts": 0.00,
+                "giftVouchers": 0,
+                "nectarPointsCurrencyValue": 0
+            },
+            "others": {
+                "checkoutCallbackUrl": "https://www.argos.co.uk",
+                "origin": "argos",
+                "ipAddress": "99.99.99.99",
+                "collectionStoreId": "12345",
+                "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.164 Safari/537.36",
+                "collectionStorePostCode": "BT14 6NE",
+                "fulfilmentChannel": "Collection",
+                "creditPlanId": "20010",
+                "checkoutSessionExpiryTime": "calculated at runtime",
+                "stockHoldExpiryTime": "calculated at runtime",
+                "purchaseChannel": "Web"
+            },
+            "products": [
+                {
+                    "quantity": 1,
+                    "sku": 1000,
+                    "unitPrice": 300,
+                    "description": "Samsung TV"
+                },
+                {
+                    "quantity": 2,
+                    "sku": 2313131323,
+                    "unitPrice": 10,
+                    "description": "AA Batteries"
+                }
+            ]
+        },
+        "expectedErrorMessage": "\"basket.financeAmount\" must be a positive number. \"basket.financeAmount\" must be larger than or equal to 0.01"
+    },
+    {
+        "scenario": "\"basket.financeAmount\" is empty string",
+        "scenarioType": "invalid",
+        "data": {
+            "messageId": "OTHER_REQUEST",
+            "customer": {
+                "customerId": "123",
+                "title": "Mr",
+                "firstName": "Benjamin",
+                "lastName": "Shales",
+                "emailAddress": "Benjamin.Shales@gmail.com",
+                "billingAddress": {
+                    "houseNumber": "26",
+                    "line1": "Moore Court",
+                    "postCode": "HA0 4AF",
+                    "town": "Wembley",
+                    "county": "London"
+                }
+            },
+            "basket": {
+                "financeAmount": "",
+                "grossAmount": 310,
+                "discounts": 0.00,
+                "giftVouchers": 0,
+                "nectarPointsCurrencyValue": 0
+            },
+            "others": {
+                "checkoutCallbackUrl": "https://www.argos.co.uk",
+                "origin": "argos",
+                "ipAddress": "99.99.99.99",
+                "collectionStoreId": "12345",
+                "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.164 Safari/537.36",
+                "collectionStorePostCode": "BT14 6NE",
+                "fulfilmentChannel": "Collection",
+                "creditPlanId": "20010",
+                "checkoutSessionExpiryTime": "calculated at runtime",
+                "stockHoldExpiryTime": "calculated at runtime",
+                "purchaseChannel": "Web"
+            },
+            "products": [
+                {
+                    "quantity": 1,
+                    "sku": 1000,
+                    "unitPrice": 300,
+                    "description": "Samsung TV"
+                },
+                {
+                    "quantity": 2,
+                    "sku": 2313131323,
+                    "unitPrice": 10,
+                    "description": "AA Batteries"
+                }
+            ]
+        },
+        "expectedErrorMessage": "\"basket.financeAmount\" must be a number. \"basket.grossAmount\" limit references \"ref:financeAmount\" which must be a number"
+    },
+    {
+        "scenario": "\"basket.financeAmount\" is missing",
+        "scenarioType": "invalid",
+        "data": {
+            "messageId": "OTHER_REQUEST",
+            "customer": {
+                "customerId": "123",
+                "title": "Mr",
+                "firstName": "Benjamin",
+                "lastName": "Shales",
+                "emailAddress": "Benjamin.Shales@gmail.com",
+                "billingAddress": {
+                    "houseNumber": "26",
+                    "line1": "Moore Court",
+                    "postCode": "HA0 4AF",
+                    "town": "Wembley",
+                    "county": "London"
+                }
+            },
+            "basket": {
+                "grossAmount": 310,
+                "discounts": 0.00,
+                "giftVouchers": 0,
+                "nectarPointsCurrencyValue": 0
+            },
+            "others": {
+                "checkoutCallbackUrl": "https://www.argos.co.uk",
+                "origin": "argos",
+                "ipAddress": "99.99.99.99",
+                "collectionStoreId": "12345",
+                "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.164 Safari/537.36",
+                "collectionStorePostCode": "BT14 6NE",
+                "fulfilmentChannel": "Collection",
+                "creditPlanId": "20010",
+                "checkoutSessionExpiryTime": "calculated at runtime",
+                "stockHoldExpiryTime": "calculated at runtime",
+                "purchaseChannel": "Web"
+            },
+            "products": [
+                {
+                    "quantity": 1,
+                    "sku": 1000,
+                    "unitPrice": 300,
+                    "description": "Samsung TV"
+                },
+                {
+                    "quantity": 2,
+                    "sku": 2313131323,
+                    "unitPrice": 10,
+                    "description": "AA Batteries"
+                }
+            ]
+        },
+        "expectedErrorMessage": "\"basket.financeAmount\" is required. \"basket.grossAmount\" limit references \"ref:financeAmount\" which must be a number"
+    },
+    {
+        "scenario": "\"basket.financeAmount\" is too big (1234567890.12)",
+        "scenarioType": "invalid",
+        "data": {
+            "messageId": "OTHER_REQUEST",
+            "customer": {
+                "customerId": "123",
+                "title": "Mr",
+                "firstName": "Benjamin",
+                "lastName": "Shales",
+                "emailAddress": "Benjamin.Shales@gmail.com",
+                "billingAddress": {
+                    "houseNumber": "26",
+                    "line1": "Moore Court",
+                    "postCode": "HA0 4AF",
+                    "town": "Wembley",
+                    "county": "London"
+                }
+            },
+            "basket": {
+                "financeAmount": 1234567890.12,
+                "grossAmount": 310,
+                "discounts": 0.00,
+                "giftVouchers": 0,
+                "nectarPointsCurrencyValue": 0
+            },
+            "others": {
+                "checkoutCallbackUrl": "https://www.argos.co.uk",
+                "origin": "argos",
+                "ipAddress": "99.99.99.99",
+                "collectionStoreId": "12345",
+                "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.164 Safari/537.36",
+                "collectionStorePostCode": "BT14 6NE",
+                "fulfilmentChannel": "Collection",
+                "creditPlanId": "20010",
+                "checkoutSessionExpiryTime": "calculated at runtime",
+                "stockHoldExpiryTime": "calculated at runtime",
+                "purchaseChannel": "Web"
+            },
+            "products": [
+                {
+                    "quantity": 1,
+                    "sku": 1000,
+                    "unitPrice": 300,
+                    "description": "Samsung TV"
+                },
+                {
+                    "quantity": 2,
+                    "sku": 2313131323,
+                    "unitPrice": 10,
+                    "description": "AA Batteries"
+                }
+            ]
+        },
+        "expectedErrorMessage": "\"basket.financeAmount\" must be less than or equal to 1000000. \"basket.grossAmount\" must be larger than or equal to ref:financeAmount"
+    },
+    {
+        "scenario": "others.checkoutCallbackUrl is very big",
+        "scenarioType": "valid",
+        "data": {
+            "messageId": "OTHER_REQUEST",
+            "customer": {
+                "customerId": "123",
+                "title": "Mr",
+                "firstName": "Benjamin",
+                "lastName": "Shales",
+                "emailAddress": "Benjamin.Shales@gmail.com",
+                "billingAddress": {
+                    "houseNumber": "26",
+                    "line1": "Moore Court",
+                    "postCode": "HA0 4AF",
+                    "town": "Wembley",
+                    "county": "London"
+                }
+            },
+            "basket": {
+                "financeAmount": 310,
+                "grossAmount": 310,
+                "discounts": 0.00,
+                "giftVouchers": 0,
+                "nectarPointsCurrencyValue": 0
+            },
+            "others": {
+                "checkoutCallbackUrl": "https://12345678901234567890123456789012345678901234567890.com/12345678901234567890123456789012345678901234567890",
+                "origin": "argos",
+                "ipAddress": "99.99.99.99",
+                "collectionStoreId": "12345",
+                "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.164 Safari/537.36",
+                "collectionStorePostCode": "BT14 6NE",
+                "fulfilmentChannel": "Collection",
+                "creditPlanId": "20010",
+                "checkoutSessionExpiryTime": "calculated at runtime",
+                "stockHoldExpiryTime": "calculated at runtime",
+                "purchaseChannel": "Web"
+            },
+            "products": [
+                {
+                    "quantity": 1,
+                    "sku": 1000,
+                    "unitPrice": 300,
+                    "description": "Samsung TV"
+                },
+                {
+                    "quantity": 2,
+                    "sku": 2313131323,
+                    "unitPrice": 10,
+                    "description": "AA Batteries"
+                }
+            ]
+        }
+    },
+    {
+        "scenario": "others.checkoutCallbackUrl is very small(https://A.com/A)",
+        "scenarioType": "valid",
+        "data": {
+            "messageId": "OTHER_REQUEST",
+            "customer": {
+                "customerId": "123",
+                "title": "Mr",
+                "firstName": "Benjamin",
+                "lastName": "Shales",
+                "emailAddress": "Benjamin.Shales@gmail.com",
+                "billingAddress": {
+                    "houseNumber": "26",
+                    "line1": "Moore Court",
+                    "postCode": "HA0 4AF",
+                    "town": "Wembley",
+                    "county": "London"
+                }
+            },
+            "basket": {
+                "financeAmount": 310,
+                "grossAmount": 310,
+                "discounts": 0.00,
+                "giftVouchers": 0,
+                "nectarPointsCurrencyValue": 0
+            },
+            "others": {
+                "checkoutCallbackUrl":"https://A.com/A",
+                "origin": "argos",
+                "ipAddress": "99.99.99.99",
+                "collectionStoreId": "12345",
+                "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.164 Safari/537.36",
+                "collectionStorePostCode": "BT14 6NE",
+                "fulfilmentChannel": "Collection",
+                "creditPlanId": "20010",
+                "checkoutSessionExpiryTime": "calculated at runtime",
+                "stockHoldExpiryTime": "calculated at runtime",
+                "purchaseChannel": "Web"
+            },
+            "products": [
+                {
+                    "quantity": 1,
+                    "sku": 1000,
+                    "unitPrice": 300,
+                    "description": "Samsung TV"
+                },
+                {
+                    "quantity": 2,
+                    "sku": 2313131323,
+                    "unitPrice": 10,
+                    "description": "AA Batteries"
+                }
+            ]
+        }
+    },
+    {
+        "scenario": "others.checkoutCallbackUrl is valid punctuation only(https://XXX.com/,;:.-)",
+        "scenarioType": "valid",
+        "data": {
+            "messageId": "OTHER_REQUEST",
+            "customer": {
+                "customerId": "123",
+                "title": "Mr",
+                "firstName": "Benjamin",
+                "lastName": "Shales",
+                "emailAddress": "Benjamin.Shales@gmail.com",
+                "billingAddress": {
+                    "houseNumber": "26",
+                    "line1": "Moore Court",
+                    "postCode": "HA0 4AF",
+                    "town": "Wembley",
+                    "county": "London"
+                }
+            },
+            "basket": {
+                "financeAmount": 310,
+                "grossAmount": 310,
+                "discounts": 0.00,
+                "giftVouchers": 0,
+                "nectarPointsCurrencyValue": 0
+            },
+            "others": {
+                "checkoutCallbackUrl":"https://XXX.com/,;:.-",
+                "origin": "argos",
+                "ipAddress": "99.99.99.99",
+                "collectionStoreId": "12345",
+                "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.164 Safari/537.36",
+                "collectionStorePostCode": "BT14 6NE",
+                "fulfilmentChannel": "Collection",
+                "creditPlanId": "20010",
+                "checkoutSessionExpiryTime": "calculated at runtime",
+                "stockHoldExpiryTime": "calculated at runtime",
+                "purchaseChannel": "Web"
+            },
+            "products": [
+                {
+                    "quantity": 1,
+                    "sku": 1000,
+                    "unitPrice": 300,
+                    "description": "Samsung TV"
+                },
+                {
+                    "quantity": 2,
+                    "sku": 2313131323,
+                    "unitPrice": 10,
+                    "description": "AA Batteries"
+                }
+            ]
+        }
+    },
+    {
+        "scenario": "others.checkoutCallbackUrl is leading and trialing spaces(    https://XXX.com/XXX    )",
+        "scenarioType": "valid",
+        "data": {
+            "messageId": "OTHER_REQUEST",
+            "customer": {
+                "customerId": "123",
+                "title": "Mr",
+                "firstName": "Benjamin",
+                "lastName": "Shales",
+                "emailAddress": "Benjamin.Shales@gmail.com",
+                "billingAddress": {
+                    "houseNumber": "26",
+                    "line1": "Moore Court",
+                    "postCode": "HA0 4AF",
+                    "town": "Wembley",
+                    "county": "London"
+                }
+            },
+            "basket": {
+                "financeAmount": 310,
+                "grossAmount": 310,
+                "discounts": 0.00,
+                "giftVouchers": 0,
+                "nectarPointsCurrencyValue": 0
+            },
+            "others": {
+                "checkoutCallbackUrl":"    https://XXX.com/XXX    ",
+                "origin": "argos",
+                "ipAddress": "99.99.99.99",
+                "collectionStoreId": "12345",
+                "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.164 Safari/537.36",
+                "collectionStorePostCode": "BT14 6NE",
+                "fulfilmentChannel": "Collection",
+                "creditPlanId": "20010",
+                "checkoutSessionExpiryTime": "calculated at runtime",
+                "stockHoldExpiryTime": "calculated at runtime",
+                "purchaseChannel": "Web"
+            },
+            "products": [
+                {
+                    "quantity": 1,
+                    "sku": 1000,
+                    "unitPrice": 300,
+                    "description": "Samsung TV"
+                },
+                {
+                    "quantity": 2,
+                    "sku": 2313131323,
+                    "unitPrice": 10,
+                    "description": "AA Batteries"
+                }
+            ]
+        }
+    },
+    {
+        "scenario": "others.checkoutCallbackUrl is invalid punctuation(https://XXX.com/XXX})",
+        "scenarioType": "invalid",
+        "data": {
+            "messageId": "OTHER_REQUEST",
+            "customer": {
+                "customerId": "123",
+                "title": "Mr",
+                "firstName": "Benjamin",
+                "lastName": "Shales",
+                "emailAddress": "Benjamin.Shales@gmail.com",
+                "billingAddress": {
+                    "houseNumber": "26",
+                    "line1": "Moore Court",
+                    "postCode": "HA0 4AF",
+                    "town": "Wembley",
+                    "county": "London"
+                }
+            },
+            "basket": {
+                "financeAmount": 310,
+                "grossAmount": 310,
+                "discounts": 0.00,
+                "giftVouchers": 0,
+                "nectarPointsCurrencyValue": 0
+            },
+            "others": {
+                "checkoutCallbackUrl":"https://XXX.com/XXX}",
+                "origin": "argos",
+                "ipAddress": "99.99.99.99",
+                "collectionStoreId": "12345",
+                "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.164 Safari/537.36",
+                "collectionStorePostCode": "BT14 6NE",
+                "fulfilmentChannel": "Collection",
+                "creditPlanId": "20010",
+                "checkoutSessionExpiryTime": "calculated at runtime",
+                "stockHoldExpiryTime": "calculated at runtime",
+                "purchaseChannel": "Web"
+            },
+            "products": [
+                {
+                    "quantity": 1,
+                    "sku": 1000,
+                    "unitPrice": 300,
+                    "description": "Samsung TV"
+                },
+                {
+                    "quantity": 2,
+                    "sku": 2313131323,
+                    "unitPrice": 10,
+                    "description": "AA Batteries"
+                }
+            ]
+        },
+        "expectedErrorMessage": "\"others.checkoutCallbackUrl\" must be a valid uri with a scheme matching the https pattern"
+    },
+    {
+        "scenario": "others.checkoutCallbackUrl is empty",
+        "scenarioType": "invalid",
+        "data": {
+            "messageId": "OTHER_REQUEST",
+            "customer": {
+                "customerId": "123",
+                "title": "Mr",
+                "firstName": "Benjamin",
+                "lastName": "Shales",
+                "emailAddress": "Benjamin.Shales@gmail.com",
+                "billingAddress": {
+                    "houseNumber": "26",
+                    "line1": "Moore Court",
+                    "postCode": "HA0 4AF",
+                    "town": "Wembley",
+                    "county": "London"
+                }
+            },
+            "basket": {
+                "financeAmount": 310,
+                "grossAmount": 310,
+                "discounts": 0.00,
+                "giftVouchers": 0,
+                "nectarPointsCurrencyValue": 0
+            },
+            "others": {
+                "checkoutCallbackUrl":"",
+                "origin": "argos",
+                "ipAddress": "99.99.99.99",
+                "collectionStoreId": "12345",
+                "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.164 Safari/537.36",
+                "collectionStorePostCode": "BT14 6NE",
+                "fulfilmentChannel": "Collection",
+                "creditPlanId": "20010",
+                "checkoutSessionExpiryTime": "calculated at runtime",
+                "stockHoldExpiryTime": "calculated at runtime",
+                "purchaseChannel": "Web"
+            },
+            "products": [
+                {
+                    "quantity": 1,
+                    "sku": 1000,
+                    "unitPrice": 300,
+                    "description": "Samsung TV"
+                },
+                {
+                    "quantity": 2,
+                    "sku": 2313131323,
+                    "unitPrice": 10,
+                    "description": "AA Batteries"
+                }
+            ]
+        },
+        "expectedErrorMessage": "\"others.checkoutCallbackUrl\" is not allowed to be empty"
+    },
+    {
+        "scenario": "others.checkoutCallbackUrl is missing",
+        "scenarioType": "invalid",
+        "data": {
+            "messageId": "OTHER_REQUEST",
+            "customer": {
+                "customerId": "123",
+                "title": "Mr",
+                "firstName": "Benjamin",
+                "lastName": "Shales",
+                "emailAddress": "Benjamin.Shales@gmail.com",
+                "billingAddress": {
+                    "houseNumber": "26",
+                    "line1": "Moore Court",
+                    "postCode": "HA0 4AF",
+                    "town": "Wembley",
+                    "county": "London"
+                }
+            },
+            "basket": {
+                "financeAmount": 310,
+                "grossAmount": 310,
+                "discounts": 0.00,
+                "giftVouchers": 0,
+                "nectarPointsCurrencyValue": 0
+            },
+            "others": {
+                
+                "origin": "argos",
+                "ipAddress": "99.99.99.99",
+                "collectionStoreId": "12345",
+                "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.164 Safari/537.36",
+                "collectionStorePostCode": "BT14 6NE",
+                "fulfilmentChannel": "Collection",
+                "creditPlanId": "20010",
+                "checkoutSessionExpiryTime": "calculated at runtime",
+                "stockHoldExpiryTime": "calculated at runtime",
+                "purchaseChannel": "Web"
+            },
+            "products": [
+                {
+                    "quantity": 1,
+                    "sku": 1000,
+                    "unitPrice": 300,
+                    "description": "Samsung TV"
+                },
+                {
+                    "quantity": 2,
+                    "sku": 2313131323,
+                    "unitPrice": 10,
+                    "description": "AA Batteries"
+                }
+            ]
+        },
+        "expectedErrorMessage": "\"others.checkoutCallbackUrl\" is required"
+    },
+    {
+        "scenario": "basket.giftVouchers is very small (0.01)",
+        "scenarioType": "valid",
+        "data": {
+            "messageId": "OTHER_REQUEST",
+            "customer": {
+                "customerId": "123",
+                "title": "Mr",
+                "firstName": "Benjamin",
+                "lastName": "Shales",
+                "emailAddress": "Benjamin.Shales@gmail.com",
+                "billingAddress": {
+                    "houseNumber": "26",
+                    "line1": "Moore Court",
+                    "postCode": "HA0 4AF",
+                    "town": "Wembley",
+                    "county": "London"
+                }
+            },
+            "basket": {
+                "financeAmount": 686.50, 
+                "grossAmount": 1199.00, 
+                "discounts": 10.00, 
+                "giftVouchers": 0.01, 
+                "nectarPointsCurrencyValue": 0.00
+            },
+            "others": {
+                "checkoutCallbackUrl": "https://www.argos.co.uk",
+                "origin": "argos",
+                "ipAddress": "99.99.99.99",
+                "collectionStoreId": "12345",
+                "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.164 Safari/537.36",
+                "collectionStorePostCode": "BT14 6NE",
+                "fulfilmentChannel": "Collection",
+                "creditPlanId": "20010",
+                "checkoutSessionExpiryTime": "calculated at runtime",
+                "stockHoldExpiryTime": "calculated at runtime",
+                "purchaseChannel": "Web"
+            },
+            "products": [
+                {
+                    "quantity": 1,
+                    "sku": 1000,
+                    "unitPrice": 300,
+                    "description": "Samsung TV"
+                },
+                {
+                    "quantity": 2,
+                    "sku": 2313131323,
+                    "unitPrice": 10,
+                    "description": "AA Batteries"
+                }
+            ]
+        }
+    },
+    {
+        "scenario": "basket.giftVouchers is zero",
+        "scenarioType": "valid",
+        "data": {
+            "messageId": "OTHER_REQUEST",
+            "customer": {
+                "customerId": "123",
+                "title": "Mr",
+                "firstName": "Benjamin",
+                "lastName": "Shales",
+                "emailAddress": "Benjamin.Shales@gmail.com",
+                "billingAddress": {
+                    "houseNumber": "26",
+                    "line1": "Moore Court",
+                    "postCode": "HA0 4AF",
+                    "town": "Wembley",
+                    "county": "London"
+                }
+            },
+            "basket": {
+                "financeAmount": 686.50, 
+                "grossAmount": 1199.00, 
+                "discounts": 10.00, 
+                "giftVouchers": 0.00, 
+                "nectarPointsCurrencyValue": 0.00
+            },
+            "others": {
+                "checkoutCallbackUrl": "https://www.argos.co.uk",
+                "origin": "argos",
+                "ipAddress": "99.99.99.99",
+                "collectionStoreId": "12345",
+                "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.164 Safari/537.36",
+                "collectionStorePostCode": "BT14 6NE",
+                "fulfilmentChannel": "Collection",
+                "creditPlanId": "20010",
+                "checkoutSessionExpiryTime": "calculated at runtime",
+                "stockHoldExpiryTime": "calculated at runtime",
+                "purchaseChannel": "Web"
+            },
+            "products": [
+                {
+                    "quantity": 1,
+                    "sku": 1000,
+                    "unitPrice": 300,
+                    "description": "Samsung TV"
+                },
+                {
+                    "quantity": 2,
+                    "sku": 2313131323,
+                    "unitPrice": 10,
+                    "description": "AA Batteries"
+                }
+            ]
+        }
+    },
+    {
+        "scenario": "basket.giftVouchers is missing",
+        "scenarioType": "valid",
+        "data": {
+            "messageId": "OTHER_REQUEST",
+            "customer": {
+                "customerId": "123",
+                "title": "Mr",
+                "firstName": "Benjamin",
+                "lastName": "Shales",
+                "emailAddress": "Benjamin.Shales@gmail.com",
+                "billingAddress": {
+                    "houseNumber": "26",
+                    "line1": "Moore Court",
+                    "postCode": "HA0 4AF",
+                    "town": "Wembley",
+                    "county": "London"
+                }
+            },
+            "basket": {
+                "financeAmount": 686.50, 
+                "grossAmount": 1199.00, 
+                "discounts": 10.00,
+                "nectarPointsCurrencyValue": 0.00
+            },
+            "others": {
+                "checkoutCallbackUrl": "https://www.argos.co.uk",
+                "origin": "argos",
+                "ipAddress": "99.99.99.99",
+                "collectionStoreId": "12345",
+                "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.164 Safari/537.36",
+                "collectionStorePostCode": "BT14 6NE",
+                "fulfilmentChannel": "Collection",
+                "creditPlanId": "20010",
+                "checkoutSessionExpiryTime": "calculated at runtime",
+                "stockHoldExpiryTime": "calculated at runtime",
+                "purchaseChannel": "Web"
+            },
+            "products": [
+                {
+                    "quantity": 1,
+                    "sku": 1000,
+                    "unitPrice": 300,
+                    "description": "Samsung TV"
+                },
+                {
+                    "quantity": 2,
+                    "sku": 2313131323,
+                    "unitPrice": 10,
+                    "description": "AA Batteries"
+                }
+            ]
+        }
+    },
+    {
+        "scenario": "\"basket.giftVouchers\" has too many decimals (12.3456789)",
+        "scenarioType": "invalid",
+        "data": {
+            "messageId": "OTHER_REQUEST",
+            "customer": {
+                "customerId": "123",
+                "title": "Mr",
+                "firstName": "Benjamin",
+                "lastName": "Shales",
+                "emailAddress": "Benjamin.Shales@gmail.com",
+                "billingAddress": {
+                    "houseNumber": "26",
+                    "line1": "Moore Court",
+                    "postCode": "HA0 4AF",
+                    "town": "Wembley",
+                    "county": "London"
+                }
+            },
+            "basket": {
+                "financeAmount": 686.50, 
+                "grossAmount": 1199.00, 
+                "discounts": 10.00, 
+                "giftVouchers": 12.3456789, 
+                "nectarPointsCurrencyValue": 0.00
+            },
+            "others": {
+                "checkoutCallbackUrl": "https://www.argos.co.uk",
+                "origin": "argos",
+                "ipAddress": "99.99.99.99",
+                "collectionStoreId": "12345",
+                "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.164 Safari/537.36",
+                "collectionStorePostCode": "BT14 6NE",
+                "fulfilmentChannel": "Collection",
+                "creditPlanId": "20010",
+                "checkoutSessionExpiryTime": "calculated at runtime",
+                "stockHoldExpiryTime": "calculated at runtime",
+                "purchaseChannel": "Web"
+            },
+            "products": [
+                {
+                    "quantity": 1,
+                    "sku": 1000,
+                    "unitPrice": 300,
+                    "description": "Samsung TV"
+                },
+                {
+                    "quantity": 2,
+                    "sku": 2313131323,
+                    "unitPrice": 10,
+                    "description": "AA Batteries"
+                }
+            ]
+        },
+        "expectedErrorMessage": "\"basket.giftVouchers\" must have no more than 2 decimal places"
+    },
+    {
+        "scenario": "\"basket.giftVouchers\" is of wrong type (\"12.34\")",
+        "scenarioType": "invalid",
+        "data": {
+            "messageId": "OTHER_REQUEST",
+            "customer": {
+                "customerId": "123",
+                "title": "Mr",
+                "firstName": "Benjamin",
+                "lastName": "Shales",
+                "emailAddress": "Benjamin.Shales@gmail.com",
+                "billingAddress": {
+                    "houseNumber": "26",
+                    "line1": "Moore Court",
+                    "postCode": "HA0 4AF",
+                    "town": "Wembley",
+                    "county": "London"
+                }
+            },
+            "basket": {
+                "financeAmount": 686.50, 
+                "grossAmount": 1199.00, 
+                "discounts": 10.00, 
+                "giftVouchers": "12.34", 
+                "nectarPointsCurrencyValue": 0.00
+            },
+            "others": {
+                "checkoutCallbackUrl": "https://www.argos.co.uk",
+                "origin": "argos",
+                "ipAddress": "99.99.99.99",
+                "collectionStoreId": "12345",
+                "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.164 Safari/537.36",
+                "collectionStorePostCode": "BT14 6NE",
+                "fulfilmentChannel": "Collection",
+                "creditPlanId": "20010",
+                "checkoutSessionExpiryTime": "calculated at runtime",
+                "stockHoldExpiryTime": "calculated at runtime",
+                "purchaseChannel": "Web"
+            },
+            "products": [
+                {
+                    "quantity": 1,
+                    "sku": 1000,
+                    "unitPrice": 300,
+                    "description": "Samsung TV"
+                },
+                {
+                    "quantity": 2,
+                    "sku": 2313131323,
+                    "unitPrice": 10,
+                    "description": "AA Batteries"
+                }
+            ]
+        },
+        "expectedErrorMessage": "\"basket.giftVouchers\" must be a number"
+    },
+    {
+        "scenario": "\"basket.giftVouchers\" is negative (-12.34)",
+        "scenarioType": "invalid",
+        "data": {
+            "messageId": "OTHER_REQUEST",
+            "customer": {
+                "customerId": "123",
+                "title": "Mr",
+                "firstName": "Benjamin",
+                "lastName": "Shales",
+                "emailAddress": "Benjamin.Shales@gmail.com",
+                "billingAddress": {
+                    "houseNumber": "26",
+                    "line1": "Moore Court",
+                    "postCode": "HA0 4AF",
+                    "town": "Wembley",
+                    "county": "London"
+                }
+            },
+            "basket": {
+                "financeAmount": 686.50, 
+                "grossAmount": 1199.00, 
+                "discounts": 10.00, 
+                "giftVouchers": -12.34, 
+                "nectarPointsCurrencyValue": 0.00
+            },
+            "others": {
+                "checkoutCallbackUrl": "https://www.argos.co.uk",
+                "origin": "argos",
+                "ipAddress": "99.99.99.99",
+                "collectionStoreId": "12345",
+                "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.164 Safari/537.36",
+                "collectionStorePostCode": "BT14 6NE",
+                "fulfilmentChannel": "Collection",
+                "creditPlanId": "20010",
+                "checkoutSessionExpiryTime": "calculated at runtime",
+                "stockHoldExpiryTime": "calculated at runtime",
+                "purchaseChannel": "Web"
+            },
+            "products": [
+                {
+                    "quantity": 1,
+                    "sku": 1000,
+                    "unitPrice": 300,
+                    "description": "Samsung TV"
+                },
+                {
+                    "quantity": 2,
+                    "sku": 2313131323,
+                    "unitPrice": 10,
+                    "description": "AA Batteries"
+                }
+            ]
+        },
+        "expectedErrorMessage": "\"basket.giftVouchers\" must be a positive number. \"basket.giftVouchers\" must be larger than or equal to 0"
+    },
+    {
+        "scenario": "\"basket.giftVouchers\" is empty string",
+        "scenarioType": "invalid",
+        "data": {
+            "messageId": "OTHER_REQUEST",
+            "customer": {
+                "customerId": "123",
+                "title": "Mr",
+                "firstName": "Benjamin",
+                "lastName": "Shales",
+                "emailAddress": "Benjamin.Shales@gmail.com",
+                "billingAddress": {
+                    "houseNumber": "26",
+                    "line1": "Moore Court",
+                    "postCode": "HA0 4AF",
+                    "town": "Wembley",
+                    "county": "London"
+                }
+            },
+            "basket": {
+                "financeAmount": 686.50, 
+                "grossAmount": 1199.00, 
+                "discounts": 10.00, 
+                "giftVouchers": "",
+                "nectarPointsCurrencyValue": 0.00
+            },
+            "others": {
+                "checkoutCallbackUrl": "https://www.argos.co.uk",
+                "origin": "argos",
+                "ipAddress": "99.99.99.99",
+                "collectionStoreId": "12345",
+                "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.164 Safari/537.36",
+                "collectionStorePostCode": "BT14 6NE",
+                "fulfilmentChannel": "Collection",
+                "creditPlanId": "20010",
+                "checkoutSessionExpiryTime": "calculated at runtime",
+                "stockHoldExpiryTime": "calculated at runtime",
+                "purchaseChannel": "Web"
+            },
+            "products": [
+                {
+                    "quantity": 1,
+                    "sku": 1000,
+                    "unitPrice": 300,
+                    "description": "Samsung TV"
+                },
+                {
+                    "quantity": 2,
+                    "sku": 2313131323,
+                    "unitPrice": 10,
+                    "description": "AA Batteries"
+                }
+            ]
+        },
+        "expectedErrorMessage": "\"basket.giftVouchers\" must be a number"
+    },
+    {
+        "scenario": "\"basket.giftVouchers\" is too big",
+        "scenarioType": "invalid",
+        "data": {
+            "messageId": "OTHER_REQUEST",
+            "customer": {
+                "customerId": "123",
+                "title": "Mr",
+                "firstName": "Benjamin",
+                "lastName": "Shales",
+                "emailAddress": "Benjamin.Shales@gmail.com",
+                "billingAddress": {
+                    "houseNumber": "26",
+                    "line1": "Moore Court",
+                    "postCode": "HA0 4AF",
+                    "town": "Wembley",
+                    "county": "London"
+                }
+            },
+            "basket": {
+                "financeAmount": 686.50, 
+                "grossAmount": 1199.00, 
+                "discounts": 10.00, 
+                "giftVouchers": 1234567890.12, 
+                "nectarPointsCurrencyValue": 0.00
+            },
+            "others": {
+                "checkoutCallbackUrl": "https://www.argos.co.uk",
+                "origin": "argos",
+                "ipAddress": "99.99.99.99",
+                "collectionStoreId": "12345",
+                "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.164 Safari/537.36",
+                "collectionStorePostCode": "BT14 6NE",
+                "fulfilmentChannel": "Collection",
+                "creditPlanId": "20010",
+                "checkoutSessionExpiryTime": "calculated at runtime",
+                "stockHoldExpiryTime": "calculated at runtime",
+                "purchaseChannel": "Web"
+            },
+            "products": [
+                {
+                    "quantity": 1,
+                    "sku": 1000,
+                    "unitPrice": 300,
+                    "description": "Samsung TV"
+                },
+                {
+                    "quantity": 2,
+                    "sku": 2313131323,
+                    "unitPrice": 10,
+                    "description": "AA Batteries"
+                }
+            ]
+        },
+        "expectedErrorMessage": "\"basket.giftVouchers\" must be less than or equal to 1000000"
+    },
+    {
+        "scenario": "basket.grossAmount is very small (1.00)",
+        "scenarioType": "invalid",
+        "data": {
+            "messageId": "OTHER_REQUEST",
+            "customer": {
+                "customerId": "123",
+                "title": "Mr",
+                "firstName": "Benjamin",
+                "lastName": "Shales",
+                "emailAddress": "Benjamin.Shales@gmail.com",
+                "billingAddress": {
+                    "houseNumber": "26",
+                    "line1": "Moore Court",
+                    "postCode": "HA0 4AF",
+                    "town": "Wembley",
+                    "county": "London"
+                }
+            },
+            "basket": {
+                "financeAmount": 686.50, 
+                "grossAmount": 1.00,
+                "discounts": 10.00, 
+                "giftVouchers": 0.00, 
+                "nectarPointsCurrencyValue": 0.00
+            },
+            "others": {
+                "checkoutCallbackUrl": "https://www.argos.co.uk",
+                "origin": "argos",
+                "ipAddress": "99.99.99.99",
+                "collectionStoreId": "12345",
+                "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.164 Safari/537.36",
+                "collectionStorePostCode": "BT14 6NE",
+                "fulfilmentChannel": "Collection",
+                "creditPlanId": "20010",
+                "checkoutSessionExpiryTime": "calculated at runtime",
+                "stockHoldExpiryTime": "calculated at runtime",
+                "purchaseChannel": "Web"
+            },
+            "products": [
+                {
+                    "quantity": 1,
+                    "sku": 1000,
+                    "unitPrice": 300,
+                    "description": "Samsung TV"
+                },
+                {
+                    "quantity": 2,
+                    "sku": 2313131323,
+                    "unitPrice": 10,
+                    "description": "AA Batteries"
+                }
+            ]
+        },
+        "expectedErrorMessage": "\"basket.grossAmount\" must be larger than or equal to ref:financeAmount"
+    },
+    {
+        "scenario": "\"basket.grossAmount\" has too many decimals",
+        "scenarioType": "invalid",
+        "data": {
+            "messageId": "OTHER_REQUEST",
+            "customer": {
+                "customerId": "123",
+                "title": "Mr",
+                "firstName": "Benjamin",
+                "lastName": "Shales",
+                "emailAddress": "Benjamin.Shales@gmail.com",
+                "billingAddress": {
+                    "houseNumber": "26",
+                    "line1": "Moore Court",
+                    "postCode": "HA0 4AF",
+                    "town": "Wembley",
+                    "county": "London"
+                }
+            },
+            "basket": {
+                "financeAmount": 686.50, 
+                "grossAmount": 12.3456789,
+                "discounts": 10.00, 
+                "giftVouchers": 0.00, 
+                "nectarPointsCurrencyValue": 0.00
+            },
+            "others": {
+                "checkoutCallbackUrl": "https://www.argos.co.uk",
+                "origin": "argos",
+                "ipAddress": "99.99.99.99",
+                "collectionStoreId": "12345",
+                "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.164 Safari/537.36",
+                "collectionStorePostCode": "BT14 6NE",
+                "fulfilmentChannel": "Collection",
+                "creditPlanId": "20010",
+                "checkoutSessionExpiryTime": "calculated at runtime",
+                "stockHoldExpiryTime": "calculated at runtime",
+                "purchaseChannel": "Web"
+            },
+            "products": [
+                {
+                    "quantity": 1,
+                    "sku": 1000,
+                    "unitPrice": 300,
+                    "description": "Samsung TV"
+                },
+                {
+                    "quantity": 2,
+                    "sku": 2313131323,
+                    "unitPrice": 10,
+                    "description": "AA Batteries"
+                }
+            ]
+        },
+        "expectedErrorMessage": "\"basket.grossAmount\" must have no more than 2 decimal places. \"basket.grossAmount\" must be larger than or equal to ref:financeAmount"
+    },
+    {
+        "scenario": "\"basket.grossAmount\" is of wrong type (\"12.34\")",
+        "scenarioType": "invalid",
+        "data": {
+            "messageId": "OTHER_REQUEST",
+            "customer": {
+                "customerId": "123",
+                "title": "Mr",
+                "firstName": "Benjamin",
+                "lastName": "Shales",
+                "emailAddress": "Benjamin.Shales@gmail.com",
+                "billingAddress": {
+                    "houseNumber": "26",
+                    "line1": "Moore Court",
+                    "postCode": "HA0 4AF",
+                    "town": "Wembley",
+                    "county": "London"
+                }
+            },
+            "basket": {
+                "financeAmount": 686.50, 
+                "grossAmount": "12.34",
+                "discounts": 10.00, 
+                "giftVouchers": 0.00, 
+                "nectarPointsCurrencyValue": 0.00
+            },
+            "others": {
+                "checkoutCallbackUrl": "https://www.argos.co.uk",
+                "origin": "argos",
+                "ipAddress": "99.99.99.99",
+                "collectionStoreId": "12345",
+                "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.164 Safari/537.36",
+                "collectionStorePostCode": "BT14 6NE",
+                "fulfilmentChannel": "Collection",
+                "creditPlanId": "20010",
+                "checkoutSessionExpiryTime": "calculated at runtime",
+                "stockHoldExpiryTime": "calculated at runtime",
+                "purchaseChannel": "Web"
+            },
+            "products": [
+                {
+                    "quantity": 1,
+                    "sku": 1000,
+                    "unitPrice": 300,
+                    "description": "Samsung TV"
+                },
+                {
+                    "quantity": 2,
+                    "sku": 2313131323,
+                    "unitPrice": 10,
+                    "description": "AA Batteries"
+                }
+            ]
+        },
+        "expectedErrorMessage": "\"basket.grossAmount\" must be a number"
+    },
+    {
+        "scenario": "\"basket.grossAmount\" is negative value (-12.34)",
+        "scenarioType": "invalid",
+        "data": {
+            "messageId": "OTHER_REQUEST",
+            "customer": {
+                "customerId": "123",
+                "title": "Mr",
+                "firstName": "Benjamin",
+                "lastName": "Shales",
+                "emailAddress": "Benjamin.Shales@gmail.com",
+                "billingAddress": {
+                    "houseNumber": "26",
+                    "line1": "Moore Court",
+                    "postCode": "HA0 4AF",
+                    "town": "Wembley",
+                    "county": "London"
+                }
+            },
+            "basket": {
+                "financeAmount": 686.50, 
+                "grossAmount": -12.34,
+                "discounts": 10.00, 
+                "giftVouchers": 0.00, 
+                "nectarPointsCurrencyValue": 0.00
+            },
+            "others": {
+                "checkoutCallbackUrl": "https://www.argos.co.uk",
+                "origin": "argos",
+                "ipAddress": "99.99.99.99",
+                "collectionStoreId": "12345",
+                "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.164 Safari/537.36",
+                "collectionStorePostCode": "BT14 6NE",
+                "fulfilmentChannel": "Collection",
+                "creditPlanId": "20010",
+                "checkoutSessionExpiryTime": "calculated at runtime",
+                "stockHoldExpiryTime": "calculated at runtime",
+                "purchaseChannel": "Web"
+            },
+            "products": [
+                {
+                    "quantity": 1,
+                    "sku": 1000,
+                    "unitPrice": 300,
+                    "description": "Samsung TV"
+                },
+                {
+                    "quantity": 2,
+                    "sku": 2313131323,
+                    "unitPrice": 10,
+                    "description": "AA Batteries"
+                }
+            ]
+        },
+        "expectedErrorMessage": "\"basket.grossAmount\" must be a positive number. \"basket.grossAmount\" must be larger than or equal to ref:financeAmount"
+    },
+    {
+        "scenario": "\"basket.grossAmount\" is zero (0.00)",
+        "scenarioType": "invalid",
+        "data": {
+            "messageId": "OTHER_REQUEST",
+            "customer": {
+                "customerId": "123",
+                "title": "Mr",
+                "firstName": "Benjamin",
+                "lastName": "Shales",
+                "emailAddress": "Benjamin.Shales@gmail.com",
+                "billingAddress": {
+                    "houseNumber": "26",
+                    "line1": "Moore Court",
+                    "postCode": "HA0 4AF",
+                    "town": "Wembley",
+                    "county": "London"
+                }
+            },
+            "basket": {
+                "financeAmount": 686.50, 
+                "grossAmount": 0.00,
+                "discounts": 10.00, 
+                "giftVouchers": 0.00, 
+                "nectarPointsCurrencyValue": 0.00
+            },
+            "others": {
+                "checkoutCallbackUrl": "https://www.argos.co.uk",
+                "origin": "argos",
+                "ipAddress": "99.99.99.99",
+                "collectionStoreId": "12345",
+                "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.164 Safari/537.36",
+                "collectionStorePostCode": "BT14 6NE",
+                "fulfilmentChannel": "Collection",
+                "creditPlanId": "20010",
+                "checkoutSessionExpiryTime": "calculated at runtime",
+                "stockHoldExpiryTime": "calculated at runtime",
+                "purchaseChannel": "Web"
+            },
+            "products": [
+                {
+                    "quantity": 1,
+                    "sku": 1000,
+                    "unitPrice": 300,
+                    "description": "Samsung TV"
+                },
+                {
+                    "quantity": 2,
+                    "sku": 2313131323,
+                    "unitPrice": 10,
+                    "description": "AA Batteries"
+                }
+            ]
+        },
+        "expectedErrorMessage": "\"basket.grossAmount\" must be a positive number. \"basket.grossAmount\" must be larger than or equal to ref:financeAmount"
+    },
+    {
+        "scenario": "\"basket.grossAmount\" is empty string",
+        "scenarioType": "invalid",
+        "data": {
+            "messageId": "OTHER_REQUEST",
+            "customer": {
+                "customerId": "123",
+                "title": "Mr",
+                "firstName": "Benjamin",
+                "lastName": "Shales",
+                "emailAddress": "Benjamin.Shales@gmail.com",
+                "billingAddress": {
+                    "houseNumber": "26",
+                    "line1": "Moore Court",
+                    "postCode": "HA0 4AF",
+                    "town": "Wembley",
+                    "county": "London"
+                }
+            },
+            "basket": {
+                "financeAmount": 686.50, 
+                "grossAmount": "",
+                "discounts": 10.00, 
+                "giftVouchers": 0.00, 
+                "nectarPointsCurrencyValue": 0.00
+            },
+            "others": {
+                "checkoutCallbackUrl": "https://www.argos.co.uk",
+                "origin": "argos",
+                "ipAddress": "99.99.99.99",
+                "collectionStoreId": "12345",
+                "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.164 Safari/537.36",
+                "collectionStorePostCode": "BT14 6NE",
+                "fulfilmentChannel": "Collection",
+                "creditPlanId": "20010",
+                "checkoutSessionExpiryTime": "calculated at runtime",
+                "stockHoldExpiryTime": "calculated at runtime",
+                "purchaseChannel": "Web"
+            },
+            "products": [
+                {
+                    "quantity": 1,
+                    "sku": 1000,
+                    "unitPrice": 300,
+                    "description": "Samsung TV"
+                },
+                {
+                    "quantity": 2,
+                    "sku": 2313131323,
+                    "unitPrice": 10,
+                    "description": "AA Batteries"
+                }
+            ]
+        },
+        "expectedErrorMessage": "\"basket.grossAmount\" must be a number"
+    },
+    {
+        "scenario": "\"basket.grossAmount\" is empty string",
+        "scenarioType": "invalid",
+        "data": {
+            "messageId": "OTHER_REQUEST",
+            "customer": {
+                "customerId": "123",
+                "title": "Mr",
+                "firstName": "Benjamin",
+                "lastName": "Shales",
+                "emailAddress": "Benjamin.Shales@gmail.com",
+                "billingAddress": {
+                    "houseNumber": "26",
+                    "line1": "Moore Court",
+                    "postCode": "HA0 4AF",
+                    "town": "Wembley",
+                    "county": "London"
+                }
+            },
+            "basket": {
+                "financeAmount": 686.50, 
+                "discounts": 10.00, 
+                "giftVouchers": 0.00, 
+                "nectarPointsCurrencyValue": 0.00
+            },
+            "others": {
+                "checkoutCallbackUrl": "https://www.argos.co.uk",
+                "origin": "argos",
+                "ipAddress": "99.99.99.99",
+                "collectionStoreId": "12345",
+                "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.164 Safari/537.36",
+                "collectionStorePostCode": "BT14 6NE",
+                "fulfilmentChannel": "Collection",
+                "creditPlanId": "20010",
+                "checkoutSessionExpiryTime": "calculated at runtime",
+                "stockHoldExpiryTime": "calculated at runtime",
+                "purchaseChannel": "Web"
+            },
+            "products": [
+                {
+                    "quantity": 1,
+                    "sku": 1000,
+                    "unitPrice": 300,
+                    "description": "Samsung TV"
+                },
+                {
+                    "quantity": 2,
+                    "sku": 2313131323,
+                    "unitPrice": 10,
+                    "description": "AA Batteries"
+                }
+            ]
+        },
+        "expectedErrorMessage": "\"basket.grossAmount\" is required"
+    },
+    {
+        "scenario": "\"basket.grossAmount\" is too big (1234567890.12)",
+        "scenarioType": "invalid",
+        "data": {
+            "messageId": "OTHER_REQUEST",
+            "customer": {
+                "customerId": "123",
+                "title": "Mr",
+                "firstName": "Benjamin",
+                "lastName": "Shales",
+                "emailAddress": "Benjamin.Shales@gmail.com",
+                "billingAddress": {
+                    "houseNumber": "26",
+                    "line1": "Moore Court",
+                    "postCode": "HA0 4AF",
+                    "town": "Wembley",
+                    "county": "London"
+                }
+            },
+            "basket": {
+                "financeAmount": 686.50, 
+                "grossAmount": 1234567890.12, 
+                "discounts": 10.00, 
+                "giftVouchers": 0.00, 
+                "nectarPointsCurrencyValue": 0.00
+            },
+            "others": {
+                "checkoutCallbackUrl": "https://www.argos.co.uk",
+                "origin": "argos",
+                "ipAddress": "99.99.99.99",
+                "collectionStoreId": "12345",
+                "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.164 Safari/537.36",
+                "collectionStorePostCode": "BT14 6NE",
+                "fulfilmentChannel": "Collection",
+                "creditPlanId": "20010",
+                "checkoutSessionExpiryTime": "calculated at runtime",
+                "stockHoldExpiryTime": "calculated at runtime",
+                "purchaseChannel": "Web"
+            },
+            "products": [
+                {
+                    "quantity": 1,
+                    "sku": 1000,
+                    "unitPrice": 300,
+                    "description": "Samsung TV"
+                },
+                {
+                    "quantity": 2,
+                    "sku": 2313131323,
+                    "unitPrice": 10,
+                    "description": "AA Batteries"
+                }
+            ]
+        },
+        "expectedErrorMessage": "\"basket.grossAmount\" must be less than or equal to 1000000"
+    },
+    {
+        "scenario": "basket.grossAmount equals basket.financeAmount",
+        "scenarioType": "valid",
+        "data": {
+            "messageId": "OTHER_REQUEST",
+            "customer": {
+                "customerId": "123",
+                "title": "Mr",
+                "firstName": "Benjamin",
+                "lastName": "Shales",
+                "emailAddress": "Benjamin.Shales@gmail.com",
+                "billingAddress": {
+                    "houseNumber": "26",
+                    "line1": "Moore Court",
+                    "postCode": "HA0 4AF",
+                    "town": "Wembley",
+                    "county": "London"
+                }
+            },
+            "basket": {
+                "financeAmount": 100.00, 
+                "grossAmount": 100.00, 
+                "discounts": 10.00, 
+                "giftVouchers": 0.00, 
+                "nectarPointsCurrencyValue": 0.00
+            },
+            "others": {
+                "checkoutCallbackUrl": "https://www.argos.co.uk",
+                "origin": "argos",
+                "ipAddress": "99.99.99.99",
+                "collectionStoreId": "12345",
+                "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.164 Safari/537.36",
+                "collectionStorePostCode": "BT14 6NE",
+                "fulfilmentChannel": "Collection",
+                "creditPlanId": "20010",
+                "checkoutSessionExpiryTime": "calculated at runtime",
+                "stockHoldExpiryTime": "calculated at runtime",
+                "purchaseChannel": "Web"
+            },
+            "products": [
+                {
+                    "quantity": 1,
+                    "sku": 1000,
+                    "unitPrice": 300,
+                    "description": "Samsung TV"
+                },
+                {
+                    "quantity": 2,
+                    "sku": 2313131323,
+                    "unitPrice": 10,
+                    "description": "AA Batteries"
+                }
+            ]
+        }
+    },
+    {
+        "scenario": "basket.grossAmount is greater than basket.financeAmount",
+        "scenarioType": "valid",
+        "data": {
+            "messageId": "OTHER_REQUEST",
+            "customer": {
+                "customerId": "123",
+                "title": "Mr",
+                "firstName": "Benjamin",
+                "lastName": "Shales",
+                "emailAddress": "Benjamin.Shales@gmail.com",
+                "billingAddress": {
+                    "houseNumber": "26",
+                    "line1": "Moore Court",
+                    "postCode": "HA0 4AF",
+                    "town": "Wembley",
+                    "county": "London"
+                }
+            },
+            "basket": {
+                "financeAmount": 100.00, 
+                "grossAmount": 101.00, 
+                "discounts": 10.00, 
+                "giftVouchers": 0.00, 
+                "nectarPointsCurrencyValue": 0.00
+            },
+            "others": {
+                "checkoutCallbackUrl": "https://www.argos.co.uk",
+                "origin": "argos",
+                "ipAddress": "99.99.99.99",
+                "collectionStoreId": "12345",
+                "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.164 Safari/537.36",
+                "collectionStorePostCode": "BT14 6NE",
+                "fulfilmentChannel": "Collection",
+                "creditPlanId": "20010",
+                "checkoutSessionExpiryTime": "calculated at runtime",
+                "stockHoldExpiryTime": "calculated at runtime",
+                "purchaseChannel": "Web"
+            },
+            "products": [
+                {
+                    "quantity": 1,
+                    "sku": 1000,
+                    "unitPrice": 300,
+                    "description": "Samsung TV"
+                },
+                {
+                    "quantity": 2,
+                    "sku": 2313131323,
+                    "unitPrice": 10,
+                    "description": "AA Batteries"
+                }
+            ]
+        }
+    },
+    {
+        "scenario": "basket.grossAmount is less than basket.financeAmount",
+        "scenarioType": "invalid",
+        "data": {
+            "messageId": "OTHER_REQUEST",
+            "customer": {
+                "customerId": "123",
+                "title": "Mr",
+                "firstName": "Benjamin",
+                "lastName": "Shales",
+                "emailAddress": "Benjamin.Shales@gmail.com",
+                "billingAddress": {
+                    "houseNumber": "26",
+                    "line1": "Moore Court",
+                    "postCode": "HA0 4AF",
+                    "town": "Wembley",
+                    "county": "London"
+                }
+            },
+            "basket": {
+                "financeAmount": 101.00, 
+                "grossAmount": 100.00, 
+                "discounts": 10.00, 
+                "giftVouchers": 0.00, 
+                "nectarPointsCurrencyValue": 0.00
+            },
+            "others": {
+                "checkoutCallbackUrl": "https://www.argos.co.uk",
+                "origin": "argos",
+                "ipAddress": "99.99.99.99",
+                "collectionStoreId": "12345",
+                "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.164 Safari/537.36",
+                "collectionStorePostCode": "BT14 6NE",
+                "fulfilmentChannel": "Collection",
+                "creditPlanId": "20010",
+                "checkoutSessionExpiryTime": "calculated at runtime",
+                "stockHoldExpiryTime": "calculated at runtime",
+                "purchaseChannel": "Web"
+            },
+            "products": [
+                {
+                    "quantity": 1,
+                    "sku": 1000,
+                    "unitPrice": 300,
+                    "description": "Samsung TV"
+                },
+                {
+                    "quantity": 2,
+                    "sku": 2313131323,
+                    "unitPrice": 10,
+                    "description": "AA Batteries"
+                }
+            ]
+        },
+        "expectedErrorMessage": "\"basket.grossAmount\" must be larger than or equal to ref:financeAmount"
+    },
+    {
+        "scenario": "basket.nectarPointsCurrencyValue is very small (0.01)",
+        "scenarioType": "valid",
+        "data": {
+            "messageId": "OTHER_REQUEST",
+            "customer": {
+                "customerId": "123",
+                "title": "Mr",
+                "firstName": "Benjamin",
+                "lastName": "Shales",
+                "emailAddress": "Benjamin.Shales@gmail.com",
+                "billingAddress": {
+                    "houseNumber": "26",
+                    "line1": "Moore Court",
+                    "postCode": "HA0 4AF",
+                    "town": "Wembley",
+                    "county": "London"
+                }
+            },
+            "basket": {
+                "financeAmount": 686.50, 
+                "grossAmount": 1199.00, 
+                "discounts": 10.00, 
+                "giftVouchers": 0.00, 
+                "nectarPointsCurrencyValue": 0.01
+            },
+            "others": {
+                "checkoutCallbackUrl": "https://www.argos.co.uk",
+                "origin": "argos",
+                "ipAddress": "99.99.99.99",
+                "collectionStoreId": "12345",
+                "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.164 Safari/537.36",
+                "collectionStorePostCode": "BT14 6NE",
+                "fulfilmentChannel": "Collection",
+                "creditPlanId": "20010",
+                "checkoutSessionExpiryTime": "calculated at runtime",
+                "stockHoldExpiryTime": "calculated at runtime",
+                "purchaseChannel": "Web"
+            },
+            "products": [
+                {
+                    "quantity": 1,
+                    "sku": 1000,
+                    "unitPrice": 300,
+                    "description": "Samsung TV"
+                },
+                {
+                    "quantity": 2,
+                    "sku": 2313131323,
+                    "unitPrice": 10,
+                    "description": "AA Batteries"
+                }
+            ]
+        }
+    },
+    {
+        "scenario": "basket.nectarPointsCurrencyValue is negative-zero (-0.00)",
+        "scenarioType": "valid",
+        "data": {
+            "messageId": "OTHER_REQUEST",
+            "customer": {
+                "customerId": "123",
+                "title": "Mr",
+                "firstName": "Benjamin",
+                "lastName": "Shales",
+                "emailAddress": "Benjamin.Shales@gmail.com",
+                "billingAddress": {
+                    "houseNumber": "26",
+                    "line1": "Moore Court",
+                    "postCode": "HA0 4AF",
+                    "town": "Wembley",
+                    "county": "London"
+                }
+            },
+            "basket": {
+                "financeAmount": 686.50, 
+                "grossAmount": 1199.00, 
+                "discounts": 10.00, 
+                "giftVouchers": 0.00, 
+                "nectarPointsCurrencyValue": -0.00
+            },
+            "others": {
+                "checkoutCallbackUrl": "https://www.argos.co.uk",
+                "origin": "argos",
+                "ipAddress": "99.99.99.99",
+                "collectionStoreId": "12345",
+                "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.164 Safari/537.36",
+                "collectionStorePostCode": "BT14 6NE",
+                "fulfilmentChannel": "Collection",
+                "creditPlanId": "20010",
+                "checkoutSessionExpiryTime": "calculated at runtime",
+                "stockHoldExpiryTime": "calculated at runtime",
+                "purchaseChannel": "Web"
+            },
+            "products": [
+                {
+                    "quantity": 1,
+                    "sku": 1000,
+                    "unitPrice": 300,
+                    "description": "Samsung TV"
+                },
+                {
+                    "quantity": 2,
+                    "sku": 2313131323,
+                    "unitPrice": 10,
+                    "description": "AA Batteries"
+                }
+            ]
+        }
+    },
+    {
+        "scenario": "basket.nectarPointsCurrencyValue is zero (0.00)",
+        "scenarioType": "valid",
+        "data": {
+            "messageId": "OTHER_REQUEST",
+            "customer": {
+                "customerId": "123",
+                "title": "Mr",
+                "firstName": "Benjamin",
+                "lastName": "Shales",
+                "emailAddress": "Benjamin.Shales@gmail.com",
+                "billingAddress": {
+                    "houseNumber": "26",
+                    "line1": "Moore Court",
+                    "postCode": "HA0 4AF",
+                    "town": "Wembley",
+                    "county": "London"
+                }
+            },
+            "basket": {
+                "financeAmount": 686.50, 
+                "grossAmount": 1199.00, 
+                "discounts": 10.00, 
+                "giftVouchers": 0.00, 
+                "nectarPointsCurrencyValue": 0.00
+            },
+            "others": {
+                "checkoutCallbackUrl": "https://www.argos.co.uk",
+                "origin": "argos",
+                "ipAddress": "99.99.99.99",
+                "collectionStoreId": "12345",
+                "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.164 Safari/537.36",
+                "collectionStorePostCode": "BT14 6NE",
+                "fulfilmentChannel": "Collection",
+                "creditPlanId": "20010",
+                "checkoutSessionExpiryTime": "calculated at runtime",
+                "stockHoldExpiryTime": "calculated at runtime",
+                "purchaseChannel": "Web"
+            },
+            "products": [
+                {
+                    "quantity": 1,
+                    "sku": 1000,
+                    "unitPrice": 300,
+                    "description": "Samsung TV"
+                },
+                {
+                    "quantity": 2,
+                    "sku": 2313131323,
+                    "unitPrice": 10,
+                    "description": "AA Batteries"
+                }
+            ]
+        }
+    },
+    {
+        "scenario": "basket.nectarPointsCurrencyValue is optional",
+        "scenarioType": "valid",
+        "data": {
+            "messageId": "OTHER_REQUEST",
+            "customer": {
+                "customerId": "123",
+                "title": "Mr",
+                "firstName": "Benjamin",
+                "lastName": "Shales",
+                "emailAddress": "Benjamin.Shales@gmail.com",
+                "billingAddress": {
+                    "houseNumber": "26",
+                    "line1": "Moore Court",
+                    "postCode": "HA0 4AF",
+                    "town": "Wembley",
+                    "county": "London"
+                }
+            },
+            "basket": {
+                "financeAmount": 686.50, 
+                "grossAmount": 1199.00, 
+                "discounts": 10.00, 
+                "giftVouchers": 0.00
+            },
+            "others": {
+                "checkoutCallbackUrl": "https://www.argos.co.uk",
+                "origin": "argos",
+                "ipAddress": "99.99.99.99",
+                "collectionStoreId": "12345",
+                "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.164 Safari/537.36",
+                "collectionStorePostCode": "BT14 6NE",
+                "fulfilmentChannel": "Collection",
+                "creditPlanId": "20010",
+                "checkoutSessionExpiryTime": "calculated at runtime",
+                "stockHoldExpiryTime": "calculated at runtime",
+                "purchaseChannel": "Web"
+            },
+            "products": [
+                {
+                    "quantity": 1,
+                    "sku": 1000,
+                    "unitPrice": 300,
+                    "description": "Samsung TV"
+                },
+                {
+                    "quantity": 2,
+                    "sku": 2313131323,
+                    "unitPrice": 10,
+                    "description": "AA Batteries"
+                }
+            ]
+        }
+    },
+    {
+        "scenario": "\"basket.financeAmount\" has too many decimals (12.3456789)",
+        "scenarioType": "invalid",
+        "data": {
+            "messageId": "OTHER_REQUEST",
+            "customer": {
+                "customerId": "123",
+                "title": "Mr",
+                "firstName": "Benjamin",
+                "lastName": "Shales",
+                "emailAddress": "Benjamin.Shales@gmail.com",
+                "billingAddress": {
+                    "houseNumber": "26",
+                    "line1": "Moore Court",
+                    "postCode": "HA0 4AF",
+                    "town": "Wembley",
+                    "county": "London"
+                }
+            },
+            "basket": {
+                "financeAmount": 686.50, 
+                "grossAmount": 1199.00, 
+                "discounts": 10.00, 
+                "giftVouchers": 0.00, 
+                "nectarPointsCurrencyValue": 12.3456789
+            },
+            "others": {
+                "checkoutCallbackUrl": "https://www.argos.co.uk",
+                "origin": "argos",
+                "ipAddress": "99.99.99.99",
+                "collectionStoreId": "12345",
+                "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.164 Safari/537.36",
+                "collectionStorePostCode": "BT14 6NE",
+                "fulfilmentChannel": "Collection",
+                "creditPlanId": "20010",
+                "checkoutSessionExpiryTime": "calculated at runtime",
+                "stockHoldExpiryTime": "calculated at runtime",
+                "purchaseChannel": "Web"
+            },
+            "products": [
+                {
+                    "quantity": 1,
+                    "sku": 1000,
+                    "unitPrice": 300,
+                    "description": "Samsung TV"
+                },
+                {
+                    "quantity": 2,
+                    "sku": 2313131323,
+                    "unitPrice": 10,
+                    "description": "AA Batteries"
+                }
+            ]
+        },
+        "expectedErrorMessage": "\"basket.nectarPointsCurrencyValue\" must have no more than 2 decimal places"
+    },
+    {
+        "scenario": "\"basket.financeAmount\" is of type string (\"12.34\")",
+        "scenarioType": "invalid",
+        "data": {
+            "messageId": "OTHER_REQUEST",
+            "customer": {
+                "customerId": "123",
+                "title": "Mr",
+                "firstName": "Benjamin",
+                "lastName": "Shales",
+                "emailAddress": "Benjamin.Shales@gmail.com",
+                "billingAddress": {
+                    "houseNumber": "26",
+                    "line1": "Moore Court",
+                    "postCode": "HA0 4AF",
+                    "town": "Wembley",
+                    "county": "London"
+                }
+            },
+            "basket": {
+                "financeAmount": 686.50, 
+                "grossAmount": 1199.00, 
+                "discounts": 10.00, 
+                "giftVouchers": 0.00, 
+                "nectarPointsCurrencyValue": "12.34"
+            },
+            "others": {
+                "checkoutCallbackUrl": "https://www.argos.co.uk",
+                "origin": "argos",
+                "ipAddress": "99.99.99.99",
+                "collectionStoreId": "12345",
+                "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.164 Safari/537.36",
+                "collectionStorePostCode": "BT14 6NE",
+                "fulfilmentChannel": "Collection",
+                "creditPlanId": "20010",
+                "checkoutSessionExpiryTime": "calculated at runtime",
+                "stockHoldExpiryTime": "calculated at runtime",
+                "purchaseChannel": "Web"
+            },
+            "products": [
+                {
+                    "quantity": 1,
+                    "sku": 1000,
+                    "unitPrice": 300,
+                    "description": "Samsung TV"
+                },
+                {
+                    "quantity": 2,
+                    "sku": 2313131323,
+                    "unitPrice": 10,
+                    "description": "AA Batteries"
+                }
+            ]
+        },
+        "expectedErrorMessage": "\"basket.nectarPointsCurrencyValue\" must be a number"
+    },
+    {
+        "scenario": "\"basket.financeAmount\" is negative (-12.34)",
+        "scenarioType": "invalid",
+        "data": {
+            "messageId": "OTHER_REQUEST",
+            "customer": {
+                "customerId": "123",
+                "title": "Mr",
+                "firstName": "Benjamin",
+                "lastName": "Shales",
+                "emailAddress": "Benjamin.Shales@gmail.com",
+                "billingAddress": {
+                    "houseNumber": "26",
+                    "line1": "Moore Court",
+                    "postCode": "HA0 4AF",
+                    "town": "Wembley",
+                    "county": "London"
+                }
+            },
+            "basket": {
+                "financeAmount": 686.50, 
+                "grossAmount": 1199.00, 
+                "discounts": 10.00, 
+                "giftVouchers": 0.00, 
+                "nectarPointsCurrencyValue": -12.34
+            },
+            "others": {
+                "checkoutCallbackUrl": "https://www.argos.co.uk",
+                "origin": "argos",
+                "ipAddress": "99.99.99.99",
+                "collectionStoreId": "12345",
+                "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.164 Safari/537.36",
+                "collectionStorePostCode": "BT14 6NE",
+                "fulfilmentChannel": "Collection",
+                "creditPlanId": "20010",
+                "checkoutSessionExpiryTime": "calculated at runtime",
+                "stockHoldExpiryTime": "calculated at runtime",
+                "purchaseChannel": "Web"
+            },
+            "products": [
+                {
+                    "quantity": 1,
+                    "sku": 1000,
+                    "unitPrice": 300,
+                    "description": "Samsung TV"
+                },
+                {
+                    "quantity": 2,
+                    "sku": 2313131323,
+                    "unitPrice": 10,
+                    "description": "AA Batteries"
+                }
+            ]
+        },
+        "expectedErrorMessage": "\"basket.nectarPointsCurrencyValue\" must be a positive number. \"basket.nectarPointsCurrencyValue\" must be larger than or equal to 0"
+    },
+    {
+        "scenario": "\"basket.financeAmount\" is empty string",
+        "scenarioType": "invalid",
+        "data": {
+            "messageId": "OTHER_REQUEST",
+            "customer": {
+                "customerId": "123",
+                "title": "Mr",
+                "firstName": "Benjamin",
+                "lastName": "Shales",
+                "emailAddress": "Benjamin.Shales@gmail.com",
+                "billingAddress": {
+                    "houseNumber": "26",
+                    "line1": "Moore Court",
+                    "postCode": "HA0 4AF",
+                    "town": "Wembley",
+                    "county": "London"
+                }
+            },
+            "basket": {
+                "financeAmount": 686.50, 
+                "grossAmount": 1199.00, 
+                "discounts": 10.00, 
+                "giftVouchers": 0.00, 
+                "nectarPointsCurrencyValue": ""
+            },
+            "others": {
+                "checkoutCallbackUrl": "https://www.argos.co.uk",
+                "origin": "argos",
+                "ipAddress": "99.99.99.99",
+                "collectionStoreId": "12345",
+                "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.164 Safari/537.36",
+                "collectionStorePostCode": "BT14 6NE",
+                "fulfilmentChannel": "Collection",
+                "creditPlanId": "20010",
+                "checkoutSessionExpiryTime": "calculated at runtime",
+                "stockHoldExpiryTime": "calculated at runtime",
+                "purchaseChannel": "Web"
+            },
+            "products": [
+                {
+                    "quantity": 1,
+                    "sku": 1000,
+                    "unitPrice": 300,
+                    "description": "Samsung TV"
+                },
+                {
+                    "quantity": 2,
+                    "sku": 2313131323,
+                    "unitPrice": 10,
+                    "description": "AA Batteries"
+                }
+            ]
+        },
+        "expectedErrorMessage": "\"basket.nectarPointsCurrencyValue\" must be a number"
+    },
+    {
+        "scenario": "\"basket.financeAmount\" is too big (1234567890.12)",
+        "scenarioType": "invalid",
+        "data": {
+            "messageId": "OTHER_REQUEST",
+            "customer": {
+                "customerId": "123",
+                "title": "Mr",
+                "firstName": "Benjamin",
+                "lastName": "Shales",
+                "emailAddress": "Benjamin.Shales@gmail.com",
+                "billingAddress": {
+                    "houseNumber": "26",
+                    "line1": "Moore Court",
+                    "postCode": "HA0 4AF",
+                    "town": "Wembley",
+                    "county": "London"
+                }
+            },
+            "basket": {
+                "financeAmount": 686.50, 
+                "grossAmount": 1199.00, 
+                "discounts": 10.00, 
+                "giftVouchers": 0.00, 
+                "nectarPointsCurrencyValue": 1234567890.12
+            },
+            "others": {
+                "checkoutCallbackUrl": "https://www.argos.co.uk",
+                "origin": "argos",
+                "ipAddress": "99.99.99.99",
+                "collectionStoreId": "12345",
+                "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.164 Safari/537.36",
+                "collectionStorePostCode": "BT14 6NE",
+                "fulfilmentChannel": "Collection",
+                "creditPlanId": "20010",
+                "checkoutSessionExpiryTime": "calculated at runtime",
+                "stockHoldExpiryTime": "calculated at runtime",
+                "purchaseChannel": "Web"
+            },
+            "products": [
+                {
+                    "quantity": 1,
+                    "sku": 1000,
+                    "unitPrice": 300,
+                    "description": "Samsung TV"
+                },
+                {
+                    "quantity": 2,
+                    "sku": 2313131323,
+                    "unitPrice": 10,
+                    "description": "AA Batteries"
+                }
+            ]
+        },
+        "expectedErrorMessage": "\"basket.nectarPointsCurrencyValue\" must be less than or equal to 1000000"
+    }
+]

@@ -1,0 +1,22 @@
+[
+    {
+        "testName": "400 if messageId not provided",
+        "expectedErrorMessage": "\"messageId\" is required",
+        "expectedErrorName": "ACCEPT_OFFER_REQUEST_INVALID",
+        "expectedResponseCode": 400
+    },
+    {
+        "testName": "400 if messageId is empty",
+        "messageId": null,
+        "expectedErrorMessage": "\"messageId\" must be a string",
+        "expectedErrorName": "ACCEPT_OFFER_REQUEST_INVALID",
+        "expectedResponseCode": 400
+    },
+    {
+        "testName": "403 if messageId is provided for dummy application",
+        "messageId": "a99de0a5-53f8-4ca0-bb1b-82116ea42b04",
+        "expectedErrorMessage": "Invalid Application State",
+        "expectedErrorName": "APPLICATION_STATE_INVALID",
+        "expectedResponseCode": 403
+    }
+]

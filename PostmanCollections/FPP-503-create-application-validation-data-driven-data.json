@@ -1,0 +1,3400 @@
+[
+    {
+        "scenario": "empty \"messageId\" string",
+        "scenarioType": "invalid",
+        "messageId": "",
+        "termsAndConditions": [
+            {
+                "tsAndCsType": "CreditSubjectToStatus",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "HowWeWillUseYourData",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "MarketingComms",
+                "agreed": true,
+                "agreedDateTime": 48
+            }
+        ],
+        "customer": {
+            "additionalNeeds": "0",
+            "emailAddress": "joe@email.com",
+            "nationalityCode": "GB",
+            "numberOfDependents": 1,
+            "mobilePhoneNumber": "07558334222",
+            "monthlyMortgageRent": 1,
+            "dateOfBirth": "1900-01-01",
+            "maritalStatusCode": "M",
+            "residentialStatusCode": "M",
+            "employment": {
+                "employerName": "n/a",
+                "employmentStatusCode": "EMP",
+                "occupationCode": "33"
+            },
+            "income": {
+                "yearlyIncomeBeforeTax": 33000,
+                "otherIncome": 0
+            },
+            "addresses": [
+                {
+                    "addressType": "Current",
+                    "startDate": {
+                        "month": 2,
+                        "year": 2016
+                    }
+                }
+            ]
+        },
+        "creditPlan": {
+            "planNumber": "20010",
+            "periodDuration": 12,
+            "apr": 1.0
+        },
+        "errorDescription": "\"messageId\" contains an invalid value. \"messageId\" is not allowed to be empty"
+    },
+    {
+        "scenario": "empty \"email address\" string",
+        "scenarioType": "invalid",
+        "messageId": "2a05f77c-7fed-484a-8e05-9880deed341f",
+        "termsAndConditions": [
+            {
+                "tsAndCsType": "CreditSubjectToStatus",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "HowWeWillUseYourData",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "MarketingComms",
+                "agreed": true,
+                "agreedDateTime": 48
+            }
+        ],
+        "customer": {
+            "additionalNeeds": "0",
+            "emailAddress": "",
+            "nationalityCode": "GB",
+            "numberOfDependents": 1,
+            "mobilePhoneNumber": "07558334222",
+            "monthlyMortgageRent": 1,
+            "dateOfBirth": "1900-01-01",
+            "maritalStatusCode": "M",
+            "residentialStatusCode": "M",
+            "employment": {
+                "employerName": "n/a",
+                "employmentStatusCode": "EMP",
+                "occupationCode": "33"
+            },
+            "income": {
+                "yearlyIncomeBeforeTax": 33000,
+                "otherIncome": 0
+            },
+            "addresses": [
+                {
+                    "addressType": "Current",
+                    "startDate": {
+                        "month": 2,
+                        "year": 2016
+                    }
+                }
+            ]
+        },
+        "creditPlan": {
+            "planNumber": "20010",
+            "periodDuration": 12,
+            "apr": 1.0
+        },
+        "errorDescription": "\"customer.emailAddress\" is not allowed to be empty"
+    },
+    {
+        "scenario": "invalid  email address format",
+        "scenarioType": "invalid",
+        "messageId": "2a05f77c-7fed-484a-8e05-9880deed341f",
+        "termsAndConditions": [
+            {
+                "tsAndCsType": "CreditSubjectToStatus",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "HowWeWillUseYourData",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "MarketingComms",
+                "agreed": true,
+                "agreedDateTime": 48
+            }
+        ],
+        "customer": {
+            "additionalNeeds": "0",
+            "emailAddress": "email.com",
+            "nationalityCode": "GB",
+            "numberOfDependents": 1,
+            "mobilePhoneNumber": "07558334222",
+            "monthlyMortgageRent": 1,
+            "dateOfBirth": "1900-01-01",
+            "maritalStatusCode": "M",
+            "residentialStatusCode": "M",
+            "employment": {
+                "employerName": "n/a",
+                "employmentStatusCode": "EMP",
+                "occupationCode": "33"
+            },
+            "income": {
+                "yearlyIncomeBeforeTax": 33000,
+                "otherIncome": 0
+            },
+            "addresses": [
+                {
+                    "addressType": "Current",
+                    "startDate": {
+                        "month": 2,
+                        "year": 2016
+                    }
+                }
+            ]
+        },
+        "creditPlan": {
+            "planNumber": "20010",
+            "periodDuration": 12,
+            "apr": 1.0
+        },
+        "errorDescription": "\"customer.emailAddress\" fails to match the required pattern: /"
+    },
+    {
+        "scenario": "empty \"nationality code\" string",
+        "scenarioType": "invalid",
+        "messageId": "2a05f77c-7fed-484a-8e05-9880deed341f",
+        "termsAndConditions": [
+            {
+                "tsAndCsType": "CreditSubjectToStatus",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "HowWeWillUseYourData",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "MarketingComms",
+                "agreed": true,
+                "agreedDateTime": 48
+            }
+        ],
+        "customer": {
+            "additionalNeeds": "0",
+            "emailAddress": "joe@email.com",
+            "nationalityCode": "",
+            "numberOfDependents": 1,
+            "mobilePhoneNumber": "07558334222",
+            "monthlyMortgageRent": 1,
+            "dateOfBirth": "1900-01-01",
+            "maritalStatusCode": "M",
+            "residentialStatusCode": "M",
+            "employment": {
+                "employerName": "n/a",
+                "employmentStatusCode": "EMP",
+                "occupationCode": "33"
+            },
+            "income": {
+                "yearlyIncomeBeforeTax": 33000,
+                "otherIncome": 0
+            },
+            "addresses": [
+                {
+                    "addressType": "Current",
+                    "startDate": {
+                        "month": 2,
+                        "year": 2016
+                    }
+                }
+            ]
+        },
+        "creditPlan": {
+            "planNumber": "20010",
+            "periodDuration": 12,
+            "apr": 1.0
+        },
+        "errorDescription": "\"customer.nationalityCode\" must be one of [GB, AF, AX, AL, DZ, US, AS, AD, AO, AI, AQ, AR, AM, AW, AU, AT, AZ, BS, BH, BD, BB, LS, BY, BE, BZ, BJ, BM, BT, BO, BQ, BW, BV, BR, IO, VG, BN, BG, BF, BI, KH, CM, CA, CV, KY, CF, TD, CL, CN, CX, AG, BA, GW, KI, SC, DO, VU, CC, CO, KM, CG, CD, CK, CR, HR, CU, CW, CY, CZ, DK, DJ, DM, NL, TL, EC, EG, AE, GQ, ER, EE, ET, FO, FK, FJ, PH, FI, FR, TF, GA, GM, GE, DE, GH, GI, GR, GL, GD, GP, GU, GT, GG, GF, GN, GY, HT, HM, HN, HK, HU, IS, IN, ID, IR, IQ, IE, IL, IT, CI, JM, JP, JE, JO, KZ, KE, KN, KW, KG, LA, LV, LB, LR, LY, LI, LT, LU, MO, MK, YT, MG, MW, MY, MV, ML, MT, IM, MH, MQ, MR, MU, MX, FM, MD, MC, MN, ME, MS, MA, MZ, MM, NA, NR, NP, NC, NZ, NI, NG, NE, NU, NF, KP, MP, NO, OM, PK, PW, PS, PA, PG, PY, PE, PN, PL, PF, PT, PR, QA, RE, RO, RU, RW, EH, BL, LC, MF, SV, SM, WS, ST, SA, SN, RS, SL, SG, SX, SK, SI, SB, SO, ZA, GS, KR, SS, ES, LK, SH, PM, SD, SR, SJ, SZ, SE, CH, SY, TW, TJ, TZ, TH, TG, TK, TO, TT, TN, TR, TM, TC, TV, UG, UA, UM, UY, VI, UZ, VA, VE, VN, VC, WF, YE, ZM, ZW]. \"customer.nationalityCode\" is not allowed to be empty"
+    },
+    {
+        "scenario": "invalid \"nationality code\" - \"YZ\"",
+        "scenarioType": "invalid",
+        "messageId": "2a05f77c-7fed-484a-8e05-9880deed341f",
+        "termsAndConditions": [
+            {
+                "tsAndCsType": "CreditSubjectToStatus",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "HowWeWillUseYourData",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "MarketingComms",
+                "agreed": true,
+                "agreedDateTime": 48
+            }
+        ],
+        "customer": {
+            "additionalNeeds": "0",
+            "emailAddress": "joe@email.com",
+            "nationalityCode": "YZ",
+            "numberOfDependents": 1,
+            "mobilePhoneNumber": "07558334222",
+            "monthlyMortgageRent": 1,
+            "dateOfBirth": "1900-01-01",
+            "maritalStatusCode": "M",
+            "residentialStatusCode": "M",
+            "employment": {
+                "employerName": "n/a",
+                "employmentStatusCode": "EMP",
+                "occupationCode": "33"
+            },
+            "income": {
+                "yearlyIncomeBeforeTax": 33000,
+                "otherIncome": 0
+            },
+            "addresses": [
+                {
+                    "addressType": "Current",
+                    "startDate": {
+                        "month": 2,
+                        "year": 2016
+                    }
+                }
+            ]
+        },
+        "creditPlan": {
+            "planNumber": "20010",
+            "periodDuration": 12,
+            "apr": 1.0
+        },
+        "errorDescription": "\"customer.nationalityCode\" must be one of [GB, AF, AX, AL, DZ, US, AS, AD, AO, AI, AQ, AR, AM, AW, AU, AT, AZ, BS, BH, BD, BB, LS, BY, BE, BZ, BJ, BM, BT, BO, BQ, BW, BV, BR, IO, VG, BN, BG, BF, BI, KH, CM, CA, CV, KY, CF, TD, CL, CN, CX, AG, BA, GW, KI, SC, DO, VU, CC, CO, KM, CG, CD, CK, CR, HR, CU, CW, CY, CZ, DK, DJ, DM, NL, TL, EC, EG, AE, GQ, ER, EE, ET, FO, FK, FJ, PH, FI, FR, TF, GA, GM, GE, DE, GH, GI, GR, GL, GD, GP, GU, GT, GG, GF, GN, GY, HT, HM, HN, HK, HU, IS, IN, ID, IR, IQ, IE, IL, IT, CI, JM, JP, JE, JO, KZ, KE, KN, KW, KG, LA, LV, LB, LR, LY, LI, LT, LU, MO, MK, YT, MG, MW, MY, MV, ML, MT, IM, MH, MQ, MR, MU, MX, FM, MD, MC, MN, ME, MS, MA, MZ, MM, NA, NR, NP, NC, NZ, NI, NG, NE, NU, NF, KP, MP, NO, OM, PK, PW, PS, PA, PG, PY, PE, PN, PL, PF, PT, PR, QA, RE, RO, RU, RW, EH, BL, LC, MF, SV, SM, WS, ST, SA, SN, RS, SL, SG, SX, SK, SI, SB, SO, ZA, GS, KR, SS, ES, LK, SH, PM, SD, SR, SJ, SZ, SE, CH, SY, TW, TJ, TZ, TH, TG, TK, TO, TT, TN, TR, TM, TC, TV, UG, UA, UM, UY, VI, UZ, VA, VE, VN, VC, WF, YE, ZM, ZW]"
+    },
+    {
+        "scenario": "\"monthly Mortgage Rent\" is less than zero",
+        "scenarioType": "invalid",
+        "messageId": "2a05f77c-7fed-484a-8e05-9880deed341f",
+        "termsAndConditions": [
+            {
+                "tsAndCsType": "CreditSubjectToStatus",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "HowWeWillUseYourData",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "MarketingComms",
+                "agreed": true,
+                "agreedDateTime": 48
+            }
+        ],
+        "customer": {
+            "additionalNeeds": "0",
+            "emailAddress": "joe@email.com",
+            "nationalityCode": "GB",
+            "numberOfDependents": 1,
+            "mobilePhoneNumber": "07558334222",
+            "monthlyMortgageRent": -1,
+            "dateOfBirth": "1900-01-01",
+            "maritalStatusCode": "M",
+            "residentialStatusCode": "M",
+            "employment": {
+                "employerName": "n/a",
+                "employmentStatusCode": "EMP",
+                "occupationCode": "33"
+            },
+            "income": {
+                "yearlyIncomeBeforeTax": 33000,
+                "otherIncome": 0
+            },
+            "addresses": [
+                {
+                    "addressType": "Current",
+                    "startDate": {
+                        "month": 2,
+                        "year": 2016
+                    }
+                }
+            ]
+        },
+        "creditPlan": {
+            "planNumber": "20010",
+            "periodDuration": 12,
+            "apr": 1.0
+        },
+        "errorDescription": "\"customer.monthlyMortgageRent\" must be larger than or equal to 0"
+    },
+    {
+        "scenario": "\"monthly Mortgage Rent\" has more than 6 digits",
+        "scenarioType": "invalid",
+        "messageId": "2a05f77c-7fed-484a-8e05-9880deed341f",
+        "termsAndConditions": [
+            {
+                "tsAndCsType": "CreditSubjectToStatus",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "HowWeWillUseYourData",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "MarketingComms",
+                "agreed": true,
+                "agreedDateTime": 48
+            }
+        ],
+        "customer": {
+            "additionalNeeds": "0",
+            "emailAddress": "joe@email.com",
+            "nationalityCode": "GB",
+            "numberOfDependents": 1,
+            "mobilePhoneNumber": "07558334222",
+            "monthlyMortgageRent": 1000000,
+            "dateOfBirth": "1900-01-01",
+            "maritalStatusCode": "M",
+            "residentialStatusCode": "M",
+            "employment": {
+                "employerName": "n/a",
+                "employmentStatusCode": "EMP",
+                "occupationCode": "33"
+            },
+            "income": {
+                "yearlyIncomeBeforeTax": 33000,
+                "otherIncome": 0
+            },
+            "addresses": [
+                {
+                    "addressType": "Current",
+                    "startDate": {
+                        "month": 2,
+                        "year": 2016
+                    }
+                }
+            ]
+        },
+        "creditPlan": {
+            "planNumber": "20010",
+            "periodDuration": 12,
+            "apr": 1.0
+        },
+        "errorDescription": "\"customer.monthlyMortgageRent\" must be less than or equal to 999999"
+    },
+    {
+        "scenario": "invalid \"marital Status Code\" code - \"XY\"",
+        "scenarioType": "invalid",
+        "messageId": "2a05f77c-7fed-484a-8e05-9880deed341f",
+        "termsAndConditions": [
+            {
+                "tsAndCsType": "CreditSubjectToStatus",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "HowWeWillUseYourData",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "MarketingComms",
+                "agreed": true,
+                "agreedDateTime": 48
+            }
+        ],
+        "customer": {
+            "additionalNeeds": "0",
+            "emailAddress": "joe@email.com",
+            "nationalityCode": "GB",
+            "numberOfDependents": 1,
+            "mobilePhoneNumber": "07558334222",
+            "monthlyMortgageRent": 1,
+            "dateOfBirth": "1900-01-01",
+            "maritalStatusCode": "XY",
+            "residentialStatusCode": "M",
+            "employment": {
+                "employerName": "n/a",
+                "employmentStatusCode": "EMP",
+                "occupationCode": "33"
+            },
+            "income": {
+                "yearlyIncomeBeforeTax": 33000,
+                "otherIncome": 0
+            },
+            "addresses": [
+                {
+                    "addressType": "Current",
+                    "startDate": {
+                        "month": 2,
+                        "year": 2016
+                    }
+                }
+            ]
+        },
+        "creditPlan": {
+            "planNumber": "20010",
+            "periodDuration": 12,
+            "apr": 1.0
+        },
+        "errorDescription": "\"customer.maritalStatusCode\" must be one of [M, W, L, S, D, SP, CP]"
+    },
+    {
+        "scenario": "invalid \"residential Status Code\" code - \"XY\"",
+        "scenarioType": "invalid",
+        "messageId": "2a05f77c-7fed-484a-8e05-9880deed341f",
+        "termsAndConditions": [
+            {
+                "tsAndCsType": "CreditSubjectToStatus",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "HowWeWillUseYourData",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "MarketingComms",
+                "agreed": true,
+                "agreedDateTime": 48
+            }
+        ],
+        "customer": {
+            "additionalNeeds": "0",
+            "emailAddress": "joe@email.com",
+            "nationalityCode": "GB",
+            "numberOfDependents": 1,
+            "mobilePhoneNumber": "07558334222",
+            "monthlyMortgageRent": 1,
+            "dateOfBirth": "1900-01-01",
+            "maritalStatusCode": "M",
+            "residentialStatusCode": "XY",
+            "employment": {
+                "employerName": "n/a",
+                "employmentStatusCode": "EMP",
+                "occupationCode": "33"
+            },
+            "income": {
+                "yearlyIncomeBeforeTax": 33000,
+                "otherIncome": 0
+            },
+            "addresses": [
+                {
+                    "addressType": "Current",
+                    "startDate": {
+                        "month": 2,
+                        "year": 2016
+                    }
+                }
+            ]
+        },
+        "creditPlan": {
+            "planNumber": "20010",
+            "periodDuration": 12,
+            "apr": 1.0
+        },
+        "errorDescription": "\"customer.residentialStatusCode\" must be one of [M, N, F, U, C, H, P, O]"
+    },
+    {
+        "scenario": "empty \"residential Status Code\" string",
+        "scenarioType": "invalid",
+        "messageId": "2a05f77c-7fed-484a-8e05-9880deed341f",
+        "termsAndConditions": [
+            {
+                "tsAndCsType": "CreditSubjectToStatus",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "HowWeWillUseYourData",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "MarketingComms",
+                "agreed": true,
+                "agreedDateTime": 48
+            }
+        ],
+        "customer": {
+            "additionalNeeds": "0",
+            "emailAddress": "joe@email.com",
+            "nationalityCode": "GB",
+            "numberOfDependents": 1,
+            "mobilePhoneNumber": "07558334222",
+            "monthlyMortgageRent": 1,
+            "dateOfBirth": "1900-01-01",
+            "maritalStatusCode": "M",
+            "residentialStatusCode": "",
+            "employment": {
+                "employerName": "n/a",
+                "employmentStatusCode": "EMP",
+                "occupationCode": "33"
+            },
+            "income": {
+                "yearlyIncomeBeforeTax": 33000,
+                "otherIncome": 0
+            },
+            "addresses": [
+                {
+                    "addressType": "Current",
+                    "startDate": {
+                        "month": 2,
+                        "year": 2016
+                    }
+                }
+            ]
+        },
+        "creditPlan": {
+            "planNumber": "20010",
+            "periodDuration": 12,
+            "apr": 1.0
+        },
+        "errorDescription": "\"customer.residentialStatusCode\" must be one of [M, N, F, U, C, H, P, O]. \"customer.residentialStatusCode\" is not allowed to be empty"
+    },
+    {
+        "scenario": "\"yearly Income Before Tax\" is less than zero",
+        "scenarioType": "invalid",
+        "messageId": "2a05f77c-7fed-484a-8e05-9880deed341f",
+        "termsAndConditions": [
+            {
+                "tsAndCsType": "CreditSubjectToStatus",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "HowWeWillUseYourData",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "MarketingComms",
+                "agreed": true,
+                "agreedDateTime": 48
+            }
+        ],
+        "customer": {
+            "additionalNeeds": "0",
+            "emailAddress": "joe@email.com",
+            "nationalityCode": "GB",
+            "numberOfDependents": 1,
+            "mobilePhoneNumber": "07558334222",
+            "monthlyMortgageRent": 1,
+            "dateOfBirth": "1900-01-01",
+            "maritalStatusCode": "M",
+            "residentialStatusCode": "M",
+            "employment": {
+                "employerName": "n/a",
+                "employmentStatusCode": "EMP",
+                "occupationCode": "33"
+            },
+            "income": {
+                "yearlyIncomeBeforeTax": -1,
+                "otherIncome": 0
+            },
+            "addresses": [
+                {
+                    "addressType": "Current",
+                    "startDate": {
+                        "month": 2,
+                        "year": 2016
+                    }
+                }
+            ]
+        },
+        "creditPlan": {
+            "planNumber": "20010",
+            "periodDuration": 12,
+            "apr": 1.0
+        },
+        "errorDescription": "\"customer.income.yearlyIncomeBeforeTax\" must be larger than or equal to 0"
+    },
+    {
+        "scenario": "\"other income\" is less than zero",
+        "scenarioType": "invalid",
+        "messageId": "2a05f77c-7fed-484a-8e05-9880deed341f",
+        "termsAndConditions": [
+            {
+                "tsAndCsType": "CreditSubjectToStatus",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "HowWeWillUseYourData",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "MarketingComms",
+                "agreed": true,
+                "agreedDateTime": 48
+            }
+        ],
+        "customer": {
+            "additionalNeeds": "0",
+            "emailAddress": "joe@email.com",
+            "nationalityCode": "GB",
+            "numberOfDependents": 1,
+            "mobilePhoneNumber": "07558334222",
+            "monthlyMortgageRent": 1,
+            "dateOfBirth": "1900-01-01",
+            "maritalStatusCode": "M",
+            "residentialStatusCode": "M",
+            "employment": {
+                "employerName": "n/a",
+                "employmentStatusCode": "EMP",
+                "occupationCode": "33"
+            },
+            "income": {
+                "yearlyIncomeBeforeTax": 33000,
+                "otherIncome": -1
+            },
+            "addresses": [
+                {
+                    "addressType": "Current",
+                    "startDate": {
+                        "month": 2,
+                        "year": 2016
+                    }
+                }
+            ]
+        },
+        "creditPlan": {
+            "planNumber": "20010",
+            "periodDuration": 12,
+            "apr": 1.0
+        },
+        "errorDescription": "\"customer.income.otherIncome\" must be larger than or equal to 0"
+    },
+    {
+        "scenario": "empty \"address type\" string",
+        "scenarioType": "invalid",
+        "messageId": "2a05f77c-7fed-484a-8e05-9880deed341f",
+        "termsAndConditions": [
+            {
+                "tsAndCsType": "CreditSubjectToStatus",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "HowWeWillUseYourData",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "MarketingComms",
+                "agreed": true,
+                "agreedDateTime": 48
+            }
+        ],
+        "customer": {
+            "additionalNeeds": "0",
+            "emailAddress": "joe@email.com",
+            "nationalityCode": "GB",
+            "numberOfDependents": 1,
+            "mobilePhoneNumber": "07558334222",
+            "monthlyMortgageRent": 1,
+            "dateOfBirth": "1900-01-01",
+            "maritalStatusCode": "M",
+            "residentialStatusCode": "M",
+            "employment": {
+                "employerName": "n/a",
+                "employmentStatusCode": "EMP",
+                "occupationCode": "33"
+            },
+            "income": {
+                "yearlyIncomeBeforeTax": 33000,
+                "otherIncome": 0
+            },
+            "addresses": [
+                {
+                    "addressType": "",
+                    "startDate": {
+                        "month": 2,
+                        "year": 2016
+                    }
+                }
+            ]
+        },
+        "creditPlan": {
+            "planNumber": "20010",
+            "periodDuration": 12,
+            "apr": 1.0
+        },
+        "errorDescription": "\"customer.addresses[0].addressType\" must be one of [Current, Previous]. \"customer.addresses[0].addressType\" is not allowed to be empty. \"customer.addresses\" does not contain 1 required value(s). \"customer.addresses\" does not contain at least one required match"
+    },
+    {
+        "scenario": "invalid \"address type\" option - \"ABC\"",
+        "scenarioType": "invalid",
+        "messageId": "2a05f77c-7fed-484a-8e05-9880deed341f",
+        "termsAndConditions": [
+            {
+                "tsAndCsType": "CreditSubjectToStatus",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "HowWeWillUseYourData",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "MarketingComms",
+                "agreed": true,
+                "agreedDateTime": 48
+            }
+        ],
+        "customer": {
+            "additionalNeeds": "0",
+            "emailAddress": "joe@email.com",
+            "nationalityCode": "GB",
+            "numberOfDependents": 1,
+            "mobilePhoneNumber": "07558334222",
+            "monthlyMortgageRent": 1,
+            "dateOfBirth": "1900-01-01",
+            "maritalStatusCode": "M",
+            "residentialStatusCode": "M",
+            "employment": {
+                "employerName": "n/a",
+                "employmentStatusCode": "EMP",
+                "occupationCode": "33"
+            },
+            "income": {
+                "yearlyIncomeBeforeTax": 33000,
+                "otherIncome": 0
+            },
+            "addresses": [
+                {
+                    "addressType": "ABC",
+                    "startDate": {
+                        "month": 2,
+                        "year": 2016
+                    }
+                }
+            ]
+        },
+        "creditPlan": {
+            "planNumber": "20010",
+            "periodDuration": 12,
+            "apr": 1.0
+        },
+        "errorDescription": "\"customer.addresses[0].addressType\" must be one of [Current, Previous]. \"customer.addresses\" does not contain 1 required value(s). \"customer.addresses\" does not contain at least one required match"
+    },
+    {
+        "scenario": "\"customer.addresses[1].address.county\" is optional",
+        "scenarioType": "valid",
+        "messageId": "2a05f77c-7fed-484a-8e05-9880deed341f",
+        "termsAndConditions": [
+            {
+                "tsAndCsType": "CreditSubjectToStatus",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "HowWeWillUseYourData",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "MarketingComms",
+                "agreed": true,
+                "agreedDateTime": 48
+            }
+        ],
+        "customer": {
+            "additionalNeeds": "0",
+            "emailAddress": "joe@email.com",
+            "nationalityCode": "GB",
+            "numberOfDependents": 1,
+            "mobilePhoneNumber": "07558334222",
+            "monthlyMortgageRent": 1,
+            "dateOfBirth": "1900-01-01",
+            "maritalStatusCode": "M",
+            "residentialStatusCode": "M",
+            "employment": {
+                "employerName": "n/a",
+                "employmentStatusCode": "EMP",
+                "occupationCode": "33"
+            },
+            "income": {
+                "yearlyIncomeBeforeTax": 33000,
+                "otherIncome": 0
+            },
+            "addresses": [
+                {
+                    "addressType": "Current",
+                    "address": {
+                        "line1": "1",
+                        "line2": "Downton Road",
+                        "line3": "Abbey Corner",
+                        "town": "Billington",
+                        "postCode": "BS1 3AB"
+                    },
+                    "startDate": {
+                        "month": 2,
+                        "year": 2016
+                    }
+                },
+                {
+                    "addressType": "Previous",
+                    "address": {
+                        "houseNumber": "1",
+                        "line1": "1",
+                        "line2": "Abbey Road",
+                        "line3": "Bee Corner",
+                        "town": "Holborn",
+                        "postCode": "A1 3AB"
+                    },
+                    "startDate": {
+                        "month": 2,
+                        "year": 2010
+                    }
+                }
+            ]
+        },
+        "creditPlan": {
+            "planNumber": "20010",
+            "periodDuration": 12,
+            "apr": 1.0
+        }
+    },
+    {
+        "scenario": "\"customer.addresses[1].address.houseName\" is a valid field",
+        "scenarioType": "valid",
+        "messageId": "2a05f77c-7fed-484a-8e05-9880deed341f",
+        "termsAndConditions": [
+            {
+                "tsAndCsType": "CreditSubjectToStatus",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "HowWeWillUseYourData",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "MarketingComms",
+                "agreed": true,
+                "agreedDateTime": 48
+            }
+        ],
+        "customer": {
+            "additionalNeeds": "0",
+            "emailAddress": "joe@email.com",
+            "nationalityCode": "GB",
+            "numberOfDependents": 1,
+            "mobilePhoneNumber": "07558334222",
+            "monthlyMortgageRent": 1,
+            "dateOfBirth": "1900-01-01",
+            "maritalStatusCode": "M",
+            "residentialStatusCode": "M",
+            "employment": {
+                "employerName": "n/a",
+                "employmentStatusCode": "EMP",
+                "occupationCode": "33"
+            },
+            "income": {
+                "yearlyIncomeBeforeTax": 33000,
+                "otherIncome": 0
+            },
+            "addresses": [
+                {
+                    "addressType": "Current",
+                    "startDate": {
+                        "month": 2,
+                        "year": 2016
+                    }
+                },
+                {
+                    "addressType": "Previous",
+                    "address": {
+                        "houseName": "abc House",
+                        "line1": "1",
+                        "town": "Holborn",
+                        "postCode": "BS1 3AB"
+                    },
+                    "startDate": {
+                        "month": 2,
+                        "year": 2010
+                    }
+                }
+            ]
+        },
+        "creditPlan": {
+            "planNumber": "20010",
+            "periodDuration": 12,
+            "apr": 1.0
+        }
+    },
+    {
+        "scenario": "\"customer.addresses[1].address.houseNumber\" is a valid field",
+        "scenarioType": "valid",
+        "messageId": "2a05f77c-7fed-484a-8e05-9880deed341f",
+        "termsAndConditions": [
+            {
+                "tsAndCsType": "CreditSubjectToStatus",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "HowWeWillUseYourData",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "MarketingComms",
+                "agreed": true,
+                "agreedDateTime": 48
+            }
+        ],
+        "customer": {
+            "additionalNeeds": "0",
+            "emailAddress": "joe@email.com",
+            "nationalityCode": "GB",
+            "numberOfDependents": 1,
+            "mobilePhoneNumber": "07558334222",
+            "monthlyMortgageRent": 1,
+            "dateOfBirth": "1900-01-01",
+            "maritalStatusCode": "M",
+            "residentialStatusCode": "M",
+            "employment": {
+                "employerName": "n/a",
+                "employmentStatusCode": "EMP",
+                "occupationCode": "33"
+            },
+            "income": {
+                "yearlyIncomeBeforeTax": 33000,
+                "otherIncome": 0
+            },
+            "addresses": [
+                {
+                    "addressType": "Current",
+                    "startDate": {
+                        "month": 2,
+                        "year": 2016
+                    }
+                },
+                {
+                    "addressType": "Previous",
+                    "address": {
+                        "houseNumber": "1",
+                        "line1": "1",
+                        "town": "Holborn",
+                        "postCode": "BS1 3AB"
+                    },
+                    "startDate": {
+                        "month": 2,
+                        "year": 2010
+                    }
+                }
+            ]
+        },
+        "creditPlan": {
+            "planNumber": "20010",
+            "periodDuration": 12,
+            "apr": 1.0
+        }
+    },
+    {
+        "scenario": "\"customer.addresses[1].address.flatNumber\" is a valid field",
+        "scenarioType": "valid",
+        "messageId": "2a05f77c-7fed-484a-8e05-9880deed341f",
+        "termsAndConditions": [
+            {
+                "tsAndCsType": "CreditSubjectToStatus",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "HowWeWillUseYourData",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "MarketingComms",
+                "agreed": true,
+                "agreedDateTime": 48
+            }
+        ],
+        "customer": {
+            "additionalNeeds": "0",
+            "emailAddress": "joe@email.com",
+            "nationalityCode": "GB",
+            "numberOfDependents": 1,
+            "mobilePhoneNumber": "07558334222",
+            "monthlyMortgageRent": 1,
+            "dateOfBirth": "1900-01-01",
+            "maritalStatusCode": "M",
+            "residentialStatusCode": "M",
+            "employment": {
+                "employerName": "n/a",
+                "employmentStatusCode": "EMP",
+                "occupationCode": "33"
+            },
+            "income": {
+                "yearlyIncomeBeforeTax": 33000,
+                "otherIncome": 0
+            },
+            "addresses": [
+                {
+                    "addressType": "Current",
+                    "startDate": {
+                        "month": 2,
+                        "year": 2016
+                    }
+                },
+                {
+                    "addressType": "Previous",
+                    "address": {
+                        "flatNumber": "1",
+                        "houseName": "Tower House",
+                        "line1": "1",
+                        "town": "Holborn",
+                        "postCode": "BS1 3AB"
+                    },
+                    "startDate": {
+                        "month": 2,
+                        "year": 2010
+                    }
+                }
+            ]
+        },
+        "creditPlan": {
+            "planNumber": "20010",
+            "periodDuration": 12,
+            "apr": 1.0
+        }
+    },
+    {
+        "scenario": "\"customer.addresses[1].address.locality\" is a valid field",
+        "scenarioType": "valid",
+        "messageId": "2a05f77c-7fed-484a-8e05-9880deed341f",
+        "termsAndConditions": [
+            {
+                "tsAndCsType": "CreditSubjectToStatus",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "HowWeWillUseYourData",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "MarketingComms",
+                "agreed": true,
+                "agreedDateTime": 48
+            }
+        ],
+        "customer": {
+            "additionalNeeds": "0",
+            "emailAddress": "joe@email.com",
+            "nationalityCode": "GB",
+            "numberOfDependents": 1,
+            "mobilePhoneNumber": "07558334222",
+            "monthlyMortgageRent": 1,
+            "dateOfBirth": "1900-01-01",
+            "maritalStatusCode": "M",
+            "residentialStatusCode": "M",
+            "employment": {
+                "employerName": "n/a",
+                "employmentStatusCode": "EMP",
+                "occupationCode": "33"
+            },
+            "income": {
+                "yearlyIncomeBeforeTax": 33000,
+                "otherIncome": 0
+            },
+            "addresses": [
+                {
+                    "addressType": "Current",
+                    "startDate": {
+                        "month": 2,
+                        "year": 2016
+                    }
+                },
+                {
+                    "addressType": "Previous",
+                    "address": {
+                        "houseNumber": "1",
+                        "line1": "1",
+                        "locality": "Billington",
+                        "town": "Holborn",
+                        "postCode": "BS1 3AB"
+                    },
+                    "startDate": {
+                        "month": 2,
+                        "year": 2010
+                    }
+                }
+            ]
+        },
+        "creditPlan": {
+            "planNumber": "20010",
+            "periodDuration": 12,
+            "apr": 1.0
+        }
+    },
+    {
+        "scenario": "\"customer.addresses[1].address.province\" is a valid field",
+        "scenarioType": "valid",
+        "messageId": "2a05f77c-7fed-484a-8e05-9880deed341f",
+        "termsAndConditions": [
+            {
+                "tsAndCsType": "CreditSubjectToStatus",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "HowWeWillUseYourData",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "MarketingComms",
+                "agreed": true,
+                "agreedDateTime": 48
+            }
+        ],
+        "customer": {
+            "additionalNeeds": "0",
+            "emailAddress": "joe@email.com",
+            "nationalityCode": "GB",
+            "numberOfDependents": 1,
+            "mobilePhoneNumber": "07558334222",
+            "monthlyMortgageRent": 1,
+            "dateOfBirth": "1900-01-01",
+            "maritalStatusCode": "M",
+            "residentialStatusCode": "M",
+            "employment": {
+                "employerName": "n/a",
+                "employmentStatusCode": "EMP",
+                "occupationCode": "33"
+            },
+            "income": {
+                "yearlyIncomeBeforeTax": 33000,
+                "otherIncome": 0
+            },
+            "addresses": [
+                {
+                    "addressType": "Current",
+                    "startDate": {
+                        "month": 2,
+                        "year": 2016
+                    }
+                },
+                {
+                    "addressType": "Previous",
+                    "address": {
+                        "houseNumber": "1",
+                        "line1": "1",
+                        "province": "Billington",
+                        "town": "Holborn",
+                        "postCode": "BS1 3AB"
+                    },
+                    "startDate": {
+                        "month": 2,
+                        "year": 2010
+                    }
+                }
+            ]
+        },
+        "creditPlan": {
+            "planNumber": "20010",
+            "periodDuration": 12,
+            "apr": 1.0
+        }
+    },
+    {
+        "scenario": "\"customer.addresses[1].address.line1\" is required",
+        "scenarioType": "invalid",
+        "messageId": "2a05f77c-7fed-484a-8e05-9880deed341f",
+        "termsAndConditions": [
+            {
+                "tsAndCsType": "CreditSubjectToStatus",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "HowWeWillUseYourData",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "MarketingComms",
+                "agreed": true,
+                "agreedDateTime": 48
+            }
+        ],
+        "customer": {
+            "additionalNeeds": "0",
+            "emailAddress": "joe@email.com",
+            "nationalityCode": "GB",
+            "numberOfDependents": 1,
+            "mobilePhoneNumber": "07558334222",
+            "monthlyMortgageRent": 1,
+            "dateOfBirth": "1900-01-01",
+            "maritalStatusCode": "M",
+            "residentialStatusCode": "M",
+            "employment": {
+                "employerName": "n/a",
+                "employmentStatusCode": "EMP",
+                "occupationCode": "33"
+            },
+            "income": {
+                "yearlyIncomeBeforeTax": 33000,
+                "otherIncome": 0
+            },
+            "addresses": [
+                {
+                    "addressType": "Current",
+                    "startDate": {
+                        "month": 2,
+                        "year": 2016
+                    }
+                },
+                {
+                    "addressType": "Previous",
+                    "address": {
+                        "houseNumber": "1",
+                        "line2": "Downton Road",
+                        "line3": "Abbey Corner",
+                        "town": "Billington",
+                        "postCode": "BS1 3AB"
+                    },
+                    "startDate": {
+                        "month": 2,
+                        "year": 2010
+                    }
+                }
+            ]
+        },
+        "creditPlan": {
+            "planNumber": "20010",
+            "periodDuration": 12,
+            "apr": 1.0
+        },
+        "errorDescription": "\"customer.addresses[1].address.line1\" is required"
+    },
+    {
+        "scenario": "\"customer.addresses[1].address.streetName\" is not allowed",
+        "scenarioType": "invalid",
+        "messageId": "2a05f77c-7fed-484a-8e05-9880deed341f",
+        "termsAndConditions": [
+            {
+                "tsAndCsType": "CreditSubjectToStatus",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "HowWeWillUseYourData",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "MarketingComms",
+                "agreed": true,
+                "agreedDateTime": 48
+            }
+        ],
+        "customer": {
+            "additionalNeeds": "0",
+            "emailAddress": "joe@email.com",
+            "nationalityCode": "GB",
+            "numberOfDependents": 1,
+            "mobilePhoneNumber": "07558334222",
+            "monthlyMortgageRent": 1,
+            "dateOfBirth": "1900-01-01",
+            "maritalStatusCode": "M",
+            "residentialStatusCode": "M",
+            "employment": {
+                "employerName": "n/a",
+                "employmentStatusCode": "EMP",
+                "occupationCode": "33"
+            },
+            "income": {
+                "yearlyIncomeBeforeTax": 33000,
+                "otherIncome": 0
+            },
+            "addresses": [
+                {
+                    "addressType": "Current",
+                    "startDate": {
+                        "month": 2,
+                        "year": 2016
+                    }
+                },
+                {
+                    "addressType": "Previous",
+                    "address": {
+                        "houseNumber": "1",
+                        "line1": "1",
+                        "line2": "Abbey Road",
+                        "line3": "Bee Corner",
+                        "streetName": "abc",
+                        "town": "Holborn",
+                        "county": "London",
+                        "postCode": "A1 3AB"
+                    },
+                    "startDate": {
+                        "month": 2,
+                        "year": 2010
+                    }
+                }
+            ]
+        },
+        "creditPlan": {
+            "planNumber": "20010",
+            "periodDuration": 12,
+            "apr": 1.0
+        },
+        "errorDescription": "\"customer.addresses[1].address.streetName\" is not allowed"
+    },
+    {
+        "scenario": "empty \"occupation Code\" string",
+        "scenarioType": "invalid",
+        "messageId": "2a05f77c-7fed-484a-8e05-9880deed341f",
+        "termsAndConditions": [
+            {
+                "tsAndCsType": "CreditSubjectToStatus",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "HowWeWillUseYourData",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "MarketingComms",
+                "agreed": true,
+                "agreedDateTime": 48
+            }
+        ],
+        "customer": {
+            "additionalNeeds": "0",
+            "emailAddress": "joe@email.com",
+            "nationalityCode": "GB",
+            "numberOfDependents": 1,
+            "mobilePhoneNumber": "07558334222",
+            "monthlyMortgageRent": 1,
+            "dateOfBirth": "1900-01-01",
+            "maritalStatusCode": "M",
+            "residentialStatusCode": "M",
+            "employment": {
+                "employerName": "n/a",
+                "employmentStatusCode": "EMP",
+                "occupationCode": ""
+            },
+            "income": {
+                "yearlyIncomeBeforeTax": 33000,
+                "otherIncome": 0
+            },
+            "addresses": [
+                {
+                    "addressType": "Current",
+                    "startDate": {
+                        "month": 2,
+                        "year": 2016
+                    }
+                }
+            ]
+        },
+        "creditPlan": {
+            "planNumber": "20010",
+            "periodDuration": 12,
+            "apr": 1.0
+        },
+        "errorDescription": "\"customer.employment.occupationCode\" must be one of [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148]. \"customer.employment.occupationCode\" is not allowed to be empty"
+    },
+    {
+        "scenario": "invalid \"occupation Code\" - \"ABC\"",
+        "scenarioType": "invalid",
+        "messageId": "2a05f77c-7fed-484a-8e05-9880deed341f",
+        "termsAndConditions": [
+            {
+                "tsAndCsType": "CreditSubjectToStatus",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "HowWeWillUseYourData",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "MarketingComms",
+                "agreed": true,
+                "agreedDateTime": 48
+            }
+        ],
+        "customer": {
+            "additionalNeeds": "0",
+            "emailAddress": "joe@email.com",
+            "nationalityCode": "GB",
+            "numberOfDependents": 1,
+            "mobilePhoneNumber": "07558334222",
+            "monthlyMortgageRent": 1,
+            "dateOfBirth": "1900-01-01",
+            "maritalStatusCode": "M",
+            "residentialStatusCode": "M",
+            "employment": {
+                "employerName": "n/a",
+                "employmentStatusCode": "EMP",
+                "occupationCode": "ABC"
+            },
+            "income": {
+                "yearlyIncomeBeforeTax": 33000,
+                "otherIncome": 0
+            },
+            "addresses": [
+                {
+                    "addressType": "Current",
+                    "startDate": {
+                        "month": 2,
+                        "year": 2016
+                    }
+                }
+            ]
+        },
+        "creditPlan": {
+            "planNumber": "20010",
+            "periodDuration": 12,
+            "apr": 1.0
+        },
+        "errorDescription": "\"customer.employment.occupationCode\" must be one of [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148]"
+    },
+    {
+        "scenario": "empty \"employment Status Code\" string",
+        "scenarioType": "invalid",
+        "messageId": "2a05f77c-7fed-484a-8e05-9880deed341f",
+        "termsAndConditions": [
+            {
+                "tsAndCsType": "CreditSubjectToStatus",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "HowWeWillUseYourData",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "MarketingComms",
+                "agreed": true,
+                "agreedDateTime": 48
+            }
+        ],
+        "customer": {
+            "additionalNeeds": "0",
+            "emailAddress": "joe@email.com",
+            "nationalityCode": "GB",
+            "numberOfDependents": 1,
+            "mobilePhoneNumber": "07558334222",
+            "monthlyMortgageRent": 1,
+            "dateOfBirth": "1900-01-01",
+            "maritalStatusCode": "M",
+            "residentialStatusCode": "M",
+            "employment": {
+                "employerName": "n/a",
+                "employmentStatusCode": "",
+                "occupationCode": "33"
+            },
+            "income": {
+                "yearlyIncomeBeforeTax": 33000,
+                "otherIncome": 0
+            },
+            "addresses": [
+                {
+                    "addressType": "Current",
+                    "startDate": {
+                        "month": 2,
+                        "year": 2016
+                    }
+                }
+            ]
+        },
+        "creditPlan": {
+            "planNumber": "20010",
+            "periodDuration": 12,
+            "apr": 1.0
+        },
+        "errorDescription": "\"customer.employment.employmentStatusCode\" must be one of [EMP, SEMP, HMK, STU, RET, EMP_NR, NEM, TMP, OTH]. \"customer.employment.employmentStatusCode\" is not allowed to be empty"
+    },
+    {
+        "scenario": "invalid \"employment Status Code\" code - \"ABC\"",
+        "scenarioType": "invalid",
+        "messageId": "2a05f77c-7fed-484a-8e05-9880deed341f",
+        "termsAndConditions": [
+            {
+                "tsAndCsType": "CreditSubjectToStatus",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "HowWeWillUseYourData",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "MarketingComms",
+                "agreed": true,
+                "agreedDateTime": 48
+            }
+        ],
+        "customer": {
+            "additionalNeeds": "0",
+            "emailAddress": "joe@email.com",
+            "nationalityCode": "GB",
+            "numberOfDependents": 1,
+            "mobilePhoneNumber": "07558334222",
+            "monthlyMortgageRent": 1,
+            "dateOfBirth": "1900-01-01",
+            "maritalStatusCode": "M",
+            "residentialStatusCode": "M",
+            "employment": {
+                "employerName": "n/a",
+                "employmentStatusCode": "ABC",
+                "occupationCode": "33"
+            },
+            "income": {
+                "yearlyIncomeBeforeTax": 33000,
+                "otherIncome": 0
+            },
+            "addresses": [
+                {
+                    "addressType": "Current",
+                    "startDate": {
+                        "month": 2,
+                        "year": 2016
+                    }
+                }
+            ]
+        },
+        "creditPlan": {
+            "planNumber": "20010",
+            "periodDuration": 12,
+            "apr": 1.0
+        },
+        "errorDescription": "\"customer.employment.employmentStatusCode\" must be one of [EMP, SEMP, HMK, STU, RET, EMP_NR, NEM, TMP, OTH]"
+    },
+    {
+        "scenario": "\"number Of Dependents\" is less than zero",
+        "scenarioType": "invalid",
+        "messageId": "2a05f77c-7fed-484a-8e05-9880deed341f",
+        "termsAndConditions": [
+            {
+                "tsAndCsType": "CreditSubjectToStatus",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "HowWeWillUseYourData",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "MarketingComms",
+                "agreed": true,
+                "agreedDateTime": 48
+            }
+        ],
+        "customer": {
+            "additionalNeeds": "0",
+            "emailAddress": "joe@email.com",
+            "nationalityCode": "GB",
+            "numberOfDependents": -1,
+            "mobilePhoneNumber": "07558334222",
+            "monthlyMortgageRent": 1,
+            "dateOfBirth": "1900-01-01",
+            "maritalStatusCode": "M",
+            "residentialStatusCode": "M",
+            "employment": {
+                "employerName": "n/a",
+                "employmentStatusCode": "EMP",
+                "occupationCode": "33"
+            },
+            "income": {
+                "yearlyIncomeBeforeTax": 33000,
+                "otherIncome": 0
+            },
+            "addresses": [
+                {
+                    "addressType": "Current",
+                    "startDate": {
+                        "month": 2,
+                        "year": 2016
+                    }
+                }
+            ]
+        },
+        "creditPlan": {
+            "planNumber": "20010",
+            "periodDuration": 12,
+            "apr": 1.0
+        },
+        "errorDescription": "\"customer.numberOfDependents\" must be larger than or equal to 0"
+    },
+    {
+        "scenario": "\"number Of Dependents\" is 2 digit",
+        "scenarioType": "invalid",
+        "messageId": "2a05f77c-7fed-484a-8e05-9880deed341f",
+        "termsAndConditions": [
+            {
+                "tsAndCsType": "CreditSubjectToStatus",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "HowWeWillUseYourData",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "MarketingComms",
+                "agreed": true,
+                "agreedDateTime": 48
+            }
+        ],
+        "customer": {
+            "additionalNeeds": "0",
+            "emailAddress": "joe@email.com",
+            "nationalityCode": "GB",
+            "numberOfDependents": 10,
+            "mobilePhoneNumber": "07558334222",
+            "monthlyMortgageRent": 1,
+            "dateOfBirth": "1900-01-01",
+            "maritalStatusCode": "M",
+            "residentialStatusCode": "M",
+            "employment": {
+                "employerName": "n/a",
+                "employmentStatusCode": "EMP",
+                "occupationCode": "33"
+            },
+            "income": {
+                "yearlyIncomeBeforeTax": 33000,
+                "otherIncome": 0
+            },
+            "addresses": [
+                {
+                    "addressType": "Current",
+                    "startDate": {
+                        "month": 2,
+                        "year": 2016
+                    }
+                }
+            ]
+        },
+        "creditPlan": {
+            "planNumber": "20010",
+            "periodDuration": 12,
+            "apr": 1.0
+        },
+        "errorDescription": "\"customer.numberOfDependents\" must be less than or equal to 9"
+    },
+    {
+        "scenario": "empty \"employer Name\" value",
+        "scenarioType": "invalid",
+        "messageId": "2a05f77c-7fed-484a-8e05-9880deed341f",
+        "termsAndConditions": [
+            {
+                "tsAndCsType": "CreditSubjectToStatus",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "HowWeWillUseYourData",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "MarketingComms",
+                "agreed": true,
+                "agreedDateTime": 48
+            }
+        ],
+        "customer": {
+            "additionalNeeds": "0",
+            "emailAddress": "joe@email.com",
+            "nationalityCode": "GB",
+            "numberOfDependents": 1,
+            "mobilePhoneNumber": "07558334222",
+            "monthlyMortgageRent": 1,
+            "dateOfBirth": "1900-01-01",
+            "maritalStatusCode": "M",
+            "residentialStatusCode": "M",
+            "employment": {
+                "employerName": "",
+                "employmentStatusCode": "EMP",
+                "occupationCode": "33"
+            },
+            "income": {
+                "yearlyIncomeBeforeTax": 33000,
+                "otherIncome": 0
+            },
+            "addresses": [
+                {
+                    "addressType": "Current",
+                    "startDate": {
+                        "month": 2,
+                        "year": 2016
+                    }
+                }
+            ]
+        },
+        "creditPlan": {
+            "planNumber": "20010",
+            "periodDuration": 12,
+            "apr": 1.0
+        },
+        "errorDescription": "\"customer.employment.employerName\" is not allowed to be empty"
+    },
+    {
+        "scenario": "creditPlan.apr is required",
+        "scenarioType": "invalid",
+        "messageId": "2a05f77c-7fed-484a-8e05-9880deed341f",
+        "termsAndConditions": [
+            {
+                "tsAndCsType": "CreditSubjectToStatus",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "HowWeWillUseYourData",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "MarketingComms",
+                "agreed": true,
+                "agreedDateTime": 48
+            }
+        ],
+        "customer": {
+            "additionalNeeds": "0",
+            "emailAddress": "joe@email.com",
+            "nationalityCode": "GB",
+            "numberOfDependents": 1,
+            "mobilePhoneNumber": "07558334222",
+            "monthlyMortgageRent": 1,
+            "dateOfBirth": "1900-01-01",
+            "maritalStatusCode": "M",
+            "residentialStatusCode": "M",
+            "employment": {
+                "employerName": "n/a",
+                "employmentStatusCode": "EMP",
+                "occupationCode": "33"
+            },
+            "income": {
+                "yearlyIncomeBeforeTax": 33000,
+                "otherIncome": 0
+            },
+            "addresses": [
+                {
+                    "addressType": "Current",
+                    "startDate": {
+                        "month": 2,
+                        "year": 2016
+                    }
+                }
+            ]
+        },
+        "creditPlan": {
+            "planNumber": "20010",
+            "periodDuration": 12
+        },
+        "errorDescription": "\"creditPlan.apr\" is required"
+    },
+    {
+        "scenario": "creditPlan.periodDuration is required",
+        "scenarioType": "invalid",
+        "messageId": "2a05f77c-7fed-484a-8e05-9880deed341f",
+        "termsAndConditions": [
+            {
+                "tsAndCsType": "CreditSubjectToStatus",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "HowWeWillUseYourData",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "MarketingComms",
+                "agreed": true,
+                "agreedDateTime": 48
+            }
+        ],
+        "customer": {
+            "additionalNeeds": "0",
+            "emailAddress": "joe@email.com",
+            "nationalityCode": "GB",
+            "numberOfDependents": 1,
+            "mobilePhoneNumber": "07558334222",
+            "monthlyMortgageRent": 1,
+            "dateOfBirth": "1900-01-01",
+            "maritalStatusCode": "M",
+            "residentialStatusCode": "M",
+            "employment": {
+                "employerName": "n/a",
+                "employmentStatusCode": "EMP",
+                "occupationCode": "33"
+            },
+            "income": {
+                "yearlyIncomeBeforeTax": 33000,
+                "otherIncome": 0
+            },
+            "addresses": [
+                {
+                    "addressType": "Current",
+                    "startDate": {
+                        "month": 2,
+                        "year": 2016
+                    }
+                }
+            ]
+        },
+        "creditPlan": {
+            "planNumber": "20010",
+            "apr": 1.0
+        },
+        "errorDescription": "\"creditPlan.periodDuration\" is required"
+    },
+    {
+        "scenario": "creditPlan.planNumber is required",
+        "scenarioType": "invalid",
+        "messageId": "2a05f77c-7fed-484a-8e05-9880deed341f",
+        "termsAndConditions": [
+            {
+                "tsAndCsType": "CreditSubjectToStatus",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "HowWeWillUseYourData",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "MarketingComms",
+                "agreed": true,
+                "agreedDateTime": 48
+            }
+        ],
+        "customer": {
+            "additionalNeeds": "0",
+            "emailAddress": "joe@email.com",
+            "nationalityCode": "GB",
+            "numberOfDependents": 1,
+            "mobilePhoneNumber": "07558334222",
+            "monthlyMortgageRent": 1,
+            "dateOfBirth": "1900-01-01",
+            "maritalStatusCode": "M",
+            "residentialStatusCode": "M",
+            "employment": {
+                "employerName": "n/a",
+                "employmentStatusCode": "EMP",
+                "occupationCode": "33"
+            },
+            "income": {
+                "yearlyIncomeBeforeTax": 33000,
+                "otherIncome": 0
+            },
+            "addresses": [
+                {
+                    "addressType": "Current",
+                    "startDate": {
+                        "month": 2,
+                        "year": 2016
+                    }
+                }
+            ]
+        },
+        "creditPlan": {
+            "periodDuration": 12,
+            "apr": 1.0
+        },
+        "errorDescription": "\"creditPlan.planNumber\" is required"
+    },
+    {
+        "scenario": "customer.addresses[0].startDate.month is required",
+        "scenarioType": "invalid",
+        "messageId": "2a05f77c-7fed-484a-8e05-9880deed341f",
+        "termsAndConditions": [
+            {
+                "tsAndCsType": "CreditSubjectToStatus",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "HowWeWillUseYourData",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "MarketingComms",
+                "agreed": true,
+                "agreedDateTime": 48
+            }
+        ],
+        "customer": {
+            "additionalNeeds": "0",
+            "emailAddress": "joe@email.com",
+            "nationalityCode": "GB",
+            "numberOfDependents": 1,
+            "mobilePhoneNumber": "07558334222",
+            "monthlyMortgageRent": 1,
+            "dateOfBirth": "1900-01-01",
+            "maritalStatusCode": "M",
+            "residentialStatusCode": "M",
+            "employment": {
+                "employerName": "n/a",
+                "employmentStatusCode": "EMP",
+                "occupationCode": "33"
+            },
+            "income": {
+                "yearlyIncomeBeforeTax": 33000,
+                "otherIncome": 0
+            },
+            "addresses": [
+                {
+                    "addressType": "Current",
+                    "startDate": {
+                        "year": 2016
+                    }
+                }
+            ]
+        },
+        "creditPlan": {
+            "planNumber": "20010",
+            "periodDuration": 12,
+            "apr": 1.0
+        },
+        "errorDescription": "\"customer.addresses[0].startDate.month\" is required. \"customer.addresses\" does not contain 1 required value(s)"
+    },
+    {
+        "scenario": "customer.addresses[0].startDate.year is required",
+        "scenarioType": "invalid",
+        "messageId": "2a05f77c-7fed-484a-8e05-9880deed341f",
+        "termsAndConditions": [
+            {
+                "tsAndCsType": "CreditSubjectToStatus",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "HowWeWillUseYourData",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "MarketingComms",
+                "agreed": true,
+                "agreedDateTime": 48
+            }
+        ],
+        "customer": {
+            "additionalNeeds": "0",
+            "emailAddress": "joe@email.com",
+            "nationalityCode": "GB",
+            "numberOfDependents": 1,
+            "mobilePhoneNumber": "07558334222",
+            "monthlyMortgageRent": 1,
+            "dateOfBirth": "1900-01-01",
+            "maritalStatusCode": "M",
+            "residentialStatusCode": "M",
+            "employment": {
+                "employerName": "n/a",
+                "employmentStatusCode": "EMP",
+                "occupationCode": "33"
+            },
+            "income": {
+                "yearlyIncomeBeforeTax": 33000,
+                "otherIncome": 0
+            },
+            "addresses": [
+                {
+                    "addressType": "Current",
+                    "startDate": {
+                        "month": 2
+                    }
+                }
+            ]
+        },
+        "creditPlan": {
+            "planNumber": "20010",
+            "periodDuration": 12,
+            "apr": 1.0
+        },
+        "errorDescription": "\"customer.addresses[0].startDate.year\" is required. \"customer.addresses\" does not contain 1 required value(s)"
+    },
+    {
+        "scenario": "customer.addresses[0].startDate.year is 1899",
+        "scenarioType": "invalid",
+        "messageId": "2a05f77c-7fed-484a-8e05-9880deed341f",
+        "termsAndConditions": [
+            {
+                "tsAndCsType": "CreditSubjectToStatus",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "HowWeWillUseYourData",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "MarketingComms",
+                "agreed": true,
+                "agreedDateTime": 48
+            }
+        ],
+        "customer": {
+            "additionalNeeds": "0",
+            "emailAddress": "joe@email.com",
+            "nationalityCode": "GB",
+            "numberOfDependents": 1,
+            "mobilePhoneNumber": "07558334222",
+            "monthlyMortgageRent": 1,
+            "dateOfBirth": "1900-01-01",
+            "maritalStatusCode": "M",
+            "residentialStatusCode": "M",
+            "employment": {
+                "employerName": "n/a",
+                "employmentStatusCode": "EMP",
+                "occupationCode": "33"
+            },
+            "income": {
+                "yearlyIncomeBeforeTax": 33000,
+                "otherIncome": 0
+            },
+            "addresses": [
+                {
+                    "addressType": "Current",
+                    "startDate": {
+                        "month": 2,
+                        "year": 1800
+                    }
+                }
+            ]
+        },
+        "creditPlan": {
+            "planNumber": "20010",
+            "periodDuration": 12,
+            "apr": 1.0
+        },
+        "errorDescription": "\"customer.addresses[0].startDate.year\" must be larger than or equal to 1900. \"customer.addresses\" does not contain 1 required value(s)"
+    },
+    {
+        "scenario": "customer.dateOfBirth is required",
+        "scenarioType": "invalid",
+        "messageId": "2a05f77c-7fed-484a-8e05-9880deed341f",
+        "termsAndConditions": [
+            {
+                "tsAndCsType": "CreditSubjectToStatus",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "HowWeWillUseYourData",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "MarketingComms",
+                "agreed": true,
+                "agreedDateTime": 48
+            }
+        ],
+        "customer": {
+            "additionalNeeds": "0",
+            "emailAddress": "joe@email.com",
+            "nationalityCode": "GB",
+            "numberOfDependents": 1,
+            "mobilePhoneNumber": "07558334222",
+            "monthlyMortgageRent": 1,
+            "maritalStatusCode": "M",
+            "residentialStatusCode": "M",
+            "employment": {
+                "employerName": "n/a",
+                "employmentStatusCode": "EMP",
+                "occupationCode": "33"
+            },
+            "income": {
+                "yearlyIncomeBeforeTax": 33000,
+                "otherIncome": 0
+            },
+            "addresses": [
+                {
+                    "addressType": "Current",
+                    "startDate": {
+                        "month": 2,
+                        "year": 2016
+                    }
+                }
+            ]
+        },
+        "creditPlan": {
+            "planNumber": "20010",
+            "periodDuration": 12,
+            "apr": 1.0
+        },
+        "errorDescription": "\"customer.dateOfBirth\" is required"
+    },
+    {
+        "scenario": "customer.emailAddress is required",
+        "scenarioType": "invalid",
+        "messageId": "2a05f77c-7fed-484a-8e05-9880deed341f",
+        "termsAndConditions": [
+            {
+                "tsAndCsType": "CreditSubjectToStatus",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "HowWeWillUseYourData",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "MarketingComms",
+                "agreed": true,
+                "agreedDateTime": 48
+            }
+        ],
+        "customer": {
+            "nationalityCode": "GB",
+            "numberOfDependents": 1,
+            "mobilePhoneNumber": "07558334222",
+            "monthlyMortgageRent": 1,
+            "dateOfBirth": "1900-01-01",
+            "maritalStatusCode": "M",
+            "residentialStatusCode": "M",
+            "employment": {
+                "employerName": "n/a",
+                "employmentStatusCode": "EMP",
+                "occupationCode": "33"
+            },
+            "income": {
+                "yearlyIncomeBeforeTax": 33000,
+                "otherIncome": 0
+            },
+            "addresses": [
+                {
+                    "addressType": "Current",
+                    "startDate": {
+                        "month": 2,
+                        "year": 2016
+                    }
+                }
+            ]
+        },
+        "creditPlan": {
+            "planNumber": "20010",
+            "periodDuration": 12,
+            "apr": 1.0
+        },
+        "errorDescription": "\"customer.emailAddress\" is required"
+    },
+    {
+        "scenario": "customer.employment.employerName is required",
+        "scenarioType": "invalid",
+        "messageId": "2a05f77c-7fed-484a-8e05-9880deed341f",
+        "termsAndConditions": [
+            {
+                "tsAndCsType": "CreditSubjectToStatus",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "HowWeWillUseYourData",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "MarketingComms",
+                "agreed": true,
+                "agreedDateTime": 48
+            }
+        ],
+        "customer": {
+            "additionalNeeds": "0",
+            "emailAddress": "joe@email.com",
+            "nationalityCode": "GB",
+            "numberOfDependents": 1,
+            "mobilePhoneNumber": "07558334222",
+            "monthlyMortgageRent": 1,
+            "dateOfBirth": "1900-01-01",
+            "maritalStatusCode": "M",
+            "residentialStatusCode": "M",
+            "employment": {
+                "employmentStatusCode": "EMP",
+                "occupationCode": "33"
+            },
+            "income": {
+                "yearlyIncomeBeforeTax": 33000,
+                "otherIncome": 0
+            },
+            "addresses": [
+                {
+                    "addressType": "Current",
+                    "startDate": {
+                        "month": 2,
+                        "year": 2016
+                    }
+                }
+            ]
+        },
+        "creditPlan": {
+            "planNumber": "20010",
+            "periodDuration": 12,
+            "apr": 1.0
+        },
+        "errorDescription": "\"customer.employment.employerName\" is required"
+    },
+    {
+        "scenario": "customer.employment.employmentStatusCode is required",
+        "scenarioType": "invalid",
+        "messageId": "2a05f77c-7fed-484a-8e05-9880deed341f",
+        "termsAndConditions": [
+            {
+                "tsAndCsType": "CreditSubjectToStatus",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "HowWeWillUseYourData",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "MarketingComms",
+                "agreed": true,
+                "agreedDateTime": 48
+            }
+        ],
+        "customer": {
+            "additionalNeeds": "0",
+            "emailAddress": "joe@email.com",
+            "nationalityCode": "GB",
+            "numberOfDependents": 1,
+            "mobilePhoneNumber": "07558334222",
+            "monthlyMortgageRent": 1,
+            "dateOfBirth": "1900-01-01",
+            "maritalStatusCode": "M",
+            "residentialStatusCode": "M",
+            "employment": {
+                "employerName": "n/a",
+                "occupationCode": "33"
+            },
+            "income": {
+                "yearlyIncomeBeforeTax": 33000,
+                "otherIncome": 0
+            },
+            "addresses": [
+                {
+                    "addressType": "Current",
+                    "startDate": {
+                        "month": 2,
+                        "year": 2016
+                    }
+                }
+            ]
+        },
+        "creditPlan": {
+            "planNumber": "20010",
+            "periodDuration": 12,
+            "apr": 1.0
+        },
+        "errorDescription": "\"customer.employment.employmentStatusCode\" is required"
+    },
+    {
+        "scenario": "customer.employment.occupationCode is required",
+        "scenarioType": "invalid",
+        "messageId": "2a05f77c-7fed-484a-8e05-9880deed341f",
+        "termsAndConditions": [
+            {
+                "tsAndCsType": "CreditSubjectToStatus",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "HowWeWillUseYourData",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "MarketingComms",
+                "agreed": true,
+                "agreedDateTime": 48
+            }
+        ],
+        "customer": {
+            "additionalNeeds": "0",
+            "emailAddress": "joe@email.com",
+            "nationalityCode": "GB",
+            "numberOfDependents": 1,
+            "mobilePhoneNumber": "07558334222",
+            "monthlyMortgageRent": 1,
+            "dateOfBirth": "1900-01-01",
+            "maritalStatusCode": "M",
+            "residentialStatusCode": "M",
+            "employment": {
+                "employerName": "n/a",
+                "employmentStatusCode": "EMP"
+            },
+            "income": {
+                "yearlyIncomeBeforeTax": 33000,
+                "otherIncome": 0
+            },
+            "addresses": [
+                {
+                    "addressType": "Current",
+                    "startDate": {
+                        "month": 2,
+                        "year": 2016
+                    }
+                }
+            ]
+        },
+        "creditPlan": {
+            "planNumber": "20010",
+            "periodDuration": 12,
+            "apr": 1.0
+        },
+        "errorDescription": "\"customer.employment.occupationCode\" is required"
+    },
+    {
+        "scenario": "customer.income.otherIncome is required",
+        "scenarioType": "invalid",
+        "messageId": "2a05f77c-7fed-484a-8e05-9880deed341f",
+        "termsAndConditions": [
+            {
+                "tsAndCsType": "CreditSubjectToStatus",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "HowWeWillUseYourData",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "MarketingComms",
+                "agreed": true,
+                "agreedDateTime": 48
+            }
+        ],
+        "customer": {
+            "additionalNeeds": "0",
+            "emailAddress": "joe@email.com",
+            "nationalityCode": "GB",
+            "numberOfDependents": 1,
+            "mobilePhoneNumber": "07558334222",
+            "monthlyMortgageRent": 1,
+            "dateOfBirth": "1900-01-01",
+            "maritalStatusCode": "M",
+            "residentialStatusCode": "M",
+            "employment": {
+                "employerName": "n/a",
+                "employmentStatusCode": "EMP",
+                "occupationCode": "33"
+            },
+            "income": {
+                "yearlyIncomeBeforeTax": 33000
+            },
+            "addresses": [
+                {
+                    "addressType": "Current",
+                    "startDate": {
+                        "month": 2,
+                        "year": 2016
+                    }
+                }
+            ]
+        },
+        "creditPlan": {
+            "planNumber": "20010",
+            "periodDuration": 12,
+            "apr": 1.0
+        },
+        "errorDescription": "\"customer.income.otherIncome\" is required"
+    },
+    {
+        "scenario": "customer.income.yearlyIncomeBeforeTax is greater than 999999",
+        "scenarioType": "invalid",
+        "messageId": "2a05f77c-7fed-484a-8e05-9880deed341f",
+        "termsAndConditions": [
+            {
+                "tsAndCsType": "CreditSubjectToStatus",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "HowWeWillUseYourData",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "MarketingComms",
+                "agreed": true,
+                "agreedDateTime": 48
+            }
+        ],
+        "customer": {
+            "additionalNeeds": "0",
+            "emailAddress": "joe@email.com",
+            "nationalityCode": "GB",
+            "numberOfDependents": 1,
+            "mobilePhoneNumber": "07558334222",
+            "monthlyMortgageRent": 1,
+            "dateOfBirth": "1900-01-01",
+            "maritalStatusCode": "M",
+            "residentialStatusCode": "M",
+            "employment": {
+                "employerName": "n/a",
+                "employmentStatusCode": "EMP",
+                "occupationCode": "33"
+            },
+            "income": {
+                "yearlyIncomeBeforeTax": 1000000,
+                "otherIncome": 0
+            },
+            "addresses": [
+                {
+                    "addressType": "Current",
+                    "startDate": {
+                        "month": 2,
+                        "year": 2016
+                    }
+                }
+            ]
+        },
+        "creditPlan": {
+            "planNumber": "20010",
+            "periodDuration": 12,
+            "apr": 1.0
+        },
+        "errorDescription": "\"customer.income.yearlyIncomeBeforeTax\" must be less than or equal to 999999"
+    },
+    {
+        "scenario": "customer.income.otherIncome is greater than 999999",
+        "scenarioType": "invalid",
+        "messageId": "2a05f77c-7fed-484a-8e05-9880deed341f",
+        "termsAndConditions": [
+            {
+                "tsAndCsType": "CreditSubjectToStatus",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "HowWeWillUseYourData",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "MarketingComms",
+                "agreed": true,
+                "agreedDateTime": 48
+            }
+        ],
+        "customer": {
+            "additionalNeeds": "0",
+            "emailAddress": "joe@email.com",
+            "nationalityCode": "GB",
+            "numberOfDependents": 1,
+            "mobilePhoneNumber": "07558334222",
+            "monthlyMortgageRent": 1,
+            "dateOfBirth": "1900-01-01",
+            "maritalStatusCode": "M",
+            "residentialStatusCode": "M",
+            "employment": {
+                "employerName": "n/a",
+                "employmentStatusCode": "EMP",
+                "occupationCode": "33"
+            },
+            "income": {
+                "yearlyIncomeBeforeTax": 0,
+                "otherIncome": 1000000
+            },
+            "addresses": [
+                {
+                    "addressType": "Current",
+                    "startDate": {
+                        "month": 2,
+                        "year": 2016
+                    }
+                }
+            ]
+        },
+        "creditPlan": {
+            "planNumber": "20010",
+            "periodDuration": 12,
+            "apr": 1.0
+        },
+        "errorDescription": "\"customer.income.otherIncome\" must be less than or equal to 999999"
+    },
+    {
+        "scenario": "customer.income.yearlyIncomeBeforeTax is required",
+        "scenarioType": "invalid",
+        "messageId": "2a05f77c-7fed-484a-8e05-9880deed341f",
+        "termsAndConditions": [
+            {
+                "tsAndCsType": "CreditSubjectToStatus",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "HowWeWillUseYourData",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "MarketingComms",
+                "agreed": true,
+                "agreedDateTime": 48
+            }
+        ],
+        "customer": {
+            "additionalNeeds": "0",
+            "emailAddress": "joe@email.com",
+            "nationalityCode": "GB",
+            "numberOfDependents": 1,
+            "mobilePhoneNumber": "07558334222",
+            "monthlyMortgageRent": 1,
+            "dateOfBirth": "1900-01-01",
+            "maritalStatusCode": "M",
+            "residentialStatusCode": "M",
+            "employment": {
+                "employerName": "n/a",
+                "employmentStatusCode": "EMP",
+                "occupationCode": "33"
+            },
+            "income": {
+                "otherIncome": 0
+            },
+            "addresses": [
+                {
+                    "addressType": "Current",
+                    "startDate": {
+                        "month": 2,
+                        "year": 2016
+                    }
+                }
+            ]
+        },
+        "creditPlan": {
+            "planNumber": "20010",
+            "periodDuration": 12,
+            "apr": 1.0
+        },
+        "errorDescription": "\"customer.income.yearlyIncomeBeforeTax\" is required"
+    },
+    {
+        "scenario": "customer.maritalStatusCode is required",
+        "scenarioType": "invalid",
+        "messageId": "2a05f77c-7fed-484a-8e05-9880deed341f",
+        "termsAndConditions": [
+            {
+                "tsAndCsType": "CreditSubjectToStatus",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "HowWeWillUseYourData",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "MarketingComms",
+                "agreed": true,
+                "agreedDateTime": 48
+            }
+        ],
+        "customer": {
+            "additionalNeeds": "0",
+            "emailAddress": "joe@email.com",
+            "nationalityCode": "GB",
+            "numberOfDependents": 1,
+            "mobilePhoneNumber": "07558334222",
+            "monthlyMortgageRent": 1,
+            "dateOfBirth": "1900-01-01",
+            "residentialStatusCode": "M",
+            "employment": {
+                "employerName": "n/a",
+                "employmentStatusCode": "EMP",
+                "occupationCode": "33"
+            },
+            "income": {
+                "yearlyIncomeBeforeTax": 33000,
+                "otherIncome": 0
+            },
+            "addresses": [
+                {
+                    "addressType": "Current",
+                    "startDate": {
+                        "month": 2,
+                        "year": 2016
+                    }
+                }
+            ]
+        },
+        "creditPlan": {
+            "planNumber": "20010",
+            "periodDuration": 12,
+            "apr": 1.0
+        },
+        "errorDescription": "\"customer.maritalStatusCode\" is required"
+    },
+    {
+        "scenario": "customer.mobilePhoneNumber is required",
+        "scenarioType": "invalid",
+        "messageId": "2a05f77c-7fed-484a-8e05-9880deed341f",
+        "termsAndConditions": [
+            {
+                "tsAndCsType": "CreditSubjectToStatus",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "HowWeWillUseYourData",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "MarketingComms",
+                "agreed": true,
+                "agreedDateTime": 48
+            }
+        ],
+        "customer": {
+            "additionalNeeds": "0",
+            "emailAddress": "joe@email.com",
+            "nationalityCode": "GB",
+            "numberOfDependents": 1,
+            "monthlyMortgageRent": 1,
+            "dateOfBirth": "1900-01-01",
+            "maritalStatusCode": "M",
+            "residentialStatusCode": "M",
+            "employment": {
+                "employerName": "n/a",
+                "employmentStatusCode": "EMP",
+                "occupationCode": "33"
+            },
+            "income": {
+                "yearlyIncomeBeforeTax": 33000,
+                "otherIncome": 0
+            },
+            "addresses": [
+                {
+                    "addressType": "Current",
+                    "startDate": {
+                        "month": 2,
+                        "year": 2016
+                    }
+                }
+            ]
+        },
+        "creditPlan": {
+            "planNumber": "20010",
+            "periodDuration": 12,
+            "apr": 1.0
+        },
+        "errorDescription": "\"customer.mobilePhoneNumber\" is required"
+    },
+    {
+        "scenario": "customer.monthlyMortgageRent is required",
+        "scenarioType": "invalid",
+        "messageId": "2a05f77c-7fed-484a-8e05-9880deed341f",
+        "termsAndConditions": [
+            {
+                "tsAndCsType": "CreditSubjectToStatus",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "HowWeWillUseYourData",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "MarketingComms",
+                "agreed": true,
+                "agreedDateTime": 48
+            }
+        ],
+        "customer": {
+            "additionalNeeds": "0",
+            "emailAddress": "joe@email.com",
+            "nationalityCode": "GB",
+            "numberOfDependents": 1,
+            "mobilePhoneNumber": "07558334222",
+            "dateOfBirth": "1900-01-01",
+            "maritalStatusCode": "M",
+            "residentialStatusCode": "M",
+            "employment": {
+                "employerName": "n/a",
+                "employmentStatusCode": "EMP",
+                "occupationCode": "33"
+            },
+            "income": {
+                "yearlyIncomeBeforeTax": 33000,
+                "otherIncome": 0
+            },
+            "addresses": [
+                {
+                    "addressType": "Current",
+                    "startDate": {
+                        "month": 2,
+                        "year": 2016
+                    }
+                }
+            ]
+        },
+        "creditPlan": {
+            "planNumber": "20010",
+            "periodDuration": 12,
+            "apr": 1.0
+        },
+        "errorDescription": "\"customer.monthlyMortgageRent\" is required"
+    },
+    {
+        "scenario": "customer.nationalityCode is required",
+        "scenarioType": "invalid",
+        "messageId": "2a05f77c-7fed-484a-8e05-9880deed341f",
+        "termsAndConditions": [
+            {
+                "tsAndCsType": "CreditSubjectToStatus",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "HowWeWillUseYourData",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "MarketingComms",
+                "agreed": true,
+                "agreedDateTime": 48
+            }
+        ],
+        "customer": {
+            "additionalNeeds": "0",
+            "emailAddress": "joe@email.com",
+            "numberOfDependents": 1,
+            "mobilePhoneNumber": "07558334222",
+            "monthlyMortgageRent": 1,
+            "dateOfBirth": "1900-01-01",
+            "maritalStatusCode": "M",
+            "residentialStatusCode": "M",
+            "employment": {
+                "employerName": "n/a",
+                "employmentStatusCode": "EMP",
+                "occupationCode": "33"
+            },
+            "income": {
+                "yearlyIncomeBeforeTax": 33000,
+                "otherIncome": 0
+            },
+            "addresses": [
+                {
+                    "addressType": "Current",
+                    "startDate": {
+                        "month": 2,
+                        "year": 2016
+                    }
+                }
+            ]
+        },
+        "creditPlan": {
+            "planNumber": "20010",
+            "periodDuration": 12,
+            "apr": 1.0
+        },
+        "errorDescription": "\"customer.nationalityCode\" is required"
+    },
+    {
+        "scenario": "customer.numberOfDependents is required",
+        "scenarioType": "invalid",
+        "messageId": "2a05f77c-7fed-484a-8e05-9880deed341f",
+        "termsAndConditions": [
+            {
+                "tsAndCsType": "CreditSubjectToStatus",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "HowWeWillUseYourData",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "MarketingComms",
+                "agreed": true,
+                "agreedDateTime": 48
+            }
+        ],
+        "customer": {
+            "additionalNeeds": "0",
+            "emailAddress": "joe@email.com",
+            "nationalityCode": "GB",
+            "mobilePhoneNumber": "07558334222",
+            "monthlyMortgageRent": 1,
+            "dateOfBirth": "1900-01-01",
+            "maritalStatusCode": "M",
+            "residentialStatusCode": "M",
+            "employment": {
+                "employerName": "n/a",
+                "employmentStatusCode": "EMP",
+                "occupationCode": "33"
+            },
+            "income": {
+                "yearlyIncomeBeforeTax": 33000,
+                "otherIncome": 0
+            },
+            "addresses": [
+                {
+                    "addressType": "Current",
+                    "startDate": {
+                        "month": 2,
+                        "year": 2016
+                    }
+                }
+            ]
+        },
+        "creditPlan": {
+            "planNumber": "20010",
+            "periodDuration": 12,
+            "apr": 1.0
+        },
+        "errorDescription": "\"customer.numberOfDependents\" is required"
+    },
+    {
+        "scenario": "customer.residentialStatusCode is required",
+        "scenarioType": "invalid",
+        "messageId": "2a05f77c-7fed-484a-8e05-9880deed341f",
+        "termsAndConditions": [
+            {
+                "tsAndCsType": "CreditSubjectToStatus",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "HowWeWillUseYourData",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "MarketingComms",
+                "agreed": true,
+                "agreedDateTime": 48
+            }
+        ],
+        "customer": {
+            "additionalNeeds": "0",
+            "emailAddress": "joe@email.com",
+            "nationalityCode": "GB",
+            "numberOfDependents": 1,
+            "mobilePhoneNumber": "07558334222",
+            "monthlyMortgageRent": 1,
+            "dateOfBirth": "1900-01-01",
+            "maritalStatusCode": "M",
+            "employment": {
+                "employerName": "n/a",
+                "employmentStatusCode": "EMP",
+                "occupationCode": "33"
+            },
+            "income": {
+                "yearlyIncomeBeforeTax": 33000,
+                "otherIncome": 0
+            },
+            "addresses": [
+                {
+                    "addressType": "Current",
+                    "startDate": {
+                        "month": 2,
+                        "year": 2016
+                    }
+                }
+            ]
+        },
+        "creditPlan": {
+            "planNumber": "20010",
+            "periodDuration": 12,
+            "apr": 1.0
+        },
+        "errorDescription": "\"customer.residentialStatusCode\" is required"
+    },
+    {
+        "scenario": "messageId is required",
+        "scenarioType": "invalid",
+        "termsAndConditions": [
+            {
+                "tsAndCsType": "CreditSubjectToStatus",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "HowWeWillUseYourData",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "MarketingComms",
+                "agreed": true,
+                "agreedDateTime": 48
+            }
+        ],
+        "customer": {
+            "additionalNeeds": "0",
+            "emailAddress": "joe@email.com",
+            "nationalityCode": "GB",
+            "numberOfDependents": 1,
+            "mobilePhoneNumber": "07558334222",
+            "monthlyMortgageRent": 1,
+            "dateOfBirth": "1900-01-01",
+            "maritalStatusCode": "M",
+            "residentialStatusCode": "M",
+            "employment": {
+                "employerName": "n/a",
+                "employmentStatusCode": "EMP",
+                "occupationCode": "33"
+            },
+            "income": {
+                "yearlyIncomeBeforeTax": 33000,
+                "otherIncome": 0
+            },
+            "addresses": [
+                {
+                    "addressType": "Current",
+                    "startDate": {
+                        "month": 2,
+                        "year": 2016
+                    }
+                }
+            ]
+        },
+        "creditPlan": {
+            "planNumber": "20010",
+            "periodDuration": 12,
+            "apr": 1.0
+        },
+        "errorDescription": "\"messageId\" is required"
+    },
+    {
+        "scenario": "terms and conditions is invalid",
+        "scenarioType": "invalid",
+        "messageId": "2a05f77c-7fed-484a-8e05-9880deed341f",
+        "termsAndConditions": [
+            {
+                "tsAndCsType": "ABC",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "HowWeWillUseYourData",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "MarketingComms",
+                "agreed": true,
+                "agreedDateTime": 48
+            }
+        ],
+        "customer": {
+            "additionalNeeds": "0",
+            "emailAddress": "joe@email.com",
+            "nationalityCode": "GB",
+            "numberOfDependents": 1,
+            "mobilePhoneNumber": "07558334222",
+            "monthlyMortgageRent": 1,
+            "dateOfBirth": "1900-01-01",
+            "maritalStatusCode": "M",
+            "residentialStatusCode": "M",
+            "employment": {
+                "employerName": "n/a",
+                "employmentStatusCode": "EMP",
+                "occupationCode": "33"
+            },
+            "income": {
+                "yearlyIncomeBeforeTax": 33000,
+                "otherIncome": 0
+            },
+            "addresses": [
+                {
+                    "addressType": "Current",
+                    "startDate": {
+                        "month": 2,
+                        "year": 2016
+                    }
+                }
+            ]
+        },
+        "creditPlan": {
+            "planNumber": "20010",
+            "periodDuration": 12,
+            "apr": 1.0
+        },
+        "errorDescription": "\"termsAndConditions[0].tsAndCsType\" must be one of"
+    },
+    {
+        "scenario": "typeof customer.additionalNeeds is invalid - number",
+        "scenarioType": "invalid",
+        "messageId": "2a05f77c-7fed-484a-8e05-9880deed341f",
+        "termsAndConditions": [
+            {
+                "tsAndCsType": "CreditSubjectToStatus",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "HowWeWillUseYourData",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "MarketingComms",
+                "agreed": true,
+                "agreedDateTime": 48
+            }
+        ],
+        "customer": {
+            "additionalNeeds": 0,
+            "emailAddress": "joe@email.com",
+            "nationalityCode": "GB",
+            "numberOfDependents": 1,
+            "mobilePhoneNumber": "07558334222",
+            "monthlyMortgageRent": 1,
+            "dateOfBirth": "1900-01-01",
+            "maritalStatusCode": "M",
+            "residentialStatusCode": "M",
+            "employment": {
+                "employerName": "n/a",
+                "employmentStatusCode": "EMP",
+                "occupationCode": "33"
+            },
+            "income": {
+                "yearlyIncomeBeforeTax": 33000,
+                "otherIncome": 0
+            },
+            "addresses": [
+                {
+                    "addressType": "Current",
+                    "startDate": {
+                        "month": 2,
+                        "year": 2016
+                    }
+                }
+            ]
+        },
+        "creditPlan": {
+            "planNumber": "20010",
+            "periodDuration": 12,
+            "apr": 1.0
+        },
+        "errorDescription": "\"customer.additionalNeeds\" must be one of [0, 1, 2, 3]. \"customer.additionalNeeds\" must be a string"
+    },
+    {
+        "scenario": "customer.additionalNeeds is invalid - special character",
+        "scenarioType": "invalid",
+        "messageId": "2a05f77c-7fed-484a-8e05-9880deed341f",
+        "termsAndConditions": [
+            {
+                "tsAndCsType": "CreditSubjectToStatus",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "HowWeWillUseYourData",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "MarketingComms",
+                "agreed": true,
+                "agreedDateTime": 48
+            }
+        ],
+        "customer": {
+            "additionalNeeds": "$",
+            "emailAddress": "joe@email.com",
+            "nationalityCode": "GB",
+            "numberOfDependents": 1,
+            "mobilePhoneNumber": "07558334222",
+            "monthlyMortgageRent": 1,
+            "dateOfBirth": "1900-01-01",
+            "maritalStatusCode": "M",
+            "residentialStatusCode": "M",
+            "employment": {
+                "employerName": "n/a",
+                "employmentStatusCode": "EMP",
+                "occupationCode": "33"
+            },
+            "income": {
+                "yearlyIncomeBeforeTax": 33000,
+                "otherIncome": 0
+            },
+            "addresses": [
+                {
+                    "addressType": "Current",
+                    "startDate": {
+                        "month": 2,
+                        "year": 2016
+                    }
+                }
+            ]
+        },
+        "creditPlan": {
+            "planNumber": "20010",
+            "periodDuration": 12,
+            "apr": 1.0
+        },
+        "errorDescription": "\"customer.additionalNeeds\" must be one of [0, 1, 2, 3]"
+    },
+    {
+        "scenario": "customer.additionalNeeds is invalid - empty string",
+        "scenarioType": "invalid",
+        "messageId": "2a05f77c-7fed-484a-8e05-9880deed341f",
+        "termsAndConditions": [
+            {
+                "tsAndCsType": "CreditSubjectToStatus",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "HowWeWillUseYourData",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "MarketingComms",
+                "agreed": true,
+                "agreedDateTime": 48
+            }
+        ],
+        "customer": {
+            "additionalNeeds": "",
+            "emailAddress": "joe@email.com",
+            "nationalityCode": "GB",
+            "numberOfDependents": 1,
+            "mobilePhoneNumber": "07558334222",
+            "monthlyMortgageRent": 1,
+            "dateOfBirth": "1900-01-01",
+            "maritalStatusCode": "M",
+            "residentialStatusCode": "M",
+            "employment": {
+                "employerName": "n/a",
+                "employmentStatusCode": "EMP",
+                "occupationCode": "33"
+            },
+            "income": {
+                "yearlyIncomeBeforeTax": 33000,
+                "otherIncome": 0
+            },
+            "addresses": [
+                {
+                    "addressType": "Current",
+                    "startDate": {
+                        "month": 2,
+                        "year": 2016
+                    }
+                }
+            ]
+        },
+        "creditPlan": {
+            "planNumber": "20010",
+            "periodDuration": 12,
+            "apr": 1.0
+        },
+        "errorDescription": "\"customer.additionalNeeds\" must be one of [0, 1, 2, 3]. \"customer.additionalNeeds\" is not allowed to be empty"
+    },
+    {
+        "scenario": "customer.additionalNeeds option is valid - 1",
+        "scenarioType": "valid",
+        "messageId": "2a05f77c-7fed-484a-8e05-9880deed341f",
+        "termsAndConditions": [
+            {
+                "tsAndCsType": "CreditSubjectToStatus",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "HowWeWillUseYourData",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "MarketingComms",
+                "agreed": true,
+                "agreedDateTime": 48
+            }
+        ],
+        "customer": {
+            "additionalNeeds": "1",
+            "emailAddress": "joe@email.com",
+            "nationalityCode": "GB",
+            "numberOfDependents": 1,
+            "mobilePhoneNumber": "07558334222",
+            "monthlyMortgageRent": 300,
+            "dateOfBirth": "1993-12-31",
+            "maritalStatusCode": "M",
+            "residentialStatusCode": "M",
+            "employment": {
+                "employerName": "n/a",
+                "employmentStatusCode": "EMP",
+                "occupationCode": "33"
+            },
+            "income": {
+                "yearlyIncomeBeforeTax": 33000,
+                "otherIncome": 0
+            },
+            "addresses": [
+                {
+                    "addressType": "Current",
+                    "startDate": {
+                        "month": 2,
+                        "year": 2016
+                    }
+                }
+            ]
+        },
+        "creditPlan": {
+            "planNumber": "20010",
+            "periodDuration": 12,
+            "apr": 1.0
+        }
+    },
+    {
+        "scenario": "customer.additionalNeeds option is valid - 2",
+        "scenarioType": "valid",
+        "messageId": "2a05f77c-7fed-484a-8e05-9880deed341f",
+        "termsAndConditions": [
+            {
+                "tsAndCsType": "CreditSubjectToStatus",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "HowWeWillUseYourData",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "MarketingComms",
+                "agreed": true,
+                "agreedDateTime": 48
+            }
+        ],
+        "customer": {
+            "additionalNeeds": "2",
+            "emailAddress": "joe@email.com",
+            "nationalityCode": "GB",
+            "numberOfDependents": 1,
+            "mobilePhoneNumber": "07558334222",
+            "monthlyMortgageRent": 1,
+            "dateOfBirth": "1993-12-31",
+            "maritalStatusCode": "M",
+            "residentialStatusCode": "M",
+            "employment": {
+                "employerName": "n/a",
+                "employmentStatusCode": "EMP",
+                "occupationCode": "33"
+            },
+            "income": {
+                "yearlyIncomeBeforeTax": 33000,
+                "otherIncome": 0
+            },
+            "addresses": [
+                {
+                    "addressType": "Current",
+                    "startDate": {
+                        "month": 2,
+                        "year": 2016
+                    }
+                }
+            ]
+        },
+        "creditPlan": {
+            "planNumber": "20010",
+            "periodDuration": 12,
+            "apr": 1.0
+        }
+    },
+    {
+        "scenario": "customer.additionalNeeds option is valid - 3",
+        "scenarioType": "valid",
+        "messageId": "126f2a5e-5f3c-4851-8346-6eaa0f7543zs3",
+        "termsAndConditions": [
+            {
+                "tsAndCsType": "CreditSubjectToStatus",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "HowWeWillUseYourData",
+                "agreed": true,
+                "agreedDateTime": 48
+            },
+            {
+                "tsAndCsType": "MarketingComms",
+                "agreed": true,
+                "agreedDateTime": 48
+            }
+        ],
+        "customer": {
+            "additionalNeeds": "3",
+            "emailAddress": "benjamin.shales@gmail.com",
+            "nationalityCode": "GB",
+            "numberOfDependents": 1,
+            "mobilePhoneNumber": "07558334222",
+            "monthlyMortgageRent": 300,
+            "dateOfBirth": "1990-01-01",
+            "maritalStatusCode": "M",
+            "residentialStatusCode": "M",
+            "employment": {
+                "employerName": "n/a",
+                "employmentStatusCode": "EMP",
+                "occupationCode": "33"
+            },
+            "income": {
+                "yearlyIncomeBeforeTax": 33000,
+                "otherIncome": 0
+            },
+            "addresses": [
+                {
+                    "addressType": "Current",
+                    "startDate": {
+                        "month": 2,
+                        "year": 2016
+                    }
+                }
+            ]
+        },
+        "creditPlan": {
+            "planNumber": "20010",
+            "periodDuration": 12,
+            "apr": 1.0
+        }
+    }
+]

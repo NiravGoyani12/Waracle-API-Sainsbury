@@ -1,0 +1,42 @@
+
+body,
+h2,
+h3,
+h4,
+h5,
+h6,
+td,
+th,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-family: Verdana, sans-serif !important;
+    background-color: #222;
+    color: #ffffff;
+}
+p {
+    font-family: Verdana, sans-serif !important;
+    background-color: #222;
+    color: #ccd2d8;
+    line-height: 1rem !important;
+    padding-top: 5px !important;
+}
+.italics {
+    font-style: italic !important;
+}
+.underline {
+    text-decoration: underline;
+}
+.red {color: red;}
+.grey {color: #ccd2d8;}
+.green {color: teal !important;}
+.assertion {
+    color: #c0c0c0 !important;
+    line-height: 25px !important;
+}
+#detail {
+    padding-bottom: 20px !important;
+}

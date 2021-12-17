@@ -1,0 +1,315 @@
+[
+    {
+        "scenario": "all req'd fields missing",
+        "customer": {
+            "middleName": "abc",
+            "billingAddress": {
+                "county": "London"
+            }
+        },
+        "errorDescription": [
+            "customer.billingAddress.line1 is required",
+            "customer.billingAddress.postCode is required",
+            "customer.billingAddress.town is required",
+            "customer.firstName is required",
+            "customer.lastName is required",
+            "customer.title is required",
+            "messageId is required",
+            "verificationToken is required",
+            "authAmount is required"
+        ]
+    },
+    {
+        "scenario": "messageId field is req'd",
+        "verificationToken": "effeb69e-5748-4da5-9896-06a303362dec",
+        "customer": {
+            "title": "Mr",
+            "firstName": "John",
+            "lastName": "Doe",
+            "middleName": "Mark",
+            "billingAddress": {
+                "houseNumber": "2",
+                "line1": "Abel Road",
+                "postCode": "HA0 4AF",
+                "town": "London"
+            }
+        },
+        "authAmount": 310.00,
+        "errorDescription": [
+            "messageId is required"
+        ]
+    },
+    {
+        "scenario": "verificationToken field is req'd",
+        "messageId": "2a05f77c-7fed-484a-8e05-9880deed341f",
+        "customer": {
+            "title": "Mr",
+            "firstName": "John",
+            "lastName": "Doe",
+            "middleName": "Mark",
+            "billingAddress": {
+                "houseNumber": "2",
+                "line1": "Abel Road",
+                "postCode": "HA0 4AF",
+                "town": "London"
+            }
+        },
+        "authAmount": 310.00,
+        "errorDescription": [
+            "verificationToken is required"
+        ]
+    },
+    {
+        "scenario": "customer title field is req'd",
+        "messageId": "2a05f77c-7fed-484a-8e05-9880deed341f",
+        "verificationToken": "effeb69e-5748-4da5-9896-06a303362dec",
+        "customer": {
+            "firstName": "John",
+            "lastName": "Doe",
+            "middleName": "Mark",
+            "billingAddress": {
+                "houseNumber": "2",
+                "line1": "Abel Road",
+                "postCode": "HA0 4AF",
+                "town": "London"
+            }
+        },
+        "authAmount": 310.00,
+        "errorDescription": [
+            "customer.title is required"
+        ]
+    },
+    {
+        "scenario": "customer firstName field is req'd",
+        "messageId": "2a05f77c-7fed-484a-8e05-9880deed341f",
+        "verificationToken": "effeb69e-5748-4da5-9896-06a303362dec",
+        "customer": {
+            "title": "Mr",
+            "lastName": "Doe",
+            "middleName": "Mark",
+            "billingAddress": {
+                "houseNumber": "2",
+                "line1": "Abel Road",
+                "postCode": "HA0 4AF",
+                "town": "London"
+            }
+        },
+        "authAmount": 310.00,
+        "errorDescription": [
+            "customer.firstName is required"
+        ]
+    },
+    {
+        "scenario": "customer lastName field is req'd",
+        "messageId": "2a05f77c-7fed-484a-8e05-9880deed341f",
+        "verificationToken": "effeb69e-5748-4da5-9896-06a303362dec",
+        "customer": {
+            "title": "Mr",
+            "firstName": "John",
+            "middleName": "Mark",
+            "billingAddress": {
+                "houseNumber": "2",
+                "line1": "Abel Road",
+                "postCode": "HA0 4AF",
+                "town": "London"
+            }
+        },
+        "authAmount": 310.00,
+        "errorDescription": [
+            "customer.lastName is required"
+        ]
+    },
+    {
+        "scenario": "customer billingAddress line1 field is req'd",
+        "messageId": "2a05f77c-7fed-484a-8e05-9880deed341f",
+        "verificationToken": "effeb69e-5748-4da5-9896-06a303362dec",
+        "customer": {
+            "title": "Mr",
+            "firstName": "John",
+            "lastName": "Doe",
+            "middleName": "Mark",
+            "billingAddress": {
+                "houseNumber": "2",
+                "postCode": "HA0 4AF",
+                "town": "London"
+            }
+        },
+        "authAmount": 310.00,
+        "errorDescription": [
+            "customer.billingAddress.line1 is required"
+        ]
+    },
+    {
+        "scenario": "customer billingAddress postCode field is req'd",
+        "messageId": "2a05f77c-7fed-484a-8e05-9880deed341f",
+        "verificationToken": "effeb69e-5748-4da5-9896-06a303362dec",
+        "customer": {
+            "title": "Mr",
+            "firstName": "John",
+            "lastName": "Doe",
+            "middleName": "Mark",
+            "billingAddress": {
+                "houseNumber": "2",
+                "line1": "Abel Road",
+                "town": "London"
+            }
+        },
+        "authAmount": 310.00,
+        "errorDescription": [
+            "customer.billingAddress.postCode is required"
+        ]
+    },
+    {
+        "scenario": "customer billingAddress town field is req'd",
+        "messageId": "2a05f77c-7fed-484a-8e05-9880deed341f",
+        "verificationToken": "effeb69e-5748-4da5-9896-06a303362dec",
+        "customer": {
+            "title": "Mr",
+            "firstName": "John",
+            "lastName": "Doe",
+            "middleName": "Mark",
+            "billingAddress": {
+                "houseNumber": "2",
+                "line1": "Abel Road",
+                "postCode": "HA0 4AF"
+            }
+        },
+        "authAmount": 310.00,
+        "errorDescription": [
+            "customer.billingAddress.town is required"
+        ]
+    },
+    {
+        "scenario": "authAmount field is req'd",
+        "messageId": "2a05f77c-7fed-484a-8e05-9880deed341f",
+        "verificationToken": "effeb69e-5748-4da5-9896-06a303362dec",
+        "customer": {
+            "title": "Mr",
+            "firstName": "John",
+            "lastName": "Doe",
+            "middleName": "Mark",
+            "billingAddress": {
+                "houseNumber": "2",
+                "line1": "Abel Road",
+                "town": "London",
+                "postCode": "HA0 4AF"
+            }
+        },
+        "errorDescription": [
+            "authAmount is required"
+        ]
+    },{
+        "scenario": "verificationToken is not of type UUIDv4",
+        "messageId": "2a05f77c-7fed-484a-8e05-9880deed341f",
+        "verificationToken": "06a303362dec",
+        "customer": {
+            "title": "Mr",
+            "firstName": "John",
+            "lastName": "Doe",
+            "middleName": "Mark",
+            "billingAddress": {
+                "houseNumber": "2",
+                "line1": "Abel Road",
+                "town": "London",
+                "postCode": "HA0 4AF"
+            }
+        },
+        "authAmount": 310.00,
+        "errorDescription": [
+            "verificationToken fails to match the required pattern: /^([a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12})$/i"
+        ]
+    },
+    {
+        "scenario": "customer object is req'd",
+        "messageId": "2a05f77c-7fed-484a-8e05-9880deed341f",
+        "verificationToken": "effeb69e-5748-4da5-9896-06a303362dec",
+        "authAmount": 310.00,
+        "errorDescription": [
+            "customer is required"
+        ]
+    },
+    {
+        "scenario": "customer title is invalid",
+        "messageId": "2a05f77c-7fed-484a-8e05-9880deed341f",
+        "verificationToken": "effeb69e-5748-4da5-9896-06a303362dec",
+        "customer": {
+            "title": "AAA",
+            "firstName": "John",
+            "lastName": "Doe",
+            "middleName": "Mark",
+            "billingAddress": {
+                "houseNumber": "2",
+                "line1": "Abel Road",
+                "town": "London",
+                "postCode": "HA0 4AF"
+            }
+        },
+        "authAmount": 310.00,
+        "errorDescription": [
+            "customer.title must be one of [Mr, Mrs, Ms, Miss, Mx, Capt, Dr, Fr, Lady, Lord, MSTR, Prof, Rev, Sgt, Sir]"
+        ]
+    },
+    {
+        "scenario": "customer firstName is longer than 100 characters",
+        "messageId": "2a05f77c-7fed-484a-8e05-9880deed341f",
+        "verificationToken": "effeb69e-5748-4da5-9896-06a303362dec",
+        "customer": {
+            "title": "Mr",
+            "firstName": "VJvjDy4a3TGVnxFUUPBh8P9vDdsD8l7w3roB3mLWHqScZEOIBN9uIi7rpwPntnyBp7OBpPBMoNWCWIdGM4CXST0HkYvygVusiYIJe",
+            "lastName": "Doe",
+            "middleName": "Mark",
+            "billingAddress": {
+                "houseNumber": "2",
+                "line1": "Abel Road",
+                "town": "London",
+                "postCode": "HA0 4AF"
+            }
+        },
+        "authAmount": 310.00,
+        "errorDescription": [
+            "customer.firstName length must be less than or equal to 100 characters long"
+        ]
+    },
+    {
+        "scenario": "customer lastName is longer than 100 characters",
+        "messageId": "2a05f77c-7fed-484a-8e05-9880deed341f",
+        "verificationToken": "effeb69e-5748-4da5-9896-06a303362dec",
+        "customer": {
+            "title": "Mr",
+            "firstName": "John",
+            "lastName": "VJvjDy4a3TGVnxFUUPBh8P9vDdsD8l7w3roB3mLWHqScZEOIBN9uIi7rpwPntnyBp7OBpPBMoNWCWIdGM4CXST0HkYvygVusiYIJe",
+            "middleName": "Mark",
+            "billingAddress": {
+                "houseNumber": "2",
+                "line1": "Abel Road",
+                "town": "London",
+                "postCode": "HA0 4AF"
+            }
+        },
+        "authAmount": 310.00,
+        "errorDescription": [
+            "customer.lastName length must be less than or equal to 100 characters long"
+        ]
+    },
+    {
+        "scenario": "customer middleName is longer than 100 characters",
+        "messageId": "2a05f77c-7fed-484a-8e05-9880deed341f",
+        "verificationToken": "effeb69e-5748-4da5-9896-06a303362dec",
+        "customer": {
+            "title": "Mr",
+            "firstName": "John",
+            "lastName": "Doe",
+            "middleName": "VJvjDy4a3TGVnxFUUPBh8P9vDdsD8l7w3roB3mLWHqScZEOIBN9uIi7rpwPntnyBp7OBpPBMoNWCWIdGM4CXST0HkYvygVusiYIJe",
+            "billingAddress": {
+                "houseNumber": "2",
+                "line1": "Abel Road",
+                "town": "London",
+                "postCode": "HA0 4AF"
+            }
+        },
+        "authAmount": 310.00,
+        "errorDescription": [
+            "customer.middleName length must be less than or equal to 100 characters long"
+        ]
+    }
+]

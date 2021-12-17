@@ -1,0 +1,359 @@
+[
+  {
+    "testName": "messageId typical",
+    "fields": {
+        "name": "messageId",
+        "value": "5ec8af2d-5c05-4903-8d56-ba5f9765d1ee"
+    },
+    "expectedResponseCode": 200
+  },
+  {
+    "testName": "messageId empty",
+    "fields": {
+        "name": "messageId",
+        "value": ""
+    },
+    "expectedResponseCode": 400,
+    "expectedErrorName": "BANK_ACCOUNT_REQUEST_INVALID",
+    "expectedErrorMessage": "\"messageId\" contains an invalid value. \"messageId\" is not allowed to be empty"
+  },
+  {
+    "testName": "messageId missing",
+    "fields": {
+        "name": "messageId"
+    },
+    "expectedResponseCode": 400,
+    "expectedErrorName": "BANK_ACCOUNT_REQUEST_INVALID",
+    "expectedErrorMessage": "\"messageId\" is required"
+  },
+  {
+    "testName": "messageId null",
+    "fields": {
+        "name": "messageId",
+        "value": null
+    },
+    "expectedResponseCode": 400,
+    "expectedErrorName": "BANK_ACCOUNT_REQUEST_INVALID",
+    "expectedErrorMessage": "\"messageId\" must be a string"
+  },
+  {
+    "testName": "messageId very big",
+    "fields": {
+        "name": "messageId",
+        "value": "5ec8af2d-5c05-4903-8d56-ba5f9765d1ee-5ec8af2d-5c05-4903-8d56-ba5f9765d1ee-5ec8af2d-5c05-4903-8d56-ba5f9765d1ee-5ec8af2d-5c05-4903-8d56-ba5f9765d1ee5ec8af2d-5c05-4903-8d56-ba5f9765d1ee"
+    },
+    "expectedResponseCode": 400,
+    "expectedErrorName": "BANK_ACCOUNT_REQUEST_INVALID",
+    "expectedErrorMessage": "\"messageId\" length must be less than or equal to 50 characters long"
+  },
+  {
+    "testName": "messageId very small",
+    "fields": {
+        "name": "messageId",
+        "value": "7"
+    },
+    "expectedResponseCode": 200
+  },
+  {
+    "testName": "messageId with punctuation",
+    "fields": {
+        "name": "messageId",
+        "value": "5ec8af2d-5c05-4903-8d56-ba5f9765d,;!"
+    },
+    "expectedResponseCode": 400,
+    "expectedErrorName": "BANK_ACCOUNT_REQUEST_INVALID",
+    "expectedErrorMessage": "\"messageId\" fails to match the required pattern: /^[^~`§±!@€£#$%^&(){}|:;\"’<>,.?¡¢¶•ªº«\\s]*$/"
+  },
+
+  {
+    "testName": "sortCode typical",
+    "fields": {
+        "name": "sortCode",
+        "value": "070116"
+    },
+    "expectedResponseCode": 200
+  },
+  {
+    "testName": "sortCode empty",
+    "fields": {
+        "name": "sortCode",
+        "value": ""
+    },
+    "expectedResponseCode": 400,
+    "expectedErrorName": "BANK_ACCOUNT_REQUEST_INVALID",
+    "expectedErrorMessage": "\"sortCode\" is not allowed to be empty"
+  },
+  {
+    "testName": "sortCode missing",
+    "fields": {
+        "name": "sortCode"
+    },
+    "expectedResponseCode": 400,
+    "expectedErrorName": "BANK_ACCOUNT_REQUEST_INVALID",
+    "expectedErrorMessage": "\"sortCode\" is required"
+  },
+  {
+    "testName": "sortCode null",
+    "fields": {
+        "name": "sortCode",
+        "value": null
+    },
+    "expectedResponseCode": 400,
+    "expectedErrorName": "BANK_ACCOUNT_REQUEST_INVALID",
+    "expectedErrorMessage": "\"sortCode\" must be a string"
+  },
+  {
+    "testName": "sortCode very big",
+    "fields": {
+        "name": "sortCode",
+        "value": "070116070116070116070116070116070116070116070116070116"
+    },
+    "expectedResponseCode": 400,
+    "expectedErrorName": "BANK_ACCOUNT_REQUEST_INVALID",
+    "expectedErrorMessage": "\"sortCode\" fails to match the required pattern: /^[0-9]{6}$/"
+  },
+  {
+    "testName": "sortCode very small",
+    "fields": {
+        "name": "sortCode",
+        "value": "7"
+    },
+    "expectedResponseCode": 400,
+    "expectedErrorName": "BANK_ACCOUNT_REQUEST_INVALID",
+    "expectedErrorMessage": "\"sortCode\" fails to match the required pattern: /^[0-9]{6}$/"
+  },
+  {
+    "testName": "sortCode with punctuation",
+    "fields": {
+        "name": "sortCode",
+        "value": "070,;!"
+    },
+    "expectedResponseCode": 400,
+    "expectedErrorName": "BANK_ACCOUNT_REQUEST_INVALID",
+    "expectedErrorMessage": "\"sortCode\" fails to match the required pattern: /^[0-9]{6}$/"
+  },
+
+  {
+    "testName": "accountNumber typical",
+    "fields": {
+        "name": "accountNumber",
+        "value": "00003536"
+    },
+    "expectedResponseCode": 200
+  },
+  {
+    "testName": "accountNumber empty",
+    "fields": {
+        "name": "accountNumber",
+        "value": ""
+    },
+    "expectedResponseCode": 400,
+    "expectedErrorName": "BANK_ACCOUNT_REQUEST_INVALID",
+    "expectedErrorMessage": "\"accountNumber\" is not allowed to be empty"
+  },
+  {
+    "testName": "accountNumber missing",
+    "fields": {
+        "name": "accountNumber"
+    },
+    "expectedResponseCode": 400,
+    "expectedErrorName": "BANK_ACCOUNT_REQUEST_INVALID",
+    "expectedErrorMessage": "\"accountNumber\" is required"
+  },
+  {
+    "testName": "accountNumber null",
+    "fields": {
+        "name": "accountNumber",
+        "value": null
+    },
+    "expectedResponseCode": 400,
+    "expectedErrorName": "BANK_ACCOUNT_REQUEST_INVALID",
+    "expectedErrorMessage": "\"accountNumber\" must be a string"
+  },
+  {
+    "testName": "accountNumber very big",
+    "fields": {
+        "name": "accountNumber",
+        "value": "070116070116070116070116070116070116070116070116070116"
+    },
+    "expectedResponseCode": 400,
+    "expectedErrorName": "BANK_ACCOUNT_REQUEST_INVALID",
+    "expectedErrorMessage": "\"accountNumber\" fails to match the required pattern: /^[0-9]{8}$/"
+  },
+  {
+    "testName": "accountNumber very small",
+    "fields": {
+        "name": "accountNumber",
+        "value": "7"
+    },
+    "expectedResponseCode": 400,
+    "expectedErrorName": "BANK_ACCOUNT_REQUEST_INVALID",
+    "expectedErrorMessage": "\"accountNumber\" fails to match the required pattern: /^[0-9]{8}$/"
+  },
+  {
+    "testName": "accountNumber with punctuation",
+    "fields": {
+        "name": "accountNumber",
+        "value": "00003,;?"
+    },
+    "expectedResponseCode": 400,
+    "expectedErrorName": "BANK_ACCOUNT_REQUEST_INVALID",
+    "expectedErrorMessage": "\"accountNumber\" fails to match the required pattern: /^[0-9]{8}$/"
+  },
+
+  {
+    "testName": "accountOpenedMonth typical",
+    "fields": {
+        "name": "accountOpenedMonth",
+        "value": 3
+    },
+    "expectedResponseCode": 200
+  },
+  {
+    "testName": "accountOpenedMonth empty",
+    "fields": {
+        "name": "accountOpenedMonth",
+        "value": ""
+    },
+    "expectedResponseCode": 400,
+    "expectedErrorName": "BANK_ACCOUNT_REQUEST_INVALID",
+    "expectedErrorMessage": "\"accountOpenedMonth\" must be a number"
+  },
+  {
+    "testName": "accountOpenedMonth missing",
+    "fields": {
+        "name": "accountOpenedMonth"
+    },
+    "expectedResponseCode": 400,
+    "expectedErrorName": "BANK_ACCOUNT_REQUEST_INVALID",
+    "expectedErrorMessage": "\"accountOpenedMonth\" is required"
+  },
+  {
+    "testName": "accountOpenedMonth null",
+    "fields": {
+        "name": "accountOpenedMonth",
+        "value": null
+    },
+    "expectedResponseCode": 400,
+    "expectedErrorName": "BANK_ACCOUNT_REQUEST_INVALID",
+    "expectedErrorMessage": "\"accountOpenedMonth\" must be a number"
+  },
+  {
+    "testName": "accountOpenedMonth very big",
+    "fields": {
+        "name": "accountOpenedMonth",
+        "value": 123456789012345678901234567890
+    },
+    "expectedResponseCode": 400,
+    "expectedErrorName": "BANK_ACCOUNT_REQUEST_INVALID",
+    "expectedErrorMessage": "\"accountOpenedMonth\" must be a safe number"
+  },
+  {
+    "testName": "accountOpenedMonth big",
+    "fields": {
+        "name": "accountOpenedMonth",
+        "value": 120
+    },
+    "expectedResponseCode": 400,
+    "expectedErrorName": "BANK_ACCOUNT_REQUEST_INVALID",
+    "expectedErrorMessage": "\"accountOpenedMonth\" must be less than or equal to 12"
+  },
+  {
+    "testName": "accountOpenedMonth very small",
+    "fields": {
+        "name": "accountOpenedMonth",
+        "value": 0
+    },
+    "expectedResponseCode": 400,
+    "expectedErrorName": "BANK_ACCOUNT_REQUEST_INVALID",
+    "expectedErrorMessage": "\"accountOpenedMonth\" must be larger than or equal to 1"
+  },
+  {
+    "testName": "accountOpenedMonth negative",
+    "fields": {
+        "name": "accountOpenedMonth",
+        "value": -5
+    },
+    "expectedResponseCode": 400,
+    "expectedErrorName": "BANK_ACCOUNT_REQUEST_INVALID",
+    "expectedErrorMessage": "\"accountOpenedMonth\" must be larger than or equal to 1"
+  },
+
+  {
+    "testName": "accountOpenedYear typical",
+    "fields": {
+        "name": "accountOpenedYear",
+        "value": 2005
+    },
+    "expectedResponseCode": 200
+  },
+  {
+    "testName": "accountOpenedYear empty",
+    "fields": {
+        "name": "accountOpenedYear",
+        "value": ""
+    },
+    "expectedResponseCode": 400,
+    "expectedErrorName": "BANK_ACCOUNT_REQUEST_INVALID",
+    "expectedErrorMessage": "\"accountOpenedYear\" must be a number"
+  },
+  {
+    "testName": "accountOpenedYear missing",
+    "fields": {
+        "name": "accountOpenedYear"
+    },
+    "expectedResponseCode": 400,
+    "expectedErrorName": "BANK_ACCOUNT_REQUEST_INVALID",
+    "expectedErrorMessage": "\"accountOpenedYear\" is required"
+  },
+  {
+    "testName": "accountOpenedYear null",
+    "fields": {
+        "name": "accountOpenedYear",
+        "value": null
+    },
+    "expectedResponseCode": 400,
+    "expectedErrorName": "BANK_ACCOUNT_REQUEST_INVALID",
+    "expectedErrorMessage": "\"accountOpenedYear\" must be a number"
+  },
+  {
+    "testName": "accountOpenedYear very big",
+    "fields": {
+        "name": "accountOpenedYear",
+        "value": 123456789012345678901234567890
+    },
+    "expectedResponseCode": 400,
+    "expectedErrorName": "BANK_ACCOUNT_REQUEST_INVALID",
+    "expectedErrorMessage": "\"accountOpenedYear\" must be a safe number"
+  },
+  {
+    "testName": "accountOpenedYear big",
+    "fields": {
+        "name": "accountOpenedYear",
+        "value": 202000
+    },
+    "expectedResponseCode": 400,
+    "expectedErrorName": "BANK_ACCOUNT_REQUEST_INVALID",
+    "expectedErrorMessage": "\"accountOpenedYear\" must be less than or equal to 2021"
+  },
+  {
+    "testName": "accountOpenedYear very small",
+    "fields": {
+        "name": "accountOpenedYear",
+        "value": 0
+    },
+    "expectedResponseCode": 400,
+    "expectedErrorName": "BANK_ACCOUNT_REQUEST_INVALID",
+    "expectedErrorMessage": "\"accountOpenedYear\" must be larger than or equal to 1900"
+  },
+  {
+    "testName": "accountOpenedYear negative",
+    "fields": {
+        "name": "accountOpenedYear",
+        "value": -5
+    },
+    "expectedResponseCode": 400,
+    "expectedErrorName": "BANK_ACCOUNT_REQUEST_INVALID",
+    "expectedErrorMessage": "\"accountOpenedYear\" must be larger than or equal to 1900"
+  }
+]

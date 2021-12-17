@@ -1,0 +1,88 @@
+[
+    {
+        "testName": "400 if messageId not provided",
+        "identityAnswers": [{"questionId": "foo", "value": "bar"}],
+        "expectedErrorMessage": "\"messageId\" is required",
+        "expectedErrorName": "POST_IDENTITY_ANSWERS_REQUEST_INVALID",
+        "expectedResponseCode": 400
+    },
+    {
+        "testName": "400 if messageId is empty",
+        "messageId": null,
+        "identityAnswers": [{"questionId": "foo", "value": "bar"}],
+        "expectedErrorMessage": "\"messageId\" must be a string",
+        "expectedErrorName": "POST_IDENTITY_ANSWERS_REQUEST_INVALID",
+        "expectedResponseCode": 400
+    },
+    {
+        "testName": "400 if identityAnswers not provided",
+        "messageId": "a99de0a5-53f8-4ca0-bb1b-82116ea42b04",
+        "expectedErrorMessage": "\"identityAnswers\" is required",
+        "expectedErrorName": "POST_IDENTITY_ANSWERS_REQUEST_INVALID",
+        "expectedResponseCode": 400
+    },
+    {
+        "testName": "400 if identityAnswers is null",
+        "messageId": "a99de0a5-53f8-4ca0-bb1b-82116ea42b04",
+        "identityAnswers": null,
+        "expectedErrorMessage": "\"identityAnswers\" must be an array",
+        "expectedErrorName": "POST_IDENTITY_ANSWERS_REQUEST_INVALID",
+        "expectedResponseCode": 400
+    },    
+    {
+        "testName": "400 if identityAnswers is empty array",
+        "messageId": "a99de0a5-53f8-4ca0-bb1b-82116ea42b04",
+        "identityAnswers": [],
+        "expectedErrorMessage": "\"identityAnswers\" must be a non-empty array",
+        "expectedErrorName": "POST_IDENTITY_ANSWERS_REQUEST_INVALID",
+        "expectedResponseCode": 400
+    }, 
+    {
+        "testName": "400 if identityAnswers contains empty object",
+        "messageId": "a99de0a5-53f8-4ca0-bb1b-82116ea42b04",
+        "identityAnswers": [{}],
+        "expectedErrorMessage": "\"identityAnswers[0].questionId\" is required. \"identityAnswers[0].value\" is required",
+        "expectedErrorName": "POST_IDENTITY_ANSWERS_REQUEST_INVALID",
+        "expectedResponseCode": 400
+    }, 
+    {
+        "testName": "400 if questionId not provided",
+        "messageId": "a99de0a5-53f8-4ca0-bb1b-82116ea42b04",
+        "identityAnswers": [{"value": "bar"}],
+        "expectedErrorMessage": "\"identityAnswers[0].questionId\" is required",
+        "expectedErrorName": "POST_IDENTITY_ANSWERS_REQUEST_INVALID",
+        "expectedResponseCode": 400
+    }, 
+    {
+        "testName": "400 if questionId is null",
+        "messageId": "a99de0a5-53f8-4ca0-bb1b-82116ea42b04",
+        "identityAnswers": [{"questionId": null, "value": "bar"}],
+        "expectedErrorMessage": "\"identityAnswers[0].questionId\" must be a string",
+        "expectedErrorName": "POST_IDENTITY_ANSWERS_REQUEST_INVALID",
+        "expectedResponseCode": 400
+    }, 
+    {
+        "testName": "400 if value not provided",
+        "messageId": "a99de0a5-53f8-4ca0-bb1b-82116ea42b04",
+        "identityAnswers": [{"questionId": "foo"}],
+        "expectedErrorMessage": "\"identityAnswers[0].value\" is required",
+        "expectedErrorName": "POST_IDENTITY_ANSWERS_REQUEST_INVALID",
+        "expectedResponseCode": 400
+    }, 
+    {
+        "testName": "400 if value is null",
+        "messageId": "a99de0a5-53f8-4ca0-bb1b-82116ea42b04",
+        "identityAnswers": [{"questionId": "foo", "value": null}],
+        "expectedErrorMessage": "\"identityAnswers[0].value\" must be a string",
+        "expectedErrorName": "POST_IDENTITY_ANSWERS_REQUEST_INVALID",
+        "expectedResponseCode": 400
+    }, 
+    {
+        "testName": "403 if request data is provided for dummy application",
+        "messageId": "a99de0a5-53f8-4ca0-bb1b-82116ea42b04",
+        "identityAnswers": [{"questionId": "foo", "value": "bar"}],
+        "expectedErrorMessage": "Invalid Application State",
+        "expectedErrorName": "APPLICATION_STATE_INVALID",
+        "expectedResponseCode": 403
+    }
+]

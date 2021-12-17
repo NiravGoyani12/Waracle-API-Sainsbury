@@ -1,0 +1,204 @@
+[
+  
+    {
+        "scenario":"sort code is less than 6 char",
+        "{{b2c}}{{getsession}}/{{applicationid}}{{bankaccount_validate}}":"b2c/v1/applications/applicationid/bankaccount_validate",
+        "messageId":"5ec8af2d-5c05-4903-8d56-ba5f9765d1ee",
+        "sortCode":"40472",
+        "accountNumber":"12345678",
+        "accountOpenedMonth":"1",
+        "accountOpenedYear":"2020",
+        "errorMessage":"\"sortCode\" fails to match the required pattern: /^[0-9]{6}$/"
+    },
+    {
+        "scenario":"sort code is greater than 6 char",
+        "{{b2c}}{{getsession}}/{{applicationid}}{{bankaccount_validate}}":"b2c/v1/applications/applicationid/bankaccount_validate",
+        "messageId":"5ec8af2d-5c05-4903-8d56-ba5f9765d1ee",
+        "sortCode":"4047232",
+        "accountNumber":"12345678",
+        "accountOpenedMonth":"1",
+        "accountOpenedYear":"2020",
+        "errorMessage":"\"sortCode\" fails to match the required pattern: /^[0-9]{6}$/"
+    },
+    {
+        "scenario":"account number is less than 8 char",
+        "{{b2c}}{{getsession}}/{{applicationid}}{{bankaccount_validate}}":"b2c/v1/applications/applicationid/bankaccount_validate",
+        "messageId":"5ec8af2d-5c05-4903-8d56-ba5f9765d1ee",
+        "sortCode":"404723",
+        "accountNumber":"1234567",
+        "accountOpenedMonth":"1",
+        "accountOpenedYear":"2020",
+        "errorMessage":"\"accountNumber\" fails to match the required pattern: /^[0-9]{8}$/"                      
+    },
+    {
+        "scenario":"account number is greater than 8 char",
+        "{{b2c}}{{getsession}}/{{applicationid}}{{bankaccount_validate}}":"b2c/v1/applications/applicationid/bankaccount_validate",
+        "messageId":"5ec8af2d-5c05-4903-8d56-ba5f9765d1ee",
+        "sortCode":"404723",
+        "accountNumber":"123456789",
+        "accountOpenedMonth":"1",
+        "accountOpenedYear":"2020",
+        "errorMessage":"\"accountNumber\" fails to match the required pattern: /^[0-9]{8}$/"                      
+    },
+    {
+        "scenario":"account opened month is less than 1",
+        "{{b2c}}{{getsession}}/{{applicationid}}{{bankaccount_validate}}":"b2c/v1/applications/applicationid/bankaccount_validate",
+        "messageId":"5ec8af2d-5c05-4903-8d56-ba5f9765d1ee",
+        "sortCode":"404723",
+        "accountNumber":"123456789",
+        "accountOpenedMonth":"0",
+        "accountOpenedYear":"2020",
+        "errorMessage":"\"accountNumber\" fails to match the required pattern: /^[0-9]{8}$/. \"accountOpenedMonth\" must be larger than or equal to 1"
+                         
+    },
+    {
+        "scenario":"account opened month is greater than 12",
+        "{{b2c}}{{getsession}}/{{applicationid}}{{bankaccount_validate}}":"b2c/v1/applications/applicationid/bankaccount_validate",
+        "messageId":"5ec8af2d-5c05-4903-8d56-ba5f9765d1ee",
+        "sortCode":"404723",
+        "accountNumber":"123456789",
+        "accountOpenedMonth":"13",
+        "accountOpenedYear":"2020",
+        "errorMessage":"\"accountNumber\" fails to match the required pattern: /^[0-9]{8}$/. \"accountOpenedMonth\" must be less than or equal to 12"                        
+    },
+    {
+        "scenario":"account opened year is less than 1900",
+        "{{b2c}}{{getsession}}/{{applicationid}}{{bankaccount_validate}}":"b2c/v1/applications/applicationid/bankaccount_validate",
+        "messageId":"5ec8af2d-5c05-4903-8d56-ba5f9765d1ee",
+        "sortCode":"404723",
+        "accountNumber":"123456789",
+        "accountOpenedMonth":"11",
+        "accountOpenedYear":"20",
+        "errorMessage": "\"accountNumber\" fails to match the required pattern: /^[0-9]{8}$/. \"accountOpenedYear\" must be larger than or equal to 1900"
+    },
+    {
+        "scenario":"sort code with special char and numbers",
+        "{{b2c}}{{getsession}}/{{applicationid}}{{bankaccount_validate}}":"b2c/v1/applications/applicationid/bankaccount_validate",
+        "messageId":"5ec8af2d-5c05-4903-8d56-ba5f9765d1ee",
+        "sortCode":"40472$",
+        "accountNumber":"12345678",
+        "accountOpenedMonth":"1",
+        "accountOpenedYear":"2020",
+        "errorMessage":"\"sortCode\" fails to match the required pattern: /^[0-9]{6}$/"
+    },
+    {
+        "scenario":"account number with special char and numbers",
+        "{{b2c}}{{getsession}}/{{applicationid}}{{bankaccount_validate}}":"b2c/v1/applications/applicationid/bankaccount_validate",
+        "messageId":"5ec8af2d-5c05-4903-8d56-ba5f9765d1ee",
+        "sortCode":"404723",
+        "accountNumber":"1234567%",
+        "accountOpenedMonth":"10",
+        "accountOpenedYear":"2020",
+        "errorMessage":"\"accountNumber\" fails to match the required pattern: /^[0-9]{8}$/"
+    },
+    {
+        "scenario":"sort code with space",
+        "{{b2c}}{{getsession}}/{{applicationid}}{{bankaccount_validate}}":"b2c/v1/applications/applicationid/bankaccount_validate",
+        "messageId":"5ec8af2d-5c05-4903-8d56-ba5f9765d1ee",
+        "sortCode":"404 723",
+        "accountNumber":"22345616",
+        "accountOpenedMonth":"10",
+        "accountOpenedYear":"2020",
+        "errorMessage":"\"sortCode\" fails to match the required pattern: /^[0-9]{6}$/"
+    },
+    {
+        "scenario":"account opened year is with future date - 2025",
+        "{{b2c}}{{getsession}}/{{applicationid}}{{bankaccount_validate}}":"b2c/v1/applications/applicationid/bankaccount_validate",
+        "messageId":"5ec8af2d-5c05-4903-8d56-ba5f9765d1ee",
+        "sortCode":"404723",
+        "accountNumber":"22345616",
+        "accountOpenedMonth":"10",
+        "accountOpenedYear":"2025",
+        "errorMessage":"\"accountOpenedYear\" must be less than or equal to 2021"
+    },
+    {
+        "scenario":"account opened year is with future date - 2025",
+        "{{b2c}}{{getsession}}/{{applicationid}}{{bankaccount_validate}}":"b2c/v1/applications/applicationid/bankaccount_validate",
+        "messageId":"5ec8af2d-5c05-4903-8d56-ba5f9765d1ee",
+        "sortCode":"",
+        "accountNumber":"22345616",
+        "accountOpenedMonth":"10",
+        "accountOpenedYear":"2020",
+        "errorMessage":"\"sortCode\" is not allowed to be empty"
+    },
+    {
+        "scenario":"account opened year is with future date - 2025",
+        "{{b2c}}{{getsession}}/{{applicationid}}{{bankaccount_validate}}":"b2c/v1/applications/applicationid/bankaccount_validate",
+        "messageId":"5ec8af2d-5c05-4903-8d56-ba5f9765d1ee",
+        "sortCode":"404723",
+        "accountNumber":"22345616",
+        "accountOpenedMonth":"10",
+        "accountOpenedYear":"2025",
+        "errorMessage":"\"accountOpenedYear\" must be less than or equal to 2021"
+    },
+    {
+        "scenario":"account opened year is less than 1900-boundary check",
+        "{{b2c}}{{getsession}}/{{applicationid}}{{bankaccount_validate}}":"b2c/v1/applications/applicationid/bankaccount_validate",
+        "messageId":"5ec8af2d-5c05-4903-8d56-ba5f9765d1ee",
+        "sortCode":"404723",
+        "accountNumber":"00000000",
+        "accountOpenedMonth":"10",
+        "accountOpenedYear":"1899",
+        "errorMessage":"\"accountOpenedYear\" must be larger than or equal to 1900"
+    },
+    {
+        "scenario":"messageid is empty",
+        "{{b2c}}{{getsession}}/{{applicationid}}{{bankaccount_validate}}":"b2c/v1/applications/applicationid/bankaccount_validate",
+        "messageId":"",
+        "sortCode":"404723",
+        "accountNumber":"00000000",
+        "accountOpenedMonth":"10",
+        "accountOpenedYear":"2015",
+        "errorMessage":"\"messageId\" contains an invalid value. \"messageId\" is not allowed to be empty"
+    },
+    {
+        "scenario":"account opened month is with negative value",
+        "{{b2c}}{{getsession}}/{{applicationid}}{{bankaccount_validate}}":"b2c/v1/applications/applicationid/bankaccount_validate",
+        "messageId":"5ec8af2d-5c05-4903-8d56-ba5f9765d1ee",
+        "sortCode":"404723",
+        "accountNumber":"00000000",
+        "accountOpenedMonth":"-10",
+        "accountOpenedYear":"2020",
+        "errorMessage":"\"accountOpenedMonth\" must be larger than or equal to 1"
+    },
+    {
+        "scenario":"account opened year is with negative value",
+        "{{b2c}}{{getsession}}/{{applicationid}}{{bankaccount_validate}}":"b2c/v1/applications/applicationid/bankaccount_validate",
+        "messageId":"5ec8af2d-5c05-4903-8d56-ba5f9765d1ee",
+        "sortCode":"000000",
+        "accountNumber":"22345616",
+        "accountOpenedMonth":"10",
+        "accountOpenedYear":"-2020",
+        "errorMessage":"\"accountOpenedYear\" must be larger than or equal to 1900"
+    },
+    {
+        "scenario":"account number with special char",
+        "{{b2c}}{{getsession}}/{{applicationid}}{{bankaccount_validate}}":"b2c/v1/applications/applicationid/bankaccount_validate",
+        "messageId":"5ec8af2d-5c05-4903-8d56-ba5f9765d1ee",
+        "sortCode":"000000",
+        "accountNumber":"(*&$%@()",
+        "accountOpenedMonth":"10",
+        "accountOpenedYear":"2020",
+        "errorMessage":"\"accountNumber\" fails to match the required pattern: /^[0-9]{8}$/"
+    },
+    {
+        "scenario":"sort code with special char",
+        "{{b2c}}{{getsession}}/{{applicationid}}{{bankaccount_validate}}":"b2c/v1/applications/applicationid/bankaccount_validate",
+        "messageId":"5ec8af2d-5c05-4903-8d56-ba5f9765d1ee",
+        "sortCode":"(*&$%@()",
+        "accountNumber":"12345678",
+        "accountOpenedMonth":"10",
+        "accountOpenedYear":"2020",
+        "errorMessage":"\"sortCode\" fails to match the required pattern: /^[0-9]{6}$/"
+    },
+    {
+        "scenario":"messageId contains special characters",
+        "{{b2c}}{{getsession}}/{{applicationid}}{{bankaccount_validate}}":"b2c/v1/applications/applicationid/bankaccount_validate",
+        "messageId":"5ec8af2d-5c05-4903-8d56-ba5f9765d1ee±!@€£#$%^&(){}|:;",
+        "sortCode":"000000",
+        "accountNumber":"12345678",
+        "accountOpenedMonth":"1",
+        "accountOpenedYear":"2020",
+        "errorMessage":"\"messageId\" fails to match the required pattern: /^[^~`§±!@€£#$%^&(){}|:;"
+    }
+]
